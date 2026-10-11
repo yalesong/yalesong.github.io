@@ -214,5 +214,9 @@ window.PUB_METADATA = {
   },
   "conf/fgr/SongDD11a": {
     "data": "https://github.com/yalesong/natops"
+  },
+  "journals/corr/abs-2604-24842": {
+    "project": "https://co-director-agent.github.io/",
+    "blog": "https://research.google/blog/coherent-long-form-video-generation/"
   }
 };
