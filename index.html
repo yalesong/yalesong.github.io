@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yale Song - Senior Staff Research Scientist and Manager at Google">
+    <meta name="author" content="Yale Song">
+    <title>Yale Song</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+        <header>
+            <img src="img/yale.jpg" alt="Yale Song" class="profile-img">
+            <div class="header-info">
+                <h1>Yale Song</h1>
+                <p class="title">Senior Staff Research Scientist and Manager, Google</p>
+                <div class="links">
+                    <a href="mailto:yalesong@gmail.com">Email</a>
+                    <a href="https://scholar.google.com/citations?user=dNHNpxoAAAAJ&sortby=pubdate" target="_blank">Google Scholar</a>
+                    <a href="https://github.com/yalesong" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/yalesong" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <p class="bio-text">
+                I am a researcher and manager working on computer vision and machine learning in real-world contexts. These days, I am mostly interested in <strong>agentic video storytelling</strong>  and <strong>robotic perception and manipulation</strong>. Previously, I was a research scientist at Meta FAIR, Microsoft Research, and Yahoo Research NYC. I received my PhD from MIT.
+            </p>
+        </header>
+
+        <section id="news" style="display: none;">
+            <div class="news-header">
+                <h2>Latest News</h2>
+                <div class="news-filter">
+                    <button class="filter-btn active" data-years="1">1Y</button>
+                    <button class="filter-btn" data-years="2">2Y</button>
+                    <button class="filter-btn" data-years="5">5Y</button>
+                    <button class="filter-btn" data-years="all">All</button>
+                </div>
+            </div>
+            <ul id="news-list" class="news-list">
+                <!-- News items will be injected by script.js -->
+            </ul>
+        </section>
+
+        <section id="publications">
+            <div class="news-header">
+                <h2>Publications <span id="pub-count" style="font-size: 1rem; color: var(--secondary-text); font-weight: normal;"></span> <small style="font-size: 0.8rem; font-weight: normal; color: var(--secondary-text); margin-left: 10px;">(auto-synced from DBLP)</small></h2>
+                <div class="pub-filters">
+                    <select id="time-filter" class="filter-select">
+                        <option value="10">Latest 10</option>
+                        <option value="2026">2026 Only</option>
+                        <option value="2">Last 2 Years</option>
+                        <option value="5">Last 5 Years</option>
+                        <option value="all">All Time</option>
+                    </select>
+                    <select id="venue-filter" class="filter-select">
+                        <option value="all">All Venues</option>
+                        <!-- Venues will be populated by script.js -->
+                    </select>
+                </div>
+            </div>
+            <ul id="pub-list" class="pub-list">
+                <li class="loading">Fetching publications from DBLP...</li>
+            </ul>
+            <p class="more-pubs">See all publications on <a href="https://scholar.google.com/citations?user=dNHNpxoAAAAJ" target="_blank">Google Scholar</a> or <a href="https://dblp.org/pid/31/9606.html" target="_blank">DBLP</a>.</p>
+        </section>
+
+        <section id="service">
+            <h2>Professional Service</h2>
+            <ul class="service-list">
+                <li><span class="service-category">Journal Editor:</span> Transactions on Machine Learning Research (TMLR), 2022–Present</li>
+                <li><span class="service-category">Organizing Committee:</span> 
+                    <strong>CVPR Socials Chair</strong> (2023–2026), 
+                    <strong>ICLR Paper Award Committee</strong> (2021, 2023), 
+                    <strong>NeurIPS Expo Chair</strong> (2020–2021), 
+                    <strong>ICMI Sponsorship Chair</strong> (2021),
+                    <strong>ICMI Program Chair</strong> (2019)
+                </li>
+                <li><span class="service-category">Area Chair / Senior PC:</span> 
+                    Regularly serve for <strong>NeurIPS</strong> (2020–2026), <strong>ICLR</strong> (2021–2026), <strong>ICML</strong> (2023–2026), <strong>CVPR</strong> (2020–2026, Lead AC in '25, '26), <strong>ICCV</strong> (2021–2025), and <strong>ECCV</strong> (2022–2024, Lead AC in '24). 
+                    Also served for WACV, ACL, FG, and ICMI.
+                </li>
+                <li><span class="service-category">Recognition:</span> Outstanding Area Chair (ICLR 2023), Outstanding Reviewer (ICML, NeurIPS, CVPR)</li>
+            </ul>
+        </section>
+
+        <section id="students" style="display: none;">
+            <h2>Mentorship</h2>
+            <p style="color: var(--secondary-text); font-size: 0.9rem; margin-bottom: 15px;">I've had the pleasure of working with many talented interns and students:</p>
+            <div class="student-grid">
+                <span>Ching-Yao Chuang (MIT)</span>, <span>Sharath Girish (UMD)</span>, <span>Chandler Squires (MIT)</span>, <span>Xiaolong Li (VT)</span>, <span>Tsu-Jui Ray Fu (UCSB)</span>, <span>Yuan-Ting Hu (UIUC)</span>, <span>Julia Gong (Stanford)</span>, <span>Sangho Lee (SNU)</span>, <span>Shuang Ma (SUNY Buffalo)</span>, <span>Youngjae Yu (SNU)</span>, <span>Chris Thomas (Pitt)</span>, <span>Keith Maki (CMU)</span>, <span>Yunseok Jang (SNU)</span>, <span>Yipin Zhou (UNC)</span>, <span>Yuncheng Li (Rochester)</span>, <span>Michael Gygli (ETH)</span>, <span>Wen-Sheng Chu (CMU)</span>, <span>Gloria Zen (Trento)</span>
+            </div>
+        </section>
+
+        <section id="etc" style="display: none;">
+            <h2>Etc.</h2>
+            <p>I am a guitar player since 1996. Check out my <a href="https://www.youtube.com/yalesong" target="_blank">YouTube channel</a> to see me playing in a band!</p>
+        </section>
+
+        <footer>
+            <p>&copy; Yale Song <button id="admin-toggle" class="admin-toggle-btn" title="Toggle Admin Edit Mode" aria-label="Toggle Admin Edit Mode">&#9998;</button></p>
+            <div id="admin-bar" class="admin-bar" style="display: none;">
+                <span class="admin-status"><strong>Admin Mode</strong> <span id="admin-sync-msg"></span></span>
+                <div class="admin-actions">
+                    <button id="admin-token-btn" class="admin-btn">Set GitHub Token</button>
+                    <button id="admin-save-github-btn" class="admin-btn admin-btn-primary">Push to GitHub</button>
+                    <button id="admin-save-local-btn" class="admin-btn">Save Local File</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="pub_metadata.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

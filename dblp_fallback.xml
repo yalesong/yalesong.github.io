@@ -1,0 +1,2332 @@
+<?xml version="1.0"?>
+<dblpperson name="Yale Song" pid="31/9606" n="115">
+<person key="homepages/31/9606" mdate="2011-05-22">
+<author pid="31/9606">Yale Song</author>
+</person>
+<r><inproceedings key="conf/cvpr/YangYPLCSK26" mdate="2026-10-09">
+<author pid="264/7539">Saelyne Yang</author>
+<author pid="295/1448">Jaesang Yu</author>
+<author pid="124/7504">Yi-Hao Peng</author>
+<author pid="287/4900">Kevin Qinghong Lin</author>
+<author pid="408/0087">Jae Won Cho</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="64/3462-1">Juho Kim 0001</author>
+<title>GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks.</title>
+<booktitle>CVPR</booktitle>
+<year>2026</year>
+<pages>13017-13027</pages>
+<crossref>conf/cvpr/2026</crossref>
+<ee type="oa">https://openaccess.thecvf.com/content/CVPR2026/html/Yang_GUIDE_A_Benchmark_for_Understanding_and_Assisting_Users_in_Open-Ended_CVPR_2026_paper.html</ee>
+<url>db/conf/cvpr/cvpr2026.html#YangYPLCSK26</url>
+<stream>streams/conf/cvpr</stream>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/wacv/ZhangSDITBK26" mdate="2026-05-27">
+<author pid="97/919-10">Ce Zhang 0010</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="128/0409">Ruta Desai</author>
+<author pid="233/0309">Michael Louis Iuzzolino</author>
+<author pid="58/8741">Joseph Tighe</author>
+<author pid="155/9783">Gedas Bertasius</author>
+<author pid="172/1012">Satwik Kottur</author>
+<title>Enhancing Visual Planning with Auxiliary Tasks and Multi-token Prediction.</title>
+<booktitle>WACV</booktitle>
+<year>2026</year>
+<pages>4190-4200</pages>
+<crossref>conf/wacv/2026</crossref>
+<ee>https://doi.org/10.1109/WACV61042.2026.00408</ee>
+<url>db/conf/wacv/wacv2026.html#ZhangSDITBK26</url>
+<stream>streams/conf/wacv</stream>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2601-23265" mdate="2026-02-26">
+<author pid="12/9540">Dawei Zhu</author>
+<author pid="83/8545">Rui Meng</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="397/2231">Xiyu Wei</author>
+<author pid="05/4288">Sujian Li</author>
+<author pid="14/8360">Tomas Pfister</author>
+<author pid="173/5409">Jinsung Yoon</author>
+<title>PaperBanana: Automating Academic Illustration for AI Scientists.</title>
+<year>2026</year>
+<month>January</month>
+<volume>abs/2601.23265</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2601.23265</ee>
+<url>db/journals/corr/corr2601.html#abs-2601-23265</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2603-12310" mdate="2026-04-11">
+<author pid="170/4082">Yiwen Song</author>
+<author pid="14/8360">Tomas Pfister</author>
+<author pid="31/9606">Yale Song</author>
+<title>VQQA: An Agentic Approach for Video Evaluation and Quality Improvement.</title>
+<year>2026</year>
+<month>March</month>
+<volume>abs/2603.12310</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2603.12310</ee>
+<url>db/journals/corr/corr2603.html#abs-2603-12310</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2603-25864" mdate="2026-04-16">
+<author pid="264/7539">Saelyne Yang</author>
+<author pid="295/1448">Jaesang Yu</author>
+<author pid="124/7504">Yi-Hao Peng</author>
+<author pid="287/4900">Kevin Qinghong Lin</author>
+<author pid="408/0087">Jae Won Cho</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="64/3462-1">Juho Kim 0001</author>
+<title>GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks.</title>
+<year>2026</year>
+<month>March</month>
+<volume>abs/2603.25864</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2603.25864</ee>
+<url>db/journals/corr/corr2603.html#abs-2603-25864</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2604-05018" mdate="2026-05-07">
+<author pid="170/4082">Yiwen Song</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="14/8360">Tomas Pfister</author>
+<author pid="173/5409">Jinsung Yoon</author>
+<title>PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing.</title>
+<year>2026</year>
+<month>April</month>
+<volume>abs/2604.05018</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2604.05018</ee>
+<url>db/journals/corr/corr2604.html#abs-2604-05018</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2604-13452" mdate="2026-05-11">
+<author pid="255/8493">Ishani Mondal</author>
+<author pid="170/4082">Yiwen Song</author>
+<author pid="253/6105">Mihir Parmar</author>
+<author pid="183/3699">Palash Goyal</author>
+<author pid="57/5950">Jordan L. Boyd-Graber</author>
+<author pid="14/8360">Tomas Pfister</author>
+<author pid="31/9606">Yale Song</author>
+<title>CANVAS: Continuity-Aware Narratives via Visual Agentic Storyboarding.</title>
+<year>2026</year>
+<month>April</month>
+<volume>abs/2604.13452</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2604.13452</ee>
+<url>db/journals/corr/corr2604.html#abs-2604-13452</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2604-24317" mdate="2026-05-19">
+<author pid="268/3564">Dibyadip Chatterjee</author>
+<author pid="243/1928">Zhanzhong Pang</author>
+<author pid="119/1497">Fadime Sener</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="64/8484">Angela Yao</author>
+<title>Don't Pause! Every prediction matters in a streaming video.</title>
+<year>2026</year>
+<month>April</month>
+<volume>abs/2604.24317</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2604.24317</ee>
+<url>db/journals/corr/corr2604.html#abs-2604-24317</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2604-24842" mdate="2026-05-19">
+<author pid="31/9606">Yale Song</author>
+<author pid="170/4082">Yiwen Song</author>
+<author pid="435/9608">Nick Losier</author>
+<author pid="436/0236">Nathan Hodson</author>
+<author pid="40/1042">Ye Jin</author>
+<author pid="435/9280">Rhyard Zhu</author>
+<author pid="03/4702">Yan Xu</author>
+<author pid="04/5374">Daniel Vlasic</author>
+<author pid="436/0837">Carina Claassen</author>
+<author pid="435/9595">Jasmine Leon</author>
+<author pid="435/9222">Khanh G. LeViet</author>
+<author pid="436/0355">Zack Chomyn</author>
+<author pid="435/8973">Joe Timmons</author>
+<author pid="41/10286">Brett Slatkin</author>
+<author pid="435/9623">Scott Penberthy</author>
+<author pid="14/8360">Tomas Pfister</author>
+<title>Co-Director: Agentic Generative Video Storytelling.</title>
+<year>2026</year>
+<month>April</month>
+<volume>abs/2604.24842</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2604.24842</ee>
+<url>db/journals/corr/corr2604.html#abs-2604-24842</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2605-06924" mdate="2026-06-08">
+<author pid="317/0657">Do Xuan Long</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="k/MinYenKan">Min-Yen Kan</author>
+<author pid="14/8360">Tomas Pfister</author>
+<author pid="142/1627">Long T. Le</author>
+<title>A<sup>2</sup>RD: Agentic Autoregressive Diffusion for Long Video Consistency.</title>
+<year>2026</year>
+<month>May</month>
+<volume>abs/2605.06924</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2605.06924</ee>
+<url>db/journals/corr/corr2605.html#abs-2605-06924</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2605-26340" mdate="2026-06-14">
+<author pid="83/8545">Rui Meng</author>
+<author pid="78/6527">Bhavana Dalvi Mishra</author>
+<author pid="199/3381">Jiefeng Chen 0001</author>
+<author pid="123/5098">Chun-Liang Li</author>
+<author pid="183/3699">Palash Goyal</author>
+<author pid="253/6105">Mihir Parmar</author>
+<author pid="170/4082">Yiwen Song</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="83/4490">Rajarishi Sinha</author>
+<author pid="12/6848">Parthasarathy Ranganathan</author>
+<author pid="84/9988">Burak Gokturk</author>
+<author pid="173/5409">Jinsung Yoon</author>
+<author pid="14/8360">Tomas Pfister</author>
+<title>ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence.</title>
+<year>2026</year>
+<month>May</month>
+<volume>abs/2605.26340</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2605.26340</ee>
+<url>db/journals/corr/corr2605.html#abs-2605-26340</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2608-30241" mdate="2026-09-14">
+<author pid="243/5831-1">Xueqing Wu 0001</author>
+<author pid="392/3830">Ashwin Balasubramanian</author>
+<author pid="148/9942">Bingxuan Li</author>
+<author pid="12/9540">Dawei Zhu</author>
+<author pid="18/2428-1">Kai-Wei Chang 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="170/4082">Yiwen Song</author>
+<author pid="83/8545">Rui Meng</author>
+<author pid="14/8360">Tomas Pfister</author>
+<author pid="117/4036">Nanyun Peng 0001</author>
+<title>PaperBanana-Interact: Scientific Diagram Refinement with Multi-Turn Human Feedback.</title>
+<year>2026</year>
+<month>August</month>
+<volume>abs/2608.30241</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2608.30241</ee>
+<url>db/journals/corr/corr2608.html#abs-2608-30241</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article key="journals/ijcv/GraumanWTKMAABBBBCCCCCD25" mdate="2026-06-03">
+<author orcid="0000-0002-9591-5873" pid="57/4553">Kristen Grauman</author>
+<author pid="302/0668">Andrew Westbury</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="42/163">Kris Kitani</author>
+<author pid="58/2944">Jitendra Malik</author>
+<author pid="175/5771">Triantafyllos Afouras</author>
+<author pid="231/3353">Kumar Ashutosh</author>
+<author pid="362/2962">Vijay Baiyya</author>
+<author orcid="0000-0003-2636-0066" pid="247/0964">Siddhant Bansal</author>
+<author pid="292/2707">Bikram Boote</author>
+<author pid="304/2850">Eugene Byrne</author>
+<author pid="304/3531">Zachary Chavis</author>
+<author pid="247/9518">Joya Chen</author>
+<author pid="12/3274">Feng Cheng</author>
+<author pid="166/1598">Fu-Jen Chu</author>
+<author pid="304/3037">Sean Crane</author>
+<author pid="122/1845">Avijit Dasgupta</author>
+<author pid="85/1692-2">Jing Dong 0002</author>
+<author pid="169/7108">Mar&#237;a Escobar</author>
+<author pid="329/1536">Cristhian Forigua</author>
+<author pid="304/2928">Abrham Gebreselasie</author>
+<author pid="253/0473">Sanjay Haresh</author>
+<author pid="14/4834-20">Jing Huang 0020</author>
+<author pid="317/6929">Md Mohaiminul Islam</author>
+<author pid="142/2520">Suyog Dutt Jain</author>
+<author pid="230/4108">Rawal Khirodkar</author>
+<author pid="362/3217">Devansh Kukreja</author>
+<author pid="230/8348">Kevin J. Liang</author>
+<author pid="85/3336">Jia-Wei Liu</author>
+<author pid="223/7908">Sagnik Majumder</author>
+<author pid="317/5604">Yongsen Mao</author>
+<author pid="47/8081">Miguel Martin</author>
+<author pid="166/6300">Effrosyni Mavroudi</author>
+<author pid="207/8308">Tushar Nagarajan</author>
+<author pid="197/7192">Francesco Ragusa</author>
+<author pid="199/1913">Santhosh Kumar Ramakrishnan</author>
+<author orcid="0009-0004-2242-1225" pid="362/2867">Luigi Seminara</author>
+<author pid="333/1844">Arjun Somayazulu</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="51/7623">Shan Su</author>
+<author pid="256/9549">Zihui Xue</author>
+<author pid="159/4948">Edward Zhang</author>
+<author pid="362/2934">Jinxu Zhang</author>
+<author pid="275/0085">Angela Castillo</author>
+<author pid="227/2470">Changan Chen</author>
+<author pid="362/3247">Xinzhu Fu</author>
+<author pid="158/9646">Ryosuke Furuta</author>
+<author pid="200/5697">Cristina Gonz&#225;lez</author>
+<author pid="84/8416">Prince Gupta</author>
+<author pid="357/1386">Jiabo Hu</author>
+<author pid="71/8763-2">Yifei Huang 0002</author>
+<author pid="175/7344-11">Yiming Huang 0011</author>
+<author pid="304/3203">Weslie Khoo</author>
+<author pid="35/211">Anush Kumar</author>
+<author pid="386/6796">Robert Kuo</author>
+<author pid="386/6843">Sach Lakhavani</author>
+<author pid="60/6348-7">Miao Liu 0007</author>
+<author pid="257/3359">Mi Luo</author>
+<author pid="00/7733-2">Zhengyi Luo 0002</author>
+<author pid="386/6518">Brighid Meredith</author>
+<author pid="258/1144">Austin Miller</author>
+<author pid="386/7090">Oluwatumininu Oguntola</author>
+<author pid="177/9224">Xiaqing Pan</author>
+<author pid="386/6470">Penny Peng</author>
+<author pid="289/0043">Shraman Pramanick</author>
+<author orcid="0000-0002-6234-0831" pid="304/3597">Merey Ramazanova</author>
+<author pid="283/7526">Fiona Ryan</author>
+<author pid="42/855">Wei Shan</author>
+<author pid="20/8395">Kiran K. Somasundaram</author>
+<author pid="362/8104">Chenan Song</author>
+<author pid="206/8614">Audrey Southerland</author>
+<author pid="377/3711">Masatoshi Tateno</author>
+<author pid="95/1127">Huiyu Wang</author>
+<author pid="82/8599">Yuchen Wang</author>
+<author pid="210/2402">Takuma Yagi</author>
+<author pid="243/2976">Mingfei Yan</author>
+<author pid="168/8851">Xitong Yang</author>
+<author pid="322/3576">Zecheng Yu</author>
+<author pid="386/6728">Shengxin Cindy Zha</author>
+<author pid="81/3-2">Chen Zhao 0002</author>
+<author pid="241/6308-3">Ziwei Zhao 0003</author>
+<author pid="72/888-1">Zhifan Zhu 0001</author>
+<author pid="386/7058">Jeff Zhuo</author>
+<author orcid="0000-0001-5244-2407" pid="41/639">Pablo Arbel&#225;ez</author>
+<author pid="155/9783">Gedas Bertasius</author>
+<author pid="c/DavidCrandall">David Crandall</author>
+<author orcid="0000-0001-8804-6238" pid="95/3618">Dima Damen</author>
+<author pid="243/3258">Jakob Julian Engel</author>
+<author pid="31/6643">Giovanni Maria Farinella</author>
+<author pid="147/3952">Antonino Furnari</author>
+<author orcid="0000-0002-5534-587X" pid="37/2516">Bernard Ghanem</author>
+<author pid="45/10336">Judy Hoffman</author>
+<author pid="j/CVJawahar">C. V. Jawahar</author>
+<author pid="01/8653">Richard A. Newcombe</author>
+<author pid="68/4325">Hyun Soo Park</author>
+<author pid="r/JMRehg">James M. Rehg</author>
+<author orcid="0000-0003-0097-4537" pid="64/5287-1">Yoichi Sato 0001</author>
+<author pid="21/9924">Manolis Savva</author>
+<author pid="71/3879">Jianbo Shi</author>
+<author pid="386/7282">Mike Zheng Shout</author>
+<author orcid="0000-0001-5918-9029" pid="161/3601">Michael Wray</author>
+<title>Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives.</title>
+<pages>8356-8435</pages>
+<year>2025</year>
+<month>December</month>
+<volume>133</volume>
+<journal>Int. J. Comput. Vis.</journal>
+<number>12</number>
+<ee>https://doi.org/10.1007/s11263-025-02557-6</ee>
+<url>db/journals/ijcv/ijcv133.html#GraumanWTKMAABBBBCCCCCD25</url>
+<stream>streams/journals/ijcv</stream>
+</article>
+</r>
+<r><inproceedings key="conf/cvpr/LuSWTN25" mdate="2025-08-20">
+<author pid="24/3263">Yujie Lu</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="66/9854">William Wang</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="207/8308">Tushar Nagarajan</author>
+<title>VITED: Video Temporal Evidence Distillation.</title>
+<pages>8501-8511</pages>
+<year>2025</year>
+<booktitle>CVPR</booktitle>
+<ee type="oa">https://openaccess.thecvf.com/content/CVPR2025/html/Lu_VITED_Video_Temporal_Evidence_Distillation_CVPR_2025_paper.html</ee>
+<ee>https://doi.org/10.1109/CVPR52734.2025.00795</ee>
+<crossref>conf/cvpr/2025</crossref>
+<url>db/conf/cvpr/cvpr2025.html#LuSWTN25</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iccv/ChatterjeeRSTMBCHSMYS25" mdate="2026-05-13">
+<author pid="268/3564">Dibyadip Chatterjee</author>
+<author pid="209/5911">Edoardo Remelli</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="136/4930">Bugra Tekin</author>
+<author pid="286/7972">Abhay Mittal</author>
+<author pid="405/4999">Bharat Bhatnagar</author>
+<author pid="160/2823">Necati Cihan Camg&#246;z</author>
+<author pid="244/2530">Shreyas Hampali</author>
+<author pid="91/6103">Eric Sauser</author>
+<author pid="70/418">Shugao Ma</author>
+<author pid="64/8484">Angela Yao</author>
+<author pid="119/1497">Fadime Sener</author>
+<title>Streaming Videollms for Real-Time Procedural Video Understanding.</title>
+<year>2025</year>
+<booktitle>ICCV</booktitle>
+<pages>22586-22598</pages>
+<crossref>conf/iccv/2025</crossref>
+<ee>https://doi.org/10.1109/ICCV51701.2025.02097</ee>
+<url>db/conf/iccv/iccv2025.html#ChatterjeeRSTMBCHSMYS25</url>
+<stream>streams/conf/iccv</stream>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iccv/PramanickMSCTA25" mdate="2026-05-13">
+<author pid="289/0043">Shraman Pramanick</author>
+<author pid="166/6300">Effrosyni Mavroudi</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="c/RamaChellappa">Rama Chellappa</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="175/5771">Triantafyllos Afouras</author>
+<title>Enrich and Detect: Video Temporal Grounding With Multimodal Llms.</title>
+<year>2025</year>
+<booktitle>ICCV</booktitle>
+<pages>24297-24308</pages>
+<crossref>conf/iccv/2025</crossref>
+<ee>https://doi.org/10.1109/ICCV51701.2025.02252</ee>
+<url>db/conf/iccv/iccv2025.html#PramanickMSCTA25</url>
+<stream>streams/conf/iccv</stream>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/nips/ChoMMANMSMHJMWR25" mdate="2026-08-06">
+<author pid="249/9432">Jang Hyun Cho</author>
+<author pid="174/2905">Andrea Madotto</author>
+<author pid="166/6300">Effrosyni Mavroudi</author>
+<author pid="175/5771">Triantafyllos Afouras</author>
+<author pid="207/8308">Tushar Nagarajan</author>
+<author pid="247/6083-1">Muhammad Maaz 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="384/7631">Tengyu Ma 0005</author>
+<author pid="352/2124">Shuming Hu</author>
+<author pid="142/2520">Suyog Dutt Jain</author>
+<author pid="47/8081">Miguel Martin</author>
+<author pid="95/1127">Huiyu Wang</author>
+<author pid="293/7463">Hanoona Abdul Rasheed</author>
+<author pid="249/2345">Peize Sun</author>
+<author pid="154/3943-1">Po-Yao Huang 0001</author>
+<author pid="239/4186">Daniel Bolya</author>
+<author pid="248/7650">Nikhila Ravi</author>
+<author pid="186/3731">Shashank Jain</author>
+<author pid="405/4460">Tammy Stark</author>
+<author pid="120/4131">Seungwhan Moon</author>
+<author pid="140/3437">Babak Damavandi</author>
+<author pid="47/3649">Vivian Lee</author>
+<author pid="302/0668">Andrew Westbury</author>
+<author pid="32/11535-1">Salman H. Khan 0001</author>
+<author pid="43/7592">Philipp Kr&#228;henb&#252;hl</author>
+<author pid="62/750">Piotr Doll&#225;r</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="57/4553">Kristen Grauman</author>
+<author pid="127/1937">Christoph Feichtenhofer</author>
+<title>PerceptionLM: Open-Access Data and Models for Detailed Visual Understanding.</title>
+<year>2025</year>
+<booktitle>NeurIPS</booktitle>
+<ee type="oa">http://papers.nips.cc/paper_files/paper/2025/hash/21f1c5bbf2519321c1bee9bfa9edcd46-Abstract-Conference.html</ee>
+<crossref>conf/nips/2025</crossref>
+<url>db/conf/nips/neurips2025.html#ChoMMANMSMHJMWR25</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2503-12855" mdate="2025-04-13">
+<author pid="24/3263">Yujie Lu</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="66/9854">William Wang</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="207/8308">Tushar Nagarajan</author>
+<title>VITED: Video Temporal Evidence Distillation.</title>
+<year>2025</year>
+<month>March</month>
+<volume>abs/2503.12855</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2503.12855</ee>
+<url>db/journals/corr/corr2503.html#abs-2503-12855</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2504-13180" mdate="2025-05-23">
+<author pid="249/9432">Jang Hyun Cho</author>
+<author pid="174/2905">Andrea Madotto</author>
+<author pid="166/6300">Effrosyni Mavroudi</author>
+<author pid="175/5771">Triantafyllos Afouras</author>
+<author pid="207/8308">Tushar Nagarajan</author>
+<author pid="247/6083-1">Muhammad Maaz 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="384/7631">Tengyu Ma 0005</author>
+<author pid="352/2124">Shuming Hu</author>
+<author pid="142/2520">Suyog Dutt Jain</author>
+<author pid="47/8081">Miguel Martin</author>
+<author pid="95/1127">Huiyu Wang</author>
+<author pid="293/7463">Hanoona Abdul Rasheed</author>
+<author pid="249/2345">Peize Sun</author>
+<author pid="154/3943-1">Po-Yao Huang 0001</author>
+<author pid="239/4186">Daniel Bolya</author>
+<author pid="248/7650">Nikhila Ravi</author>
+<author pid="186/3731">Shashank Jain</author>
+<author pid="405/4460">Tammy Stark</author>
+<author pid="373/5549">Shane Moon</author>
+<author pid="140/3437">Babak Damavandi</author>
+<author pid="47/3649">Vivian Lee</author>
+<author pid="302/0668">Andrew Westbury</author>
+<author pid="32/11535-1">Salman H. Khan 0001</author>
+<author pid="43/7592">Philipp Kr&#228;henb&#252;hl</author>
+<author pid="62/750">Piotr Doll&#225;r</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="57/4553">Kristen Grauman</author>
+<author pid="127/1937">Christoph Feichtenhofer</author>
+<title>PerceptionLM: Open-Access Data and Models for Detailed Visual Understanding.</title>
+<year>2025</year>
+<month>April</month>
+<volume>abs/2504.13180</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2504.13180</ee>
+<url>db/journals/corr/corr2504.html#abs-2504-13180</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2504-13915" mdate="2025-05-22">
+<author pid="268/3564">Dibyadip Chatterjee</author>
+<author pid="209/5911">Edoardo Remelli</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="136/4930">Bugra Tekin</author>
+<author pid="286/7972">Abhay Mittal</author>
+<author pid="405/4999">Bharat Bhatnagar</author>
+<author pid="160/2823">Necati Cihan Camg&#246;z</author>
+<author pid="244/2530">Shreyas Hampali</author>
+<author pid="91/6103">Eric Sauser</author>
+<author pid="70/418">Shugao Ma</author>
+<author pid="64/8484">Angela Yao</author>
+<author pid="119/1497">Fadime Sener</author>
+<title>Memory-efficient Streaming VideoLLMs for Real-time Procedural Video Understanding.</title>
+<year>2025</year>
+<month>April</month>
+<volume>abs/2504.13915</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2504.13915</ee>
+<url>db/journals/corr/corr2504.html#abs-2504-13915</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2507-15130" mdate="2026-03-09">
+<author pid="97/919-10">Ce Zhang 0010</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="128/0409">Ruta Desai</author>
+<author pid="233/0309">Michael Louis Iuzzolino</author>
+<author pid="58/8741">Joseph Tighe</author>
+<author pid="155/9783">Gedas Bertasius</author>
+<author pid="172/1012">Satwik Kottur</author>
+<title>Enhancing Visual Planning with Auxiliary Tasks and Multi-token Prediction.</title>
+<year>2025</year>
+<month>July</month>
+<volume>abs/2507.15130</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2507.15130</ee>
+<url>db/journals/corr/corr2507.html#abs-2507-15130</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2510-17023" mdate="2025-11-15">
+<author pid="289/0043">Shraman Pramanick</author>
+<author pid="166/6300">Effrosyni Mavroudi</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="c/RamaChellappa">Rama Chellappa</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="175/5771">Triantafyllos Afouras</author>
+<title>Enrich and Detect: Video Temporal Grounding with Multimodal LLMs.</title>
+<year>2025</year>
+<month>October</month>
+<volume>abs/2510.17023</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2510.17023</ee>
+<url>db/journals/corr/corr2510.html#abs-2510-17023</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><inproceedings key="conf/cvpr/GraumanWTKMAABB24" mdate="2026-06-03">
+<author pid="57/4553">Kristen Grauman</author>
+<author pid="302/0668">Andrew Westbury</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="42/163">Kris Kitani</author>
+<author pid="58/2944">Jitendra Malik</author>
+<author pid="175/5771">Triantafyllos Afouras</author>
+<author pid="231/3353">Kumar Ashutosh</author>
+<author pid="362/2962">Vijay Baiyya</author>
+<author orcid="0000-0003-2636-0066" pid="247/0964">Siddhant Bansal</author>
+<author pid="292/2707">Bikram Boote</author>
+<author pid="304/2850">Eugene Byrne</author>
+<author pid="304/3531">Zachary Chavis</author>
+<author pid="247/9518">Joya Chen</author>
+<author pid="12/3274">Feng Cheng</author>
+<author pid="166/1598">Fu-Jen Chu</author>
+<author pid="304/3037">Sean Crane</author>
+<author pid="122/1845">Avijit Dasgupta</author>
+<author pid="85/1692-2">Jing Dong 0002</author>
+<author pid="169/7108">Mar&#237;a Escobar</author>
+<author pid="329/1536">Cristhian Forigua</author>
+<author pid="304/2928">Abrham Gebreselasie</author>
+<author pid="253/0473">Sanjay Haresh</author>
+<author pid="14/4834-20">Jing Huang 0020</author>
+<author pid="317/6929">Md Mohaiminul Islam</author>
+<author pid="142/2520">Suyog Dutt Jain</author>
+<author pid="230/4108">Rawal Khirodkar</author>
+<author pid="362/3217">Devansh Kukreja</author>
+<author pid="230/8348">Kevin J. Liang</author>
+<author pid="85/3336">Jia-Wei Liu</author>
+<author pid="223/7908">Sagnik Majumder</author>
+<author pid="317/5604">Yongsen Mao</author>
+<author pid="47/8081">Miguel Martin</author>
+<author pid="166/6300">Effrosyni Mavroudi</author>
+<author pid="207/8308">Tushar Nagarajan</author>
+<author pid="197/7192">Francesco Ragusa</author>
+<author pid="199/1913">Santhosh Kumar Ramakrishnan</author>
+<author orcid="0009-0004-2242-1225" pid="362/2867">Luigi Seminara</author>
+<author pid="333/1844">Arjun Somayazulu</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="51/7623">Shan Su</author>
+<author pid="256/9549">Zihui Xue</author>
+<author pid="159/4948">Edward Zhang</author>
+<author pid="362/2934">Jinxu Zhang</author>
+<author pid="275/0085">Angela Castillo</author>
+<author pid="227/2470">Changan Chen</author>
+<author pid="362/3247">Xinzhu Fu</author>
+<author pid="158/9646">Ryosuke Furuta</author>
+<author pid="200/5697">Cristina Gonz&#225;lez</author>
+<author pid="84/8416">Prince Gupta</author>
+<author pid="357/1386">Jiabo Hu</author>
+<author orcid="0000-0001-8067-6227" pid="71/8763-2">Yifei Huang 0002</author>
+<author pid="175/7344-11">Yiming Huang 0011</author>
+<author pid="304/3203">Weslie Khoo</author>
+<author pid="35/211">Anush Kumar</author>
+<author pid="386/6796">Robert Kuo</author>
+<author pid="386/6843">Sach Lakhavani</author>
+<author pid="60/6348-7">Miao Liu 0007</author>
+<author pid="257/3359">Mi Luo</author>
+<author pid="00/7733-2">Zhengyi Luo 0002</author>
+<author pid="386/6518">Brighid Meredith</author>
+<author pid="258/1144">Austin Miller</author>
+<author pid="386/7090">Oluwatumininu Oguntola</author>
+<author pid="177/9224">Xiaqing Pan</author>
+<author pid="386/6470">Penny Peng</author>
+<author pid="289/0043">Shraman Pramanick</author>
+<author pid="304/3597">Merey Ramazanova</author>
+<author pid="283/7526">Fiona Ryan</author>
+<author pid="42/855">Wei Shan</author>
+<author pid="20/8395">Kiran K. Somasundaram</author>
+<author pid="362/8104">Chenan Song</author>
+<author pid="206/8614">Audrey Southerland</author>
+<author pid="377/3711">Masatoshi Tateno</author>
+<author pid="95/1127">Huiyu Wang</author>
+<author pid="82/8599">Yuchen Wang</author>
+<author pid="210/2402">Takuma Yagi</author>
+<author pid="243/2976">Mingfei Yan</author>
+<author pid="168/8851">Xitong Yang</author>
+<author pid="322/3576">Zecheng Yu</author>
+<author pid="386/6728">Shengxin Cindy Zha</author>
+<author orcid="0000-0003-4993-5416" pid="81/3-2">Chen Zhao 0002</author>
+<author pid="241/6308-3">Ziwei Zhao 0003</author>
+<author pid="72/888-1">Zhifan Zhu 0001</author>
+<author pid="386/7058">Jeff Zhuo</author>
+<author orcid="0000-0001-5244-2407" pid="41/639">Pablo Arbel&#225;ez</author>
+<author pid="155/9783">Gedas Bertasius</author>
+<author orcid="0000-0001-8804-6238" pid="95/3618">Dima Damen</author>
+<author pid="243/3258">Jakob J. Engel</author>
+<author pid="31/6643">Giovanni Maria Farinella</author>
+<author pid="147/3952">Antonino Furnari</author>
+<author pid="37/2516">Bernard Ghanem</author>
+<author pid="45/10336">Judy Hoffman</author>
+<author pid="j/CVJawahar">C. V. Jawahar</author>
+<author pid="01/8653">Richard A. Newcombe</author>
+<author pid="68/4325">Hyun Soo Park</author>
+<author pid="r/JMRehg">James M. Rehg</author>
+<author orcid="0000-0003-0097-4537" pid="64/5287-1">Yoichi Sato 0001</author>
+<author pid="21/9924">Manolis Savva</author>
+<author pid="71/3879">Jianbo Shi</author>
+<author pid="386/7282">Mike Zheng Shout</author>
+<author orcid="0000-0001-5918-9029" pid="161/3601">Michael Wray</author>
+<title>Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives.</title>
+<pages>19383-19400</pages>
+<year>2024</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR52733.2024.01834</ee>
+<crossref>conf/cvpr/2024</crossref>
+<url>db/conf/cvpr/cvpr2024.html#GraumanWTKMAABB24</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cvpr/XueSGT23" mdate="2023-08-28">
+<author pid="256/9549">Zihui Xue</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="57/4553">Kristen Grauman</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<title>Egocentric Video Task Translation.</title>
+<pages>2310-2320</pages>
+<year>2023</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR52729.2023.00229</ee>
+<crossref>conf/cvpr/2023</crossref>
+<url>db/conf/cvpr/cvpr2023.html#XueSGT23</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iccv/PramanickSNLSSC23" mdate="2024-01-22">
+<author pid="289/0043">Shraman Pramanick</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="198/1398">Sayan Nag</author>
+<author pid="287/4900">Kevin Qinghong Lin</author>
+<author pid="44/5592">Hardik Shah</author>
+<author pid="284/0807">Mike Zheng Shou</author>
+<author pid="c/RamaChellappa">Rama Chellappa</author>
+<author pid="207/1300">Pengchuan Zhang</author>
+<title>EgoVLPv2: Egocentric Video-Language Pre-training with Fusion in the Backbone.</title>
+<pages>5262-5274</pages>
+<year>2023</year>
+<booktitle>ICCV</booktitle>
+<ee>https://doi.org/10.1109/ICCV51070.2023.00487</ee>
+<crossref>conf/iccv/2023</crossref>
+<url>db/conf/iccv/iccv2023.html#PramanickSNLSSC23</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/nips/SongBNWMT23" mdate="2024-03-01">
+<author pid="31/9606">Yale Song</author>
+<author pid="304/2850">Eugene Byrne</author>
+<author pid="207/8308">Tushar Nagarajan</author>
+<author pid="95/1127">Huiyu Wang</author>
+<author pid="47/8081">Miguel Martin</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<title>Ego4D Goal-Step: Toward Hierarchical Understanding of Procedural Activities.</title>
+<year>2023</year>
+<booktitle>NeurIPS</booktitle>
+<ee type="oa">http://papers.nips.cc/paper_files/paper/2023/hash/7a65606fa1a6849450550325832036e5-Abstract-Datasets_and_Benchmarks.html</ee>
+<crossref>conf/nips/2023</crossref>
+<url>db/conf/nips/neurips2023.html#SongBNWMT23</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/wacv/LaBonteSWVJ23" mdate="2023-06-28">
+<author pid="251/5689">Tyler LaBonte</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="10/5630-66">Xin Wang 0066</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<author pid="08/3966">Neel Joshi</author>
+<title>Scaling Novel Object Detection with Weakly Supervised Detection Transformers.</title>
+<pages>85-96</pages>
+<year>2023</year>
+<booktitle>WACV</booktitle>
+<ee>https://doi.org/10.1109/WACV56688.2023.00017</ee>
+<crossref>conf/wacv/2023</crossref>
+<url>db/conf/wacv/wacv2023.html#LaBonteSWVJ23</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2302-01891" mdate="2023-02-10">
+<author pid="256/9549">Zihui Xue</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="57/4553">Kristen Grauman</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<title>Egocentric Video Task Translation @ Ego4D Challenge 2022.</title>
+<year>2023</year>
+<volume>abs/2302.01891</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2302.01891</ee>
+<url>db/journals/corr/corr2302.html#abs-2302-01891</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2307-05463" mdate="2023-07-24">
+<author pid="289/0043">Shraman Pramanick</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="198/1398">Sayan Nag</author>
+<author pid="287/4900">Kevin Qinghong Lin</author>
+<author pid="44/5592">Hardik Shah</author>
+<author pid="284/0807">Mike Zheng Shou</author>
+<author pid="c/RamaChellappa">Rama Chellappa</author>
+<author pid="207/1300">Pengchuan Zhang</author>
+<title>EgoVLPv2: Egocentric Video-Language Pre-training with Fusion in the Backbone.</title>
+<year>2023</year>
+<volume>abs/2307.05463</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2307.05463</ee>
+<url>db/journals/corr/corr2307.html#abs-2307-05463</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2311-18259" mdate="2026-03-18">
+<author pid="57/4553">Kristen Grauman</author>
+<author pid="302/0668">Andrew Westbury</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<author pid="42/163">Kris Kitani</author>
+<author pid="58/2944">Jitendra Malik</author>
+<author pid="175/5771">Triantafyllos Afouras</author>
+<author pid="231/3353">Kumar Ashutosh</author>
+<author pid="362/2962">Vijay Baiyya</author>
+<author orcid="0000-0003-2636-0066" pid="247/0964">Siddhant Bansal</author>
+<author pid="292/2707">Bikram Boote</author>
+<author pid="304/2850">Eugene Byrne</author>
+<author pid="304/3531">Zachary Chavis</author>
+<author pid="247/9518">Joya Chen</author>
+<author pid="12/3274">Feng Cheng</author>
+<author pid="166/1598">Fu-Jen Chu</author>
+<author pid="304/3037">Sean Crane</author>
+<author pid="122/1845">Avijit Dasgupta</author>
+<author pid="85/1692-2">Jing Dong 0002</author>
+<author pid="169/7108">Mar&#237;a Escobar</author>
+<author pid="329/1536">Cristhian Forigua</author>
+<author pid="304/2928">Abrham Gebreselasie</author>
+<author pid="253/0473">Sanjay Haresh</author>
+<author pid="14/4834-20">Jing Huang 0020</author>
+<author pid="317/6929">Md Mohaiminul Islam</author>
+<author pid="142/2520">Suyog Dutt Jain</author>
+<author pid="230/4108">Rawal Khirodkar</author>
+<author pid="362/3217">Devansh Kukreja</author>
+<author pid="230/8348">Kevin J. Liang</author>
+<author pid="85/3336">Jia-Wei Liu</author>
+<author pid="223/7908">Sagnik Majumder</author>
+<author pid="317/5604">Yongsen Mao</author>
+<author pid="47/8081">Miguel Martin</author>
+<author pid="166/6300">Effrosyni Mavroudi</author>
+<author pid="207/8308">Tushar Nagarajan</author>
+<author pid="197/7192">Francesco Ragusa</author>
+<author pid="199/1913">Santhosh Kumar Ramakrishnan</author>
+<author orcid="0009-0004-2242-1225" pid="362/2867">Luigi Seminara</author>
+<author pid="333/1844">Arjun Somayazulu</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="51/7623">Shan Su</author>
+<author pid="256/9549">Zihui Xue</author>
+<author pid="159/4948">Edward Zhang</author>
+<author pid="362/2934">Jinxu Zhang</author>
+<author pid="275/0085">Angela Castillo</author>
+<author pid="227/2470">Changan Chen</author>
+<author pid="362/3247">Xinzhu Fu</author>
+<author pid="158/9646">Ryosuke Furuta</author>
+<author pid="200/5697">Cristina Gonz&#225;lez</author>
+<author pid="84/8416">Prince Gupta</author>
+<author pid="357/1386">Jiabo Hu</author>
+<author pid="71/8763-2">Yifei Huang 0002</author>
+<author pid="175/7344-11">Yiming Huang 0011</author>
+<author pid="304/3203">Weslie Khoo</author>
+<author pid="82/8699">et al.</author>
+<title>Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives.</title>
+<year>2023</year>
+<volume>abs/2311.18259</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2311.18259</ee>
+<url>db/journals/corr/corr2311.html#abs-2311-18259</url>
+</article>
+</r>
+<r><article key="journals/ftcgv/OtaniSW22" mdate="2022-10-18">
+<author pid="72/11482">Mayu Otani</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="181/2842">Yang Wang</author>
+<title>Video Summarization Overview.</title>
+<pages>284-335</pages>
+<year>2022</year>
+<volume>13</volume>
+<journal>Found. Trends Comput. Graph. Vis.</journal>
+<number>4</number>
+<ee>https://doi.org/10.1561/0600000099</ee>
+<url>db/journals/ftcgv/ftcgv13.html#OtaniSW22</url>
+</article>
+</r>
+<r><inproceedings key="conf/aaai/FuWMS22" mdate="2023-09-04">
+<author pid="218/5366">Tsu-Jui Fu</author>
+<author pid="08/9282">William Yang Wang</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>DOC2PPT: Automatic Presentation Slides Generation from Scientific Documents.</title>
+<pages>634-642</pages>
+<year>2022</year>
+<booktitle>AAAI</booktitle>
+<ee type="oa">https://doi.org/10.1609/aaai.v36i1.19943</ee>
+<crossref>conf/aaai/2022</crossref>
+<url>db/conf/aaai/aaai2022.html#FuWMS22</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/clear2/McDuffSLVVGSMSK22" mdate="2025-10-02">
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="26/4105-5">Jiyoung Lee 0005</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<author pid="190/8334">Sai Vemprala</author>
+<author pid="260/6670">Nicholas Gyde</author>
+<author pid="192/3204">Hadi Salman</author>
+<author pid="98/3906">Shuang Ma</author>
+<author pid="21/2373">Kwanghoon Sohn</author>
+<author pid="93/161">Ashish Kapoor</author>
+<title>CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning.</title>
+<pages>559-575</pages>
+<year>2022</year>
+<booktitle>CLeaR</booktitle>
+<ee type="oa">https://proceedings.mlr.press/v177/mcduff22a.html</ee>
+<crossref>conf/clear2/2022</crossref>
+<url>db/conf/clear2/clear2022.html#McDuffSLVVGSMSK22</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cvpr/ChuangHWVJ0JS22" mdate="2023-06-28">
+<author pid="190/7522">Ching-Yao Chuang</author>
+<author pid="195/5928">R. Devon Hjelm</author>
+<author pid="10/5630-66">Xin Wang 0066</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<author pid="08/3966">Neel Joshi</author>
+<author pid="t/AntonioBTorralba">Antonio Torralba 0001</author>
+<author pid="38/7003">Stefanie Jegelka</author>
+<author pid="31/9606">Yale Song</author>
+<title>Robust Contrastive Learning against Noisy Views.</title>
+<pages>16649-16660</pages>
+<year>2022</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR52688.2022.01617</ee>
+<crossref>conf/cvpr/2022</crossref>
+<url>db/conf/cvpr/cvpr2022.html#ChuangHWVJ0JS22</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/eccv/GeBXGJSWIV22" mdate="2023-06-28">
+<author pid="204/1908">Yunhao Ge</author>
+<author pid="199/2125">Harkirat S. Behl</author>
+<author pid="267/0701">Jiashu Xu</author>
+<author pid="118/7221">Suriya Gunasekar</author>
+<author pid="08/3966">Neel Joshi</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="10/5630-66">Xin Wang 0066</author>
+<author pid="31/3256">Laurent Itti</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<title>Neural-Sim: Learning to Generate Training Data with NeRF.</title>
+<pages>477-493</pages>
+<year>2022</year>
+<booktitle>ECCV (23)</booktitle>
+<ee>https://doi.org/10.1007/978-3-031-20050-2_28</ee>
+<crossref>conf/eccv/2022-23</crossref>
+<url>db/conf/eccv/eccv2022-23.html#GeBXGJSWIV22</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/icde/KieuYGCZSJ22" mdate="2025-09-06">
+<author orcid="0000-0002-7696-1444" pid="201/8989">Tung Kieu</author>
+<author orcid="0000-0002-1658-1079" pid="77/377-2">Bin Yang 0002</author>
+<author pid="49/7979">Chenjuan Guo</author>
+<author pid="225/7855">Razvan-Gabriel Cirstea</author>
+<author pid="88/5320-8">Yan Zhao 0008</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0002-9697-7670" pid="j/ChristianSJensen">Christian S. Jensen</author>
+<title>Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders.</title>
+<pages>1342-1354</pages>
+<year>2022</year>
+<booktitle>ICDE</booktitle>
+<ee>https://doi.org/10.1109/ICDE53745.2022.00105</ee>
+<crossref>conf/icde/2022</crossref>
+<url>db/conf/icde/icde2022.html#KieuYGCZSJ22</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/icml/ShiSJDW22" mdate="2023-06-28">
+<author pid="261/9376">Baifeng Shi</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="08/3966">Neel Joshi</author>
+<author pid="d/TrevorDarrell">Trevor Darrell</author>
+<author pid="10/5630-66">Xin Wang 0066</author>
+<title>Visual Attention Emerges from Recurrent Sparse Reconstruction.</title>
+<pages>20041-20056</pages>
+<year>2022</year>
+<booktitle>ICML</booktitle>
+<ee type="oa">https://proceedings.mlr.press/v162/shi22e.html</ee>
+<crossref>conf/icml/2022</crossref>
+<url>db/conf/icml/icml2022.html#ShiSJDW22</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iros/MaVWGSMK22" mdate="2023-01-03">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="190/8334">Sai Vemprala</author>
+<author pid="86/8494">Wenshan Wang</author>
+<author pid="164/8491">Jayesh K. Gupta</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="93/161">Ashish Kapoor</author>
+<title>COMPASS: Contrastive Multimodal Pretraining for Autonomous Systems.</title>
+<pages>1000-1007</pages>
+<year>2022</year>
+<booktitle>IROS</booktitle>
+<ee>https://doi.org/10.1109/IROS47612.2022.9982241</ee>
+<crossref>conf/iros/2022</crossref>
+<url>db/conf/iros/iros2022.html#MaVWGSMK22</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2201-04309" mdate="2026-10-01">
+<author pid="190/7522">Ching-Yao Chuang</author>
+<author pid="195/5928">R. Devon Hjelm</author>
+<author pid="10/5630-66">Xin Wang 0066</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<author pid="08/3966">Neel Joshi</author>
+<author pid="t/AntonioBTorralba">Antonio Torralba 0001</author>
+<author pid="38/7003">Stefanie Jegelka</author>
+<author pid="31/9606">Yale Song</author>
+<title>Robust Contrastive Learning against Noisy Views.</title>
+<year>2022</year>
+<volume>abs/2201.04309</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2201.04309</ee>
+<url>db/journals/corr/corr2201.html#abs-2201-04309</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2203-08130" mdate="2022-03-28">
+<author pid="232/3030">Sharath Girish</author>
+<author pid="76/10090">Debadeepta Dey</author>
+<author pid="08/3966">Neel Joshi</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<author pid="188/5763">Shital Shah</author>
+<author pid="20/11498">Caio C&#233;sar Teodoro Mendes</author>
+<author pid="65/10572">Abhinav Shrivastava</author>
+<author pid="31/9606">Yale Song</author>
+<title>One Network Doesn't Rule Them All: Moving Beyond Handcrafted Architectures in Self-Supervised Learning.</title>
+<year>2022</year>
+<volume>abs/2203.08130</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2203.08130</ee>
+<url>db/journals/corr/corr2203.html#abs-2203-08130</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2203-15788" mdate="2022-04-04">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="190/8334">Sai Vemprala</author>
+<author pid="86/8494">Wenshan Wang</author>
+<author pid="164/8491">Jayesh K. Gupta</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="93/161">Ashish Kapoor</author>
+<title>COMPASS: Contrastive Multimodal Pretraining for Autonomous Systems.</title>
+<year>2022</year>
+<volume>abs/2203.15788</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2203.15788</ee>
+<url>db/journals/corr/corr2203.html#abs-2203-15788</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2204-10962" mdate="2023-06-28">
+<author pid="261/9376">Baifeng Shi</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="08/3966">Neel Joshi</author>
+<author pid="d/TrevorDarrell">Trevor Darrell</author>
+<author pid="10/5630-66">Xin Wang 0066</author>
+<title>Visual Attention Emerges from Recurrent Sparse Reconstruction.</title>
+<year>2022</year>
+<volume>abs/2204.10962</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2204.10962</ee>
+<url>db/journals/corr/corr2204.html#abs-2204-10962</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2207-05205" mdate="2023-06-28">
+<author pid="251/5689">Tyler LaBonte</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="10/5630-66">Xin Wang 0066</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<author pid="08/3966">Neel Joshi</author>
+<title>Scaling Novel Object Detection with Weakly Supervised Detection Transformers.</title>
+<year>2022</year>
+<volume>abs/2207.05205</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2207.05205</ee>
+<url>db/journals/corr/corr2207.html#abs-2207-05205</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2207-11368" mdate="2023-06-28">
+<author pid="204/1908">Yunhao Ge</author>
+<author pid="199/2125">Harkirat S. Behl</author>
+<author pid="267/0701">Jiashu Xu</author>
+<author pid="118/7221">Suriya Gunasekar</author>
+<author pid="08/3966">Neel Joshi</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="10/5630-66">Xin Wang 0066</author>
+<author pid="31/3256">Laurent Itti</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<title>Neural-Sim: Learning to Generate Training Data with NeRF.</title>
+<year>2022</year>
+<volume>abs/2207.11368</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2207.11368</ee>
+<url>db/journals/corr/corr2207.html#abs-2207-11368</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2210-11707" mdate="2022-10-25">
+<author pid="72/11482">Mayu Otani</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="181/2842">Yang Wang</author>
+<title>Video Summarization Overview.</title>
+<year>2022</year>
+<volume>abs/2210.11707</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2210.11707</ee>
+<url>db/journals/corr/corr2210.html#abs-2210-11707</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2211-14449" mdate="2025-07-07">
+<author pid="242/8262-1">Gabriele Prato 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="169/9942">Janarthanan Rajendran</author>
+<author pid="195/5928">R. Devon Hjelm</author>
+<author pid="08/3966">Neel Joshi</author>
+<author pid="45/8542">Sarath Chandar</author>
+<title>PatchBlender: A Motion Prior for Video Transformers.</title>
+<year>2022</year>
+<volume>abs/2211.14449</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2211.14449</ee>
+<url>db/journals/corr/corr2211.html#abs-2211-14449</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2212-06301" mdate="2023-01-02">
+<author pid="256/9549">Zihui Xue</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="57/4553">Kristen Grauman</author>
+<author pid="75/2854">Lorenzo Torresani</author>
+<title>Egocentric Video Task Translation.</title>
+<year>2022</year>
+<volume>abs/2212.06301</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2212.06301</ee>
+<url>db/journals/corr/corr2212.html#abs-2212-06301</url>
+</article>
+</r>
+<r><inproceedings key="conf/iccv/LeeCYKBCS21" mdate="2026-08-15">
+<author pid="17/5702-8">Sangho Lee 0008</author>
+<author orcid="0009-0005-4974-0637" pid="277/2798">Jiwan Chung</author>
+<author pid="188/6210">Youngjae Yu</author>
+<author pid="45/115">Gunhee Kim</author>
+<author pid="b/ThomasMBreuel">Thomas M. Breuel</author>
+<author orcid="0000-0001-9164-5303" pid="c/GalChechik">Gal Chechik</author>
+<author pid="31/9606">Yale Song</author>
+<title>ACAV100M: Automatic Curation of Large-Scale Datasets for Audio-Visual Video Representation Learning.</title>
+<pages>10254-10264</pages>
+<year>2021</year>
+<booktitle>ICCV</booktitle>
+<ee>https://doi.org/10.1109/ICCV48922.2021.01011</ee>
+<crossref>conf/iccv/2021</crossref>
+<url>db/conf/iccv/iccv2021.html#LeeCYKBCS21</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iclr/LeeYKBKS21" mdate="2024-11-04">
+<author pid="17/5702-8">Sangho Lee 0008</author>
+<author pid="188/6210">Youngjae Yu</author>
+<author pid="45/115">Gunhee Kim</author>
+<author pid="b/ThomasMBreuel">Thomas M. Breuel</author>
+<author pid="48/6214">Jan Kautz</author>
+<author pid="31/9606">Yale Song</author>
+<title>Parameter Efficient Multimodal Transformers for Video Representation Learning.</title>
+<year>2021</year>
+<booktitle>ICLR</booktitle>
+<ee type="oa">https://openreview.net/forum?id=6UdQLhqJyFD</ee>
+<crossref>conf/iclr/2021</crossref>
+<url>db/conf/iclr/iclr2021.html#LeeYKBKS21</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iclr/MaZMS21" mdate="2022-04-19">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="207/1887">Zhaoyang Zeng</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Active Contrastive Learning of Audio-Visual Video Representations.</title>
+<year>2021</year>
+<booktitle>ICLR</booktitle>
+<ee type="oa">https://openreview.net/forum?id=OMizHuea_HB</ee>
+<crossref>conf/iclr/2021</crossref>
+<url>db/conf/iclr/iclr2021.html#MaZMS21</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iclr/YuLKS21" mdate="2024-11-04">
+<author pid="188/6210">Youngjae Yu</author>
+<author pid="17/5702-8">Sangho Lee 0008</author>
+<author pid="45/115">Gunhee Kim</author>
+<author pid="31/9606">Yale Song</author>
+<title>Self-Supervised Learning of Compressed Video Representations.</title>
+<year>2021</year>
+<booktitle>ICLR</booktitle>
+<ee type="oa">https://openreview.net/forum?id=jMPcEkJpdD</ee>
+<crossref>conf/iclr/2021</crossref>
+<url>db/conf/iclr/iclr2021.html#YuLKS21</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/nips/MaZMS21" mdate="2022-05-03">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="207/1887">Zhaoyang Zeng</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Contrastive Learning of Global and Local Video Representations.</title>
+<pages>7025-7040</pages>
+<year>2021</year>
+<booktitle>NeurIPS</booktitle>
+<ee type="oa">https://proceedings.neurips.cc/paper/2021/hash/38ef4b66cb25e92abe4d594acb841471-Abstract.html</ee>
+<crossref>conf/nips/2021</crossref>
+<url>db/conf/nips/neurips2021.html#MaZMS21</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2101-10803" mdate="2026-10-09">
+<author pid="17/5702-8">Sangho Lee 0008</author>
+<author orcid="0009-0005-4974-0637" pid="277/2798">Jiwan Chung</author>
+<author pid="188/6210">Youngjae Yu</author>
+<author pid="45/115">Gunhee Kim</author>
+<author pid="b/ThomasMBreuel">Thomas M. Breuel</author>
+<author pid="c/GalChechik">Gal Chechik</author>
+<author pid="31/9606">Yale Song</author>
+<title>Automatic Curation of Large-Scale Datasets for Audio-Visual Representation Learning.</title>
+<year>2021</year>
+<volume>abs/2101.10803</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2101.10803</ee>
+<url>db/journals/corr/corr2101.html#abs-2101-10803</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2101-11796" mdate="2026-10-01">
+<author pid="218/5366">Tsu-Jui Fu</author>
+<author pid="08/9282">William Yang Wang</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>DOC2PPT: Automatic Presentation Slides Generation from Scientific Documents.</title>
+<year>2021</year>
+<volume>abs/2101.11796</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2101.11796</ee>
+<url>db/journals/corr/corr2101.html#abs-2101-11796</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2104-05418" mdate="2026-10-01">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="207/1887">Zhaoyang Zeng</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Contrastive Learning of Global and Local Audio-Visual Representations.</title>
+<year>2021</year>
+<volume>abs/2104.05418</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2104.05418</ee>
+<url>db/journals/corr/corr2104.html#abs-2104-05418</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2106-13364" mdate="2026-10-09">
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0009-0000-6647-9403" pid="26/4105-5">Jiyoung Lee 0005</author>
+<author pid="02/8067">Vibhav Vineet</author>
+<author pid="190/8334">Sai Vemprala</author>
+<author pid="260/6670">Nicholas Gyde</author>
+<author pid="192/3204">Hadi Salman</author>
+<author pid="98/3906">Shuang Ma</author>
+<author pid="21/2373">Kwanghoon Sohn</author>
+<author pid="93/161">Ashish Kapoor</author>
+<title>CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning.</title>
+<year>2021</year>
+<volume>abs/2106.13364</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2106.13364</ee>
+<url>db/journals/corr/corr2106.html#abs-2106-13364</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2108-07894" mdate="2026-10-01">
+<author pid="12/2106-1">Yunseok Jang 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="45/115">Gunhee Kim</author>
+<title>On the Virality of Animated GIFs on Tumblr.</title>
+<year>2021</year>
+<volume>abs/2108.07894</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2108.07894</ee>
+<url>db/journals/corr/corr2108.html#abs-2108-07894</url>
+</article>
+</r>
+<r><inproceedings key="conf/icpr/WangCCSL20" mdate="2022-04-09">
+<author pid="243/6651">Kuan-Hsun Wang</author>
+<author pid="286/5323">Chia-Chun Cheng</author>
+<author pid="72/3762-4">Yi-Ling Chen 0004</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0002-5092-993X" pid="27/679">Shang-Hong Lai</author>
+<title>Attention-Based Deep Metric Learning for Near-Duplicate Video Retrieval.</title>
+<pages>5360-5367</pages>
+<year>2020</year>
+<booktitle>ICPR</booktitle>
+<ee>https://doi.org/10.1109/ICPR48806.2021.9412710</ee>
+<crossref>conf/icpr/2020</crossref>
+<url>db/conf/icpr/icpr2020.html#WangCCSL20</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/interspeech/WhitehillMMS20" mdate="2022-04-19">
+<author pid="251/8424">Matt Whitehill</author>
+<author pid="98/3906">Shuang Ma</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Multi-Reference Neural TTS Stylization with Adversarial Cycle Consistency.</title>
+<pages>4442-4446</pages>
+<year>2020</year>
+<booktitle>INTERSPEECH</booktitle>
+<ee type="oa">https://doi.org/10.21437/Interspeech.2020-2985</ee>
+<crossref>conf/interspeech/2020</crossref>
+<url>db/conf/interspeech/interspeech2020.html#WhitehillMMS20</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/wacv/KaeS20" mdate="2020-05-18">
+<author pid="77/7218">Andrew Kae</author>
+<author pid="31/9606">Yale Song</author>
+<title>Image to Video Domain Adaptation Using Web Supervision.</title>
+<pages>556-564</pages>
+<year>2020</year>
+<booktitle>WACV</booktitle>
+<ee>https://doi.org/10.1109/WACV45572.2020.9093645</ee>
+<crossref>conf/wacv/2020</crossref>
+<url>db/conf/wacv/wacv2020.html#KaeS20</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/websci/YoderSWCJSTR20" mdate="2026-02-25">
+<author pid="20/3744">Michael Miller Yoder</author>
+<author pid="184/3757">Qinlan Shen</author>
+<author orcid="0009-0005-5280-2050" pid="134/7817">Yansen Wang</author>
+<author pid="228/8336">Alex Coda</author>
+<author pid="12/2106-1">Yunseok Jang 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="86/4278">Kapil Thadani</author>
+<author orcid="0000-0003-1128-5155" pid="r/CarolynPensteinRose">Carolyn P. Ros&#233;</author>
+<title>Phans, Stans and Cishets: Self-Presentation Effects on Content Propagation in Tumblr.</title>
+<pages>39-48</pages>
+<year>2020</year>
+<booktitle>WebSci</booktitle>
+<ee>https://doi.org/10.1145/3394231.3397893</ee>
+<crossref>conf/websci/2020</crossref>
+<url>db/conf/websci/websci2020.html#YoderSWCJSTR20</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2009-09805" mdate="2026-10-01">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="207/1887">Zhaoyang Zeng</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Learning Audio-Visual Representations with Active Contrastive Coding.</title>
+<year>2020</year>
+<volume>abs/2009.09805</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2009.09805</ee>
+<url>db/journals/corr/corr2009.html#abs-2009-09805</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2012-01642" mdate="2026-10-01">
+<author pid="21/4235-4">Christopher Thomas 0004</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="51/8652">Adriana Kovashka</author>
+<title>Learning to Transfer Visual Effects from Videos to Images.</title>
+<year>2020</year>
+<volume>abs/2012.01642</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2012.01642</ee>
+<url>db/journals/corr/corr2012.html#abs-2012-01642</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2012-04124" mdate="2026-10-01">
+<author pid="17/5702-8">Sangho Lee 0008</author>
+<author pid="188/6210">Youngjae Yu</author>
+<author pid="45/115">Gunhee Kim</author>
+<author pid="b/ThomasMBreuel">Thomas M. Breuel</author>
+<author pid="48/6214">Jan Kautz</author>
+<author pid="31/9606">Yale Song</author>
+<title>Parameter Efficient Multimodal Transformers for Video Representation Learning.</title>
+<year>2020</year>
+<volume>abs/2012.04124</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2012.04124</ee>
+<url>db/journals/corr/corr2012.html#abs-2012-04124</url>
+</article>
+</r>
+<r><article key="journals/ijcv/JangSKYKK19" mdate="2025-01-19">
+<author pid="12/2106-1">Yunseok Jang 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="176/5576">Chris Dongjoo Kim</author>
+<author pid="188/6210">Youngjae Yu</author>
+<author pid="67/3028">Youngjin Kim</author>
+<author orcid="0000-0002-9543-7453" pid="45/115">Gunhee Kim</author>
+<title>Video Question Answering with Spatio-Temporal Reasoning.</title>
+<pages>1385-1412</pages>
+<year>2019</year>
+<volume>127</volume>
+<journal>Int. J. Comput. Vis.</journal>
+<number>10</number>
+<ee>https://doi.org/10.1007/s11263-019-01189-x</ee>
+<ee>https://www.wikidata.org/entity/Q127681372</ee>
+<url>db/journals/ijcv/ijcv127.html#JangSKYKK19</url>
+</article>
+</r>
+<r><inproceedings key="conf/cvpr/SongS19" mdate="2020-01-20">
+<author pid="31/9606">Yale Song</author>
+<author pid="s/MohammadSoleymani">Mohammad Soleymani 0001</author>
+<title>Polysemous Visual-Semantic Embedding for Cross-Modal Retrieval.</title>
+<pages>1979-1988</pages>
+<year>2019</year>
+<booktitle>CVPR</booktitle>
+<ee type="oa">http://openaccess.thecvf.com/content_CVPR_2019/html/Song_Polysemous_Visual-Semantic_Embedding_for_Cross-Modal_Retrieval_CVPR_2019_paper.html</ee>
+<ee>https://doi.org/10.1109/CVPR.2019.00208</ee>
+<crossref>conf/cvpr/2019</crossref>
+<url>db/conf/cvpr/cvpr2019.html#SongS19</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iccv/MaMS19" mdate="2022-04-19">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Unpaired Image-to-Speech Synthesis With Multimodal Information Bottleneck.</title>
+<pages>7597-7606</pages>
+<year>2019</year>
+<booktitle>ICCV</booktitle>
+<ee>https://doi.org/10.1109/ICCV.2019.00769</ee>
+<crossref>conf/iccv/2019</crossref>
+<url>db/conf/iccv/iccv2019.html#MaMS19</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iclr/MaMS19" mdate="2022-04-19">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Neural TTS Stylization with Adversarial and Collaborative Games.</title>
+<year>2019</year>
+<booktitle>ICLR (Poster)</booktitle>
+<ee type="oa">https://openreview.net/forum?id=ByzcS3AcYX</ee>
+<crossref>conf/iclr/2019</crossref>
+<url>db/conf/iclr/iclr2019.html#MaMS19</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/nips/McDuffMSK19" mdate="2022-04-19">
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="98/3906">Shuang Ma</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="93/161">Ashish Kapoor</author>
+<title>Characterizing Bias in Classifiers using Generative Models.</title>
+<pages>5404-5415</pages>
+<year>2019</year>
+<booktitle>NeurIPS</booktitle>
+<ee type="oa">https://proceedings.neurips.cc/paper/2019/hash/7f018eb7b301a66658931cb8a93fd6e8-Abstract.html</ee>
+<ee type="oa">http://papers.nips.cc/paper/8780-characterizing-bias-in-classifiers-using-generative-models</ee>
+<crossref>conf/nips/2019</crossref>
+<url>db/conf/nips/nips2019.html#McDuffMSK19</url>
+</inproceedings>
+</r>
+<r><proceedings key="conf/icmi/2019" mdate="2025-03-12">
+<editor pid="g/WenGao">Wen Gao 0001</editor>
+<editor pid="92/3270">Helen Mei-Ling Meng</editor>
+<editor pid="61/3381">Matthew Turk 0001</editor>
+<editor pid="20/4907">Susan R. Fussell</editor>
+<editor pid="54/4934">Bj&#246;rn W. Schuller</editor>
+<editor pid="31/9606">Yale Song</editor>
+<editor pid="197/1322-4">Kai Yu 0004</editor>
+<title>International Conference on Multimodal Interaction, ICMI 2019, Suzhou, China, October 14-18, 2019</title>
+<publisher>ACM</publisher>
+<booktitle>ICMI</booktitle>
+<year>2019</year>
+<isbn>978-1-4503-6860-5</isbn>
+<ee>https://doi.org/10.1145/3340555</ee>
+<url>db/conf/icmi/icmi2019.html</url>
+</proceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1906-04402" mdate="2026-10-01">
+<author pid="31/9606">Yale Song</author>
+<author pid="s/MohammadSoleymani">Mohammad Soleymani 0001</author>
+<title>Polysemous Visual-Semantic Embedding for Cross-Modal Retrieval.</title>
+<year>2019</year>
+<volume>abs/1906.04402</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1906.04402</ee>
+<url>db/journals/corr/corr1906.html#abs-1906-04402</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1906-11891" mdate="2026-10-01">
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="98/3906">Shuang Ma</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="93/161">Ashish Kapoor</author>
+<title>Characterizing Bias in Classifiers using Generative Models.</title>
+<year>2019</year>
+<volume>abs/1906.11891</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1906.11891</ee>
+<url>db/journals/corr/corr1906.html#abs-1906-11891</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1907-04378" mdate="2026-10-01">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>M3D-GAN: Multi-Modal Multi-Domain Translation with Universal Attention.</title>
+<year>2019</year>
+<volume>abs/1907.04378</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1907.04378</ee>
+<url>db/journals/corr/corr1907.html#abs-1907-04378</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1908-01449" mdate="2026-10-01">
+<author pid="77/7218">Andrew Kae</author>
+<author pid="31/9606">Yale Song</author>
+<title>Image to Video Domain Adaptation Using Web Supervision.</title>
+<year>2019</year>
+<volume>abs/1908.01449</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1908.01449</ee>
+<url>db/journals/corr/corr1908.html#abs-1908-01449</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1908-07094" mdate="2026-10-01">
+<author pid="98/3906">Shuang Ma</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Unpaired Image-to-Speech Synthesis with Multimodal Information Bottleneck.</title>
+<year>2019</year>
+<volume>abs/1908.07094</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1908.07094</ee>
+<url>db/journals/corr/corr1908.html#abs-1908-07094</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1910-11958" mdate="2026-10-01">
+<author pid="251/8424">Matt Whitehill</author>
+<author pid="98/3906">Shuang Ma</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="31/9606">Yale Song</author>
+<title>Multi-Reference Neural TTS Stylization with Adversarial Cycle Consistency.</title>
+<year>2019</year>
+<volume>abs/1910.11958</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1910.11958</ee>
+<url>db/journals/corr/corr1910.html#abs-1910-11958</url>
+</article>
+</r>
+<r><inproceedings key="conf/icml/JangKS18" mdate="2022-08-01">
+<author pid="12/2106-1">Yunseok Jang 0001</author>
+<author pid="45/115">Gunhee Kim</author>
+<author pid="31/9606">Yale Song</author>
+<title>Video Prediction with Appearance and Motion Conditions.</title>
+<pages>2230-2239</pages>
+<year>2018</year>
+<booktitle>ICML</booktitle>
+<ee type="oa">http://proceedings.mlr.press/v80/jang18a.html</ee>
+<crossref>conf/icml/2018</crossref>
+<url>db/conf/icml/icml2018.html#JangKS18</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/wacv/ZhouSB18" mdate="2023-03-24">
+<author pid="150/4221">Yipin Zhou</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="63/6787">Tamara L. Berg</author>
+<title>Image2GIF: Generating Cinemagraphs Using Recurrent Deep Q-Networks.</title>
+<pages>170-178</pages>
+<year>2018</year>
+<booktitle>WACV</booktitle>
+<ee>https://doi.org/10.1109/WACV.2018.00025</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/WACV.2018.00025</ee>
+<crossref>conf/wacv/2018</crossref>
+<url>db/conf/wacv/wacv2018.html#ZhouSB18</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1801-09042" mdate="2026-10-01">
+<author pid="150/4221">Yipin Zhou</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="63/6787">Tamara L. Berg</author>
+<title>Image2GIF: Generating Cinemagraphs using Recurrent Deep Q-Networks.</title>
+<year>2018</year>
+<volume>abs/1801.09042</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1801.09042</ee>
+<url>db/journals/corr/corr1801.html#abs-1801-09042</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1804-04318" mdate="2026-10-01">
+<author pid="31/9606">Yale Song</author>
+<author pid="s/MohammadSoleymani">Mohammad Soleymani 0001</author>
+<title>Cross-Modal Retrieval with Implicit Concept Association.</title>
+<year>2018</year>
+<volume>abs/1804.04318</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1804.04318</ee>
+<url>db/journals/corr/corr1804.html#abs-1804-04318</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1807-02635" mdate="2026-10-01">
+<author pid="12/2106-1">Yunseok Jang 0001</author>
+<author pid="45/115">Gunhee Kim</author>
+<author pid="31/9606">Yale Song</author>
+<title>Video Prediction with Appearance and Motion Conditions.</title>
+<year>2018</year>
+<volume>abs/1807.02635</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1807.02635</ee>
+<url>db/journals/corr/corr1807.html#abs-1807-02635</url>
+</article>
+</r>
+<r><inproceedings key="conf/cvpr/JangSYKK17" mdate="2023-03-24">
+<author pid="12/2106-1">Yunseok Jang 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="188/6210">Youngjae Yu</author>
+<author pid="67/3028">Youngjin Kim</author>
+<author pid="45/115">Gunhee Kim</author>
+<title>TGIF-QA: Toward Spatio-Temporal Reasoning in Visual Question Answering.</title>
+<pages>1359-1367</pages>
+<year>2017</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR.2017.149</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/CVPR.2017.149</ee>
+<crossref>conf/cvpr/2017</crossref>
+<url>db/conf/cvpr/cvpr2017.html#JangSYKK17</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cvpr/LiSL17" mdate="2024-12-03">
+<author pid="57/7831">Yuncheng Li</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0002-4516-9729" pid="25/5545">Jiebo Luo 0001</author>
+<title>Improving Pairwise Ranking for Multi-label Image Classification.</title>
+<pages>1837-1845</pages>
+<year>2017</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR.2017.199</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/CVPR.2017.199</ee>
+<crossref>conf/cvpr/2017</crossref>
+<url>db/conf/cvpr/cvpr2017.html#LiSL17</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/iccv/LiYSCLL17" mdate="2026-07-18">
+<author pid="57/7831">Yuncheng Li</author>
+<author pid="96/3835">Jianchao Yang</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0003-0900-1512" pid="95/6915">Liangliang Cao</author>
+<author orcid="0000-0002-4516-9729" pid="25/5545">Jiebo Luo 0001</author>
+<author orcid="0000-0001-5850-7013" pid="31/2187">Li-Jia Li 0001</author>
+<title>Learning from Noisy Labels with Distillation.</title>
+<pages>1928-1936</pages>
+<year>2017</year>
+<booktitle>ICCV</booktitle>
+<ee>https://doi.org/10.1109/ICCV.2017.211</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/ICCV.2017.211</ee>
+<crossref>conf/iccv/2017</crossref>
+<url>db/conf/iccv/iccv2017.html#LiYSCLL17</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/mm/JinSY17" mdate="2024-08-04">
+<author pid="128/9277">Haojian Jin</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0003-4192-0420" pid="71/5014">Koji Yatani</author>
+<title>ElasticPlay: Interactive Video Summarization with Dynamic Time Budgets.</title>
+<pages>1164-1172</pages>
+<year>2017</year>
+<booktitle>ACM Multimedia</booktitle>
+<ee>https://doi.org/10.1145/3123266.3123393</ee>
+<crossref>conf/mm/2017</crossref>
+<url>db/conf/mm/mm2017.html#JinSY17</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/LiYSCLL17" mdate="2026-10-09">
+<author pid="57/7831">Yuncheng Li</author>
+<author pid="96/3835">Jianchao Yang</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="95/6915">Liangliang Cao</author>
+<author orcid="0000-0002-4516-9729" pid="25/5545">Jiebo Luo 0001</author>
+<author pid="23/6950-1">Jia Li 0001</author>
+<title>Learning from Noisy Labels with Distillation.</title>
+<year>2017</year>
+<volume>abs/1703.02391</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1703.02391</ee>
+<url>db/journals/corr/corr1703.html#LiYSCLL17</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/LiSL17" mdate="2026-10-09">
+<author pid="57/7831">Yuncheng Li</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0002-4516-9729" pid="25/5545">Jiebo Luo 0001</author>
+<title>Improving Pairwise Ranking for Multi-label Image Classification.</title>
+<year>2017</year>
+<volume>abs/1704.03135</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1704.03135</ee>
+<url>db/journals/corr/corr1704.html#LiSL17</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/JangSYKK17" mdate="2026-10-01">
+<author pid="12/2106-1">Yunseok Jang 0001</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="188/6210">Youngjae Yu</author>
+<author pid="67/3028">Youngjin Kim</author>
+<author pid="45/115">Gunhee Kim</author>
+<title>TGIF-QA: Toward Spatio-Temporal Reasoning in Visual Question Answering.</title>
+<year>2017</year>
+<volume>abs/1704.04497</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1704.04497</ee>
+<url>db/journals/corr/corr1704.html#JangSYKK17</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-1708-06858" mdate="2026-10-09">
+<author pid="128/9277">Haojian Jin</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0003-4192-0420" pid="71/5014">Koji Yatani</author>
+<title>ElasticPlay: Interactive Video Summarization with Dynamic Time Budgets.</title>
+<year>2017</year>
+<volume>abs/1708.06858</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1708.06858</ee>
+<url>db/journals/corr/corr1708.html#abs-1708-06858</url>
+</article>
+</r>
+<r><inproceedings key="conf/chi/BakhshiSKSJK16" mdate="2018-11-06">
+<author pid="06/10264">Saeideh Bakhshi</author>
+<author pid="98/3115">David A. Shamma</author>
+<author pid="03/8400">Lyndon Kennedy</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="64/7094">Paloma de Juan</author>
+<author pid="k/JosephKaye">Joseph Jofish Kaye</author>
+<title>Fast, Cheap, and Good: Why Animated GIFs Engage Us.</title>
+<pages>575-586</pages>
+<year>2016</year>
+<booktitle>CHI</booktitle>
+<ee>https://doi.org/10.1145/2858036.2858532</ee>
+<crossref>conf/chi/2016</crossref>
+<url>db/conf/chi/chi2016.html#BakhshiSKSJK16</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cikm/SongRVJ16" mdate="2018-11-14">
+<author pid="31/9606">Yale Song</author>
+<author pid="85/9997">Miriam Redi</author>
+<author pid="164/6089">Jordi Vallmitjana</author>
+<author pid="45/956">Alejandro Jaimes</author>
+<title>To Click or Not To Click: Automatic Selection of Beautiful Thumbnails from Videos.</title>
+<pages>659-668</pages>
+<year>2016</year>
+<booktitle>CIKM</booktitle>
+<ee>https://doi.org/10.1145/2983323.2983349</ee>
+<ee>https://www.wikidata.org/entity/Q48326496</ee>
+<crossref>conf/cikm/2016</crossref>
+<url>db/conf/cikm/cikm2016.html#SongRVJ16</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cvpr/GygliSC16" mdate="2026-10-09">
+<author pid="135/4875">Michael Gygli</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0003-0900-1512" pid="95/6915">Liangliang Cao</author>
+<title>Video2GIF: Automatic Generation of Animated GIFs from Video.</title>
+<pages>1001-1009</pages>
+<year>2016</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR.2016.114</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/CVPR.2016.114</ee>
+<crossref>conf/cvpr/2016</crossref>
+<url>db/conf/cvpr/cvpr2016.html#GygliSC16</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cvpr/LiSCTGJL16" mdate="2026-10-09">
+<author pid="57/7831">Yuncheng Li</author>
+<author pid="31/9606">Yale Song</author>
+<author orcid="0000-0003-0900-1512" pid="95/6915">Liangliang Cao</author>
+<author pid="40/4518">Joel R. Tetreault</author>
+<author pid="179/2643">Larry Goldberg</author>
+<author pid="45/956">Alejandro Jaimes</author>
+<author orcid="0000-0002-4516-9729" pid="25/5545">Jiebo Luo 0001</author>
+<title>TGIF: A New Dataset and Benchmark on Animated GIF Description.</title>
+<pages>4641-4650</pages>
+<year>2016</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR.2016.502</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/CVPR.2016.502</ee>
+<crossref>conf/cvpr/2016</crossref>
+<url>db/conf/cvpr/cvpr2016.html#LiSCTGJL16</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/ijcai/SongDMP16" mdate="2019-08-20">
+<author pid="31/9606">Yale Song</author>
+<author pid="98/5170">Randall Davis</author>
+<author pid="179/2263">Kaichen Ma</author>
+<author pid="149/1355">Dana L. Penney</author>
+<title>Balancing Appearance and Context in Sketch Interpretation.</title>
+<pages>2625-2632</pages>
+<year>2016</year>
+<booktitle>IJCAI</booktitle>
+<ee type="oa">http://www.ijcai.org/Abstract/16/373</ee>
+<crossref>conf/ijcai/2016</crossref>
+<url>db/conf/ijcai/ijcai2016.html#SongDMP16</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/mir/ZenJSJ16" mdate="2018-11-06">
+<author pid="45/8613">Gloria Zen</author>
+<author pid="64/7094">Paloma de Juan</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="45/956">Alejandro Jaimes</author>
+<title>Mouse Activity as an Indicator of Interestingness in Video.</title>
+<pages>47-54</pages>
+<year>2016</year>
+<booktitle>ICMR</booktitle>
+<ee>https://doi.org/10.1145/2911996.2912005</ee>
+<crossref>conf/mir/2016</crossref>
+<url>db/conf/mir/icmr2016.html#ZenJSJ16</url>
+</inproceedings>
+</r>
+<r><article publtype="informal" key="journals/corr/LiSCTGJL16" mdate="2026-10-01">
+<author pid="57/7831">Yuncheng Li</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="95/6915">Liangliang Cao</author>
+<author pid="40/4518">Joel R. Tetreault</author>
+<author pid="179/2643">Larry Goldberg</author>
+<author pid="45/956">Alejandro Jaimes</author>
+<author pid="25/5545">Jiebo Luo 0001</author>
+<title>TGIF: A New Dataset and Benchmark on Animated GIF Description.</title>
+<year>2016</year>
+<volume>abs/1604.02748</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1604.02748</ee>
+<url>db/journals/corr/corr1604.html#LiSCTGJL16</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/SongDMP16" mdate="2026-10-01">
+<author pid="31/9606">Yale Song</author>
+<author pid="98/5170">Randall Davis</author>
+<author pid="179/2263">Kaichen Ma</author>
+<author pid="149/1355">Dana L. Penney</author>
+<title>Balancing Appearance and Context in Sketch Interpretation.</title>
+<year>2016</year>
+<volume>abs/1604.07429</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1604.07429</ee>
+<url>db/journals/corr/corr1604.html#SongDMP16</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/GygliSC16" mdate="2026-10-01">
+<author pid="135/4875">Michael Gygli</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="95/6915">Liangliang Cao</author>
+<title>Video2GIF: Automatic Generation of Animated GIFs from Video.</title>
+<year>2016</year>
+<volume>abs/1605.04850</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1605.04850</ee>
+<url>db/journals/corr/corr1605.html#GygliSC16</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/SongRVJ16" mdate="2026-10-01">
+<author pid="31/9606">Yale Song</author>
+<author pid="85/9997">Miriam Redi</author>
+<author pid="164/6089">Jordi Vallmitjana</author>
+<author pid="45/956">Alejandro Jaimes</author>
+<title>To Click or Not To Click: Automatic Selection of Beautiful Thumbnails from Videos.</title>
+<year>2016</year>
+<volume>abs/1609.01388</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1609.01388</ee>
+<url>db/journals/corr/corr1609.html#SongRVJ16</url>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/Song16a" mdate="2026-10-01">
+<author pid="31/9606">Yale Song</author>
+<title>Real-Time Video Highlights for Yahoo Esports.</title>
+<year>2016</year>
+<volume>abs/1611.08780</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.1611.08780</ee>
+<url>db/journals/corr/corr1611.html#Song16a</url>
+</article>
+</r>
+<r><inproceedings key="conf/cvpr/ChuSJ15" mdate="2023-03-24">
+<author pid="35/8617">Wen-Sheng Chu</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="45/956">Alejandro Jaimes</author>
+<title>Video co-summarization: Video summarization by visual co-occurrence.</title>
+<pages>3584-3592</pages>
+<year>2015</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR.2015.7298981</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/CVPR.2015.7298981</ee>
+<crossref>conf/cvpr/2015</crossref>
+<url>db/conf/cvpr/cvpr2015.html#ChuSJ15</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/cvpr/SongVSJ15" mdate="2023-03-24">
+<author pid="31/9606">Yale Song</author>
+<author pid="164/6089">Jordi Vallmitjana</author>
+<author pid="69/2756">Amanda Stent</author>
+<author pid="45/956">Alejandro Jaimes</author>
+<title>TVSum: Summarizing web videos using titles.</title>
+<pages>5179-5187</pages>
+<year>2015</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR.2015.7299154</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/CVPR.2015.7299154</ee>
+<crossref>conf/cvpr/2015</crossref>
+<url>db/conf/cvpr/cvpr2015.html#SongVSJ15</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/fgr/SongMVK15" mdate="2023-03-24">
+<author pid="31/9606">Yale Song</author>
+<author pid="63/9606">Daniel McDuff</author>
+<author pid="149/9280">Deepak Vasisht</author>
+<author pid="93/161">Ashish Kapoor</author>
+<title>Exploiting sparsity and co-occurrence structure for action unit recognition.</title>
+<pages>1-8</pages>
+<year>2015</year>
+<booktitle>FG</booktitle>
+<ee>https://doi.org/10.1109/FG.2015.7163081</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/FG.2015.7163081</ee>
+<crossref>conf/fgr/2015</crossref>
+<url>db/conf/fgr/fg2015.html#SongMVK15</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/ijcai/SongD15" mdate="2019-08-20">
+<author pid="31/9606">Yale Song</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Continuous Body and Hand Gesture Recognition for Natural Human-Computer Interaction: Extended Abstract.</title>
+<pages>4212-4216</pages>
+<year>2015</year>
+<booktitle>IJCAI</booktitle>
+<ee type="oa">http://ijcai.org/Abstract/15/598</ee>
+<crossref>conf/ijcai/2015</crossref>
+<url>db/conf/ijcai/ijcai2015.html#SongD15</url>
+</inproceedings>
+</r>
+<r><phdthesis key="phd/ndltd/Song14" mdate="2022-05-04">
+<author pid="31/9606">Yale Song</author>
+<title>Structured video content analysis: learning spatio-temporal and multimodal structures.</title>
+<year>2014</year>
+<school>Massachusetts Institute of Technology, Cambridge, MA, USA</school>
+<ee>https://hdl.handle.net/1721.1/90003</ee>
+<note type="source">ndltd.org (oai:dspace.mit.edu:1721.1/90003)</note>
+</phdthesis>
+</r>
+<r><article key="journals/tvcg/ZhaoCWSLC14" mdate="2023-12-16">
+<author pid="70/2932-10">Jian Zhao 0010</author>
+<author pid="66/5146-1">Nan Cao 0001</author>
+<author pid="53/5888">Zhen Wen</author>
+<author pid="31/9606">Yale Song</author>
+<author pid="11/5853">Yu-Ru Lin</author>
+<author orcid="0000-0002-4520-7000" pid="75/9076-1">Christopher Collins 0001</author>
+<title>#FluxFlow: Visual Analysis of Anomalous Information Spreading on Social Media.</title>
+<pages>1773-1782</pages>
+<year>2014</year>
+<volume>20</volume>
+<journal>IEEE Trans. Vis. Comput. Graph.</journal>
+<number>12</number>
+<ee>https://doi.org/10.1109/TVCG.2014.2346922</ee>
+<ee>http://doi.ieeecomputersociety.org/10.1109/TVCG.2014.2346922</ee>
+<ee>https://www.wikidata.org/entity/Q39134053</ee>
+<url>db/journals/tvcg/tvcg20.html#ZhaoCWSLC14</url>
+</article>
+</r>
+<r><inproceedings key="conf/cvpr/SongMD13" mdate="2023-03-24">
+<author pid="31/9606">Yale Song</author>
+<author pid="31/739">Louis-Philippe Morency</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Action Recognition by Hierarchical Sequence Summarization.</title>
+<pages>3562-3569</pages>
+<year>2013</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR.2013.457</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/CVPR.2013.457</ee>
+<crossref>conf/cvpr/2013</crossref>
+<url>db/conf/cvpr/cvpr2013.html#SongMD13</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/fgr/SongMD13" mdate="2023-03-24">
+<author pid="31/9606">Yale Song</author>
+<author pid="31/739">Louis-Philippe Morency</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Distribution-sensitive learning for imbalanced datasets.</title>
+<pages>1-6</pages>
+<year>2013</year>
+<booktitle>FG</booktitle>
+<ee>https://doi.org/10.1109/FG.2013.6553715</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/FG.2013.6553715</ee>
+<crossref>conf/fgr/2013</crossref>
+<url>db/conf/fgr/fg2013.html#SongMD13</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/icmi/SongMD13" mdate="2018-11-06">
+<author pid="31/9606">Yale Song</author>
+<author pid="31/739">Louis-Philippe Morency</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Learning a sparse codebook of facial and body microexpressions for emotion recognition.</title>
+<pages>237-244</pages>
+<year>2013</year>
+<booktitle>ICMI</booktitle>
+<ee>https://doi.org/10.1145/2522848.2522851</ee>
+<crossref>conf/icmi/2013</crossref>
+<url>db/conf/icmi/icmi2013.html#SongMD13</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/ijcai/SongWLD13" mdate="2022-03-08">
+<author pid="31/9606">Yale Song</author>
+<author pid="53/5888">Zhen Wen</author>
+<author pid="62/1273">Ching-Yung Lin</author>
+<author pid="98/5170">Randall Davis</author>
+<title>One-Class Conditional Random Fields for Sequential Anomaly Detection.</title>
+<year>2013</year>
+<booktitle>IJCAI</booktitle>
+<ee type="archive">http://www.aaai.org/ocs/index.php/IJCAI/IJCAI13/paper/view/6579</ee>
+<ee type="oa">http://ijcai.org/Abstract/13/250</ee>
+<crossref>conf/ijcai/2013</crossref>
+<url>db/conf/ijcai/ijcai2013.html#SongWLD13</url>
+<pages>1685-1691</pages>
+</inproceedings>
+</r>
+<r><article key="journals/tiis/SongDD12" mdate="2020-04-25">
+<author pid="31/9606">Yale Song</author>
+<author pid="d/DavidDemirdjian">David Demirdjian</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Continuous body and hand gesture recognition for natural human-computer interaction.</title>
+<pages>5:1-5:28</pages>
+<year>2012</year>
+<volume>2</volume>
+<journal>ACM Trans. Interact. Intell. Syst.</journal>
+<number>1</number>
+<ee>https://doi.org/10.1145/2133366.2133371</ee>
+<url>db/journals/tiis/tiis2.html#SongDD12</url>
+</article>
+</r>
+<r><inproceedings key="conf/cvpr/SongMD12" mdate="2023-03-24">
+<author pid="31/9606">Yale Song</author>
+<author pid="31/739">Louis-Philippe Morency</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Multi-view latent variable discriminative models for action recognition.</title>
+<pages>2120-2127</pages>
+<year>2012</year>
+<booktitle>CVPR</booktitle>
+<ee>https://doi.org/10.1109/CVPR.2012.6247918</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/CVPR.2012.6247918</ee>
+<crossref>conf/cvpr/2012</crossref>
+<url>db/conf/cvpr/cvpr2012.html#SongMD12</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/icmi/SongMD12" mdate="2018-11-06">
+<author pid="31/9606">Yale Song</author>
+<author pid="31/739">Louis-Philippe Morency</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Multimodal human behavior analysis: learning correlation and interaction across modalities.</title>
+<pages>27-30</pages>
+<year>2012</year>
+<booktitle>ICMI</booktitle>
+<ee>https://doi.org/10.1145/2388676.2388684</ee>
+<crossref>conf/icmi/2012</crossref>
+<url>db/conf/icmi/icmi2012.html#SongMD12</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/fgr/SongDD11" mdate="2023-03-24">
+<author pid="31/9606">Yale Song</author>
+<author pid="d/DavidDemirdjian">David Demirdjian</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Multi-signal gesture recognition using temporal smoothing hidden conditional random fields.</title>
+<pages>388-393</pages>
+<year>2011</year>
+<booktitle>FG</booktitle>
+<ee>https://doi.org/10.1109/FG.2011.5771431</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/FG.2011.5771431</ee>
+<crossref>conf/fgr/2011</crossref>
+<url>db/conf/fgr/fg2011.html#SongDD11</url>
+</inproceedings>
+</r>
+<r><inproceedings key="conf/fgr/SongDD11a" mdate="2023-03-24">
+<author pid="31/9606">Yale Song</author>
+<author pid="d/DavidDemirdjian">David Demirdjian</author>
+<author pid="98/5170">Randall Davis</author>
+<title>Tracking body and hands for gesture recognition: NATOPS aircraft handling signals database.</title>
+<pages>500-506</pages>
+<year>2011</year>
+<booktitle>FG</booktitle>
+<ee>https://doi.org/10.1109/FG.2011.5771448</ee>
+<ee>https://doi.ieeecomputersociety.org/10.1109/FG.2011.5771448</ee>
+<crossref>conf/fgr/2011</crossref>
+<url>db/conf/fgr/fg2011.html#SongDD11a</url>
+</inproceedings>
+</r>
+<coauthors n="300" nc="2">
+<co c="0"><na f="a/Afouras:Triantafyllos" pid="175/5771">Triantafyllos Afouras</na></co>
+<co c="0"><na f="a/al=:et" pid="82/8699">et al.</na></co>
+<co c="0" n="2"><na f="a/Arbel=aacute=ez:Pablo_Andr=eacute=s" pid="41/639">Pablo Andr&#233;s Arbel&#225;ez</na><na>Pablo Arbel&#225;ez</na></co>
+<co c="0"><na f="a/Ashutosh:Kumar" pid="231/3353">Kumar Ashutosh</na></co>
+<co c="0"><na f="b/Baiyya:Vijay" pid="362/2962">Vijay Baiyya</na></co>
+<co c="0"><na f="b/Bakhshi:Saeideh" pid="06/10264">Saeideh Bakhshi</na></co>
+<co c="0"><na f="b/Balasubramanian:Ashwin" pid="392/3830">Ashwin Balasubramanian</na></co>
+<co c="0"><na f="b/Bansal:Siddhant" pid="247/0964">Siddhant Bansal</na></co>
+<co c="0"><na f="b/Behl:Harkirat_S=" pid="199/2125">Harkirat S. Behl</na></co>
+<co c="0"><na f="b/Berg:Tamara_L=" pid="63/6787">Tamara L. Berg</na></co>
+<co c="0"><na f="b/Bertasius:Gedas" pid="155/9783">Gedas Bertasius</na></co>
+<co c="0"><na f="b/Bhatnagar:Bharat" pid="405/4999">Bharat Bhatnagar</na></co>
+<co c="0"><na f="b/Bolya:Daniel" pid="239/4186">Daniel Bolya</na></co>
+<co c="0"><na f="b/Boote:Bikram" pid="292/2707">Bikram Boote</na></co>
+<co c="0"><na f="b/Boyd=Graber:Jordan_L=" pid="57/5950">Jordan L. Boyd-Graber</na></co>
+<co c="0"><na f="b/Breuel:Thomas_M=" pid="b/ThomasMBreuel">Thomas M. Breuel</na></co>
+<co c="0"><na f="b/Byrne:Eugene" pid="304/2850">Eugene Byrne</na></co>
+<co c="0"><na f="c/Camg=ouml=z:Necati_Cihan" pid="160/2823">Necati Cihan Camg&#246;z</na></co>
+<co c="0"><na f="c/Cao:Liangliang" pid="95/6915">Liangliang Cao</na></co>
+<co c="0"><na f="c/Cao_0001:Nan" pid="66/5146-1">Nan Cao 0001</na></co>
+<co c="0"><na f="c/Castillo:Angela" pid="275/0085">Angela Castillo</na></co>
+<co c="0"><na f="c/Chandar:Sarath" pid="45/8542">Sarath Chandar</na></co>
+<co c="0"><na f="c/Chang_0001:Kai=Wei" pid="18/2428-1">Kai-Wei Chang 0001</na></co>
+<co c="0"><na f="c/Chatterjee:Dibyadip" pid="268/3564">Dibyadip Chatterjee</na></co>
+<co c="0"><na f="c/Chavis:Zachary" pid="304/3531">Zachary Chavis</na></co>
+<co c="0"><na f="c/Chechik:Gal" pid="c/GalChechik">Gal Chechik</na></co>
+<co c="0"><na f="c/Chellappa:Rama" pid="c/RamaChellappa">Rama Chellappa</na></co>
+<co c="0"><na f="c/Chen:Changan" pid="227/2470">Changan Chen</na></co>
+<co c="0"><na f="c/Chen_0001:Jiefeng" pid="199/3381">Jiefeng Chen 0001</na></co>
+<co c="0"><na f="c/Chen:Joya" pid="247/9518">Joya Chen</na></co>
+<co c="0"><na f="c/Chen_0004:Yi=Ling" pid="72/3762-4">Yi-Ling Chen 0004</na></co>
+<co c="0"><na f="c/Cheng:Chia=Chun" pid="286/5323">Chia-Chun Cheng</na></co>
+<co c="0"><na f="c/Cheng:Feng" pid="12/3274">Feng Cheng</na></co>
+<co c="0"><na f="c/Cho:Jae_Won" pid="408/0087">Jae Won Cho</na></co>
+<co c="0"><na f="c/Cho:Jang_Hyun" pid="249/9432">Jang Hyun Cho</na></co>
+<co c="0"><na f="c/Chomyn:Zack" pid="436/0355">Zack Chomyn</na></co>
+<co c="0"><na f="c/Chu:Fu=Jen" pid="166/1598">Fu-Jen Chu</na></co>
+<co c="0"><na f="c/Chu:Wen=Sheng" pid="35/8617">Wen-Sheng Chu</na></co>
+<co c="0"><na f="c/Chuang:Ching=Yao" pid="190/7522">Ching-Yao Chuang</na></co>
+<co c="0"><na f="c/Chung:Jiwan" pid="277/2798">Jiwan Chung</na></co>
+<co c="1"><na f="c/Cirstea:Razvan=Gabriel" pid="225/7855">Razvan-Gabriel Cirstea</na></co>
+<co c="0"><na f="c/Claassen:Carina" pid="436/0837">Carina Claassen</na></co>
+<co c="0"><na f="c/Coda:Alex" pid="228/8336">Alex Coda</na></co>
+<co c="0"><na f="c/Collins_0001:Christopher" pid="75/9076-1">Christopher Collins 0001</na></co>
+<co c="0"><na f="c/Crandall:David" pid="c/DavidCrandall">David Crandall</na></co>
+<co c="0"><na f="c/Crane:Sean" pid="304/3037">Sean Crane</na></co>
+<co c="0" n="2"><na f="d/Dalvi:Bhavana" pid="78/6527">Bhavana Dalvi</na><na>Bhavana Dalvi Mishra</na></co>
+<co c="0"><na f="d/Damavandi:Babak" pid="140/3437">Babak Damavandi</na></co>
+<co c="0"><na f="d/Damen:Dima" pid="95/3618">Dima Damen</na></co>
+<co c="0"><na f="d/Darrell:Trevor" pid="d/TrevorDarrell">Trevor Darrell</na></co>
+<co c="0"><na f="d/Dasgupta:Avijit" pid="122/1845">Avijit Dasgupta</na></co>
+<co c="0"><na f="d/Davis:Randall" pid="98/5170">Randall Davis</na></co>
+<co c="0"><na f="d/Demirdjian:David" pid="d/DavidDemirdjian">David Demirdjian</na></co>
+<co c="0"><na f="d/Desai:Ruta" pid="128/0409">Ruta Desai</na></co>
+<co c="0"><na f="d/Dey:Debadeepta" pid="76/10090">Debadeepta Dey</na></co>
+<co c="0"><na f="d/Doll=aacute=r:Piotr" pid="62/750">Piotr Doll&#225;r</na></co>
+<co c="0"><na f="d/Dong_0002:Jing" pid="85/1692-2">Jing Dong 0002</na></co>
+<co c="0" n="2"><na f="e/Engel:Jakob_J=" pid="243/3258">Jakob J. Engel</na><na>Jakob Julian Engel</na></co>
+<co c="0"><na f="e/Escobar:Mar=iacute=a" pid="169/7108">Mar&#237;a Escobar</na></co>
+<co c="0"><na f="f/Farinella:Giovanni_Maria" pid="31/6643">Giovanni Maria Farinella</na></co>
+<co c="0"><na f="f/Feichtenhofer:Christoph" pid="127/1937">Christoph Feichtenhofer</na></co>
+<co c="0"><na f="f/Forigua:Cristhian" pid="329/1536">Cristhian Forigua</na></co>
+<co c="0"><na f="f/Fu:Tsu=Jui" pid="218/5366">Tsu-Jui Fu</na></co>
+<co c="0"><na f="f/Fu:Xinzhu" pid="362/3247">Xinzhu Fu</na></co>
+<co c="0"><na f="f/Furnari:Antonino" pid="147/3952">Antonino Furnari</na></co>
+<co c="0"><na f="f/Furuta:Ryosuke" pid="158/9646">Ryosuke Furuta</na></co>
+<co c="0"><na f="f/Fussell:Susan_R=" pid="20/4907">Susan R. Fussell</na></co>
+<co c="0"><na f="g/Gao_0001:Wen" pid="g/WenGao">Wen Gao 0001</na></co>
+<co c="0"><na f="g/Ge:Yunhao" pid="204/1908">Yunhao Ge</na></co>
+<co c="0"><na f="g/Gebreselasie:Abrham" pid="304/2928">Abrham Gebreselasie</na></co>
+<co c="0"><na f="g/Ghanem:Bernard" pid="37/2516">Bernard Ghanem</na></co>
+<co c="0"><na f="g/Girish:Sharath" pid="232/3030">Sharath Girish</na></co>
+<co c="0"><na f="g/Gokturk:Burak" pid="84/9988">Burak Gokturk</na></co>
+<co c="0"><na f="g/Goldberg:Larry" pid="179/2643">Larry Goldberg</na></co>
+<co c="0"><na f="g/Gonz=aacute=lez:Cristina" pid="200/5697">Cristina Gonz&#225;lez</na></co>
+<co c="0"><na f="g/Goyal:Palash" pid="183/3699">Palash Goyal</na></co>
+<co c="0"><na f="g/Grauman:Kristen" pid="57/4553">Kristen Grauman</na></co>
+<co c="0"><na f="g/Gunasekar:Suriya" pid="118/7221">Suriya Gunasekar</na></co>
+<co c="1"><na f="g/Guo:Chenjuan" pid="49/7979">Chenjuan Guo</na></co>
+<co c="0"><na f="g/Gupta:Jayesh_K=" pid="164/8491">Jayesh K. Gupta</na></co>
+<co c="0"><na f="g/Gupta:Prince" pid="84/8416">Prince Gupta</na></co>
+<co c="0"><na f="g/Gyde:Nicholas" pid="260/6670">Nicholas Gyde</na></co>
+<co c="0"><na f="g/Gygli:Michael" pid="135/4875">Michael Gygli</na></co>
+<co c="0"><na f="h/Hampali:Shreyas" pid="244/2530">Shreyas Hampali</na></co>
+<co c="0"><na f="h/Haresh:Sanjay" pid="253/0473">Sanjay Haresh</na></co>
+<co c="0"><na f="h/Hjelm:R=_Devon" pid="195/5928">R. Devon Hjelm</na></co>
+<co c="0"><na f="h/Hodson:Nathan" pid="436/0236">Nathan Hodson</na></co>
+<co c="0"><na f="h/Hoffman:Judy" pid="45/10336">Judy Hoffman</na></co>
+<co c="0"><na f="h/Hu:Jiabo" pid="357/1386">Jiabo Hu</na></co>
+<co c="0"><na f="h/Hu:Shuming" pid="352/2124">Shuming Hu</na></co>
+<co c="0"><na f="h/Huang_0020:Jing" pid="14/4834-20">Jing Huang 0020</na></co>
+<co c="0"><na f="h/Huang_0001:Po=Yao" pid="154/3943-1">Po-Yao Huang 0001</na></co>
+<co c="0"><na f="h/Huang_0002:Yifei" pid="71/8763-2">Yifei Huang 0002</na></co>
+<co c="0"><na f="h/Huang_0011:Yiming" pid="175/7344-11">Yiming Huang 0011</na></co>
+<co c="0"><na f="i/Islam:Md_Mohaiminul" pid="317/6929">Md Mohaiminul Islam</na></co>
+<co c="0"><na f="i/Itti:Laurent" pid="31/3256">Laurent Itti</na></co>
+<co c="0" n="2"><na f="i/Iuzzolino:Michael_L=" pid="233/0309">Michael L. Iuzzolino</na><na>Michael Louis Iuzzolino</na></co>
+<co c="0"><na f="j/Jaimes:Alejandro" pid="45/956">Alejandro Jaimes</na></co>
+<co c="0"><na f="j/Jain:Shashank" pid="186/3731">Shashank Jain</na></co>
+<co c="0"><na f="j/Jain:Suyog_Dutt" pid="142/2520">Suyog Dutt Jain</na></co>
+<co c="0"><na f="j/Jang_0001:Yunseok" pid="12/2106-1">Yunseok Jang 0001</na></co>
+<co c="0"><na f="j/Jawahar:C=_V=" pid="j/CVJawahar">C. V. Jawahar</na></co>
+<co c="0"><na f="j/Jegelka:Stefanie" pid="38/7003">Stefanie Jegelka</na></co>
+<co c="1"><na f="j/Jensen:Christian_S=" pid="j/ChristianSJensen">Christian S. Jensen</na></co>
+<co c="0"><na f="j/Jin:Haojian" pid="128/9277">Haojian Jin</na></co>
+<co c="0"><na f="j/Jin:Ye" pid="40/1042">Ye Jin</na></co>
+<co c="0"><na f="j/Joshi:Neel" pid="08/3966">Neel Joshi</na></co>
+<co c="0"><na f="j/Juan:Paloma_de" pid="64/7094">Paloma de Juan</na></co>
+<co c="-1"><na f="k/Kae:Andrew" pid="77/7218">Andrew Kae</na></co>
+<co c="0"><na f="k/Kan:Min=Yen" pid="k/MinYenKan">Min-Yen Kan</na></co>
+<co c="0"><na f="k/Kapoor:Ashish" pid="93/161">Ashish Kapoor</na></co>
+<co c="0"><na f="k/Kautz:Jan" pid="48/6214">Jan Kautz</na></co>
+<co c="0" n="2"><na f="k/Kaye:Joseph" pid="k/JosephKaye">Joseph Kaye</na><na>Joseph Jofish Kaye</na></co>
+<co c="0"><na f="k/Kennedy:Lyndon" pid="03/8400">Lyndon Kennedy</na></co>
+<co c="0" n="2"><na f="k/Khan_0001:Salman" pid="32/11535-1">Salman Khan 0001</na><na>Salman H. Khan 0001</na></co>
+<co c="0"><na f="k/Khirodkar:Rawal" pid="230/4108">Rawal Khirodkar</na></co>
+<co c="0"><na f="k/Khoo:Weslie" pid="304/3203">Weslie Khoo</na></co>
+<co c="1"><na f="k/Kieu:Tung" pid="201/8989">Tung Kieu</na></co>
+<co c="0"><na f="k/Kim:Chris_Dongjoo" pid="176/5576">Chris Dongjoo Kim</na></co>
+<co c="0"><na f="k/Kim:Gunhee" pid="45/115">Gunhee Kim</na></co>
+<co c="0"><na f="k/Kim_0001:Juho" pid="64/3462-1">Juho Kim 0001</na></co>
+<co c="0" n="2"><na f="k/Kim:Young=Jin" pid="67/3028">Young-Jin Kim</na><na>Youngjin Kim</na></co>
+<co c="0" n="2"><na f="k/Kitani:Kris_Makoto" pid="42/163">Kris Makoto Kitani</na><na>Kris Kitani</na></co>
+<co c="0"><na f="k/Kottur:Satwik" pid="172/1012">Satwik Kottur</na></co>
+<co c="0"><na f="k/Kovashka:Adriana" pid="51/8652">Adriana Kovashka</na></co>
+<co c="0"><na f="k/Kr=auml=henb=uuml=hl:Philipp" pid="43/7592">Philipp Kr&#228;henb&#252;hl</na></co>
+<co c="0"><na f="k/Kukreja:Devansh" pid="362/3217">Devansh Kukreja</na></co>
+<co c="0"><na f="k/Kumar:Anush" pid="35/211">Anush Kumar</na></co>
+<co c="0"><na f="k/Kuo:Robert" pid="386/6796">Robert Kuo</na></co>
+<co c="0"><na f="l/LaBonte:Tyler" pid="251/5689">Tyler LaBonte</na></co>
+<co c="0"><na f="l/Lai:Shang=Hong" pid="27/679">Shang-Hong Lai</na></co>
+<co c="0"><na f="l/Lakhavani:Sach" pid="386/6843">Sach Lakhavani</na></co>
+<co c="0"><na f="l/Le:Long_T=" pid="142/1627">Long T. Le</na></co>
+<co c="0"><na f="l/Lee_0005:Jiyoung" pid="26/4105-5">Jiyoung Lee 0005</na></co>
+<co c="0"><na f="l/Lee_0008:Sangho" pid="17/5702-8">Sangho Lee 0008</na></co>
+<co c="0"><na f="l/Lee:Vivian" pid="47/3649">Vivian Lee</na></co>
+<co c="0"><na f="l/Leon:Jasmine" pid="435/9595">Jasmine Leon</na></co>
+<co c="0"><na f="l/LeViet:Khanh_G=" pid="435/9222">Khanh G. LeViet</na></co>
+<co c="0"><na f="l/Li:Bingxuan" pid="148/9942">Bingxuan Li</na></co>
+<co c="0"><na f="l/Li:Chun=Liang" pid="123/5098">Chun-Liang Li</na></co>
+<co c="0"><na f="l/Li_0001:Jia" pid="23/6950-1">Jia Li 0001</na></co>
+<co c="0"><na f="l/Li_0001:Li=Jia" pid="31/2187">Li-Jia Li 0001</na></co>
+<co c="0"><na f="l/Li:Sujian" pid="05/4288">Sujian Li</na></co>
+<co c="0"><na f="l/Li:Yuncheng" pid="57/7831">Yuncheng Li</na></co>
+<co c="0"><na f="l/Liang:Kevin_J=" pid="230/8348">Kevin J. Liang</na></co>
+<co c="0"><na f="l/Lin:Ching=Yung" pid="62/1273">Ching-Yung Lin</na></co>
+<co c="0" n="2"><na f="l/Lin:Qinghong" pid="287/4900">Qinghong Lin</na><na>Kevin Qinghong Lin</na></co>
+<co c="0"><na f="l/Lin:Yu=Ru" pid="11/5853">Yu-Ru Lin</na></co>
+<co c="0"><na f="l/Liu:Jia=Wei" pid="85/3336">Jia-Wei Liu</na></co>
+<co c="0"><na f="l/Liu_0007:Miao" pid="60/6348-7">Miao Liu 0007</na></co>
+<co c="0"><na f="l/Long:Do_Xuan" pid="317/0657">Do Xuan Long</na></co>
+<co c="0"><na f="l/Losier:Nick" pid="435/9608">Nick Losier</na></co>
+<co c="0"><na f="l/Lu:Yujie" pid="24/3263">Yujie Lu</na></co>
+<co c="0"><na f="l/Luo_0001:Jiebo" pid="25/5545">Jiebo Luo 0001</na></co>
+<co c="0"><na f="l/Luo:Mi" pid="257/3359">Mi Luo</na></co>
+<co c="0"><na f="l/Luo_0002:Zhengyi" pid="00/7733-2">Zhengyi Luo 0002</na></co>
+<co c="0"><na f="m/Ma:Kaichen" pid="179/2263">Kaichen Ma</na></co>
+<co c="0"><na f="m/Ma:Shuang" pid="98/3906">Shuang Ma</na></co>
+<co c="0"><na f="m/Ma:Shugao" pid="70/418">Shugao Ma</na></co>
+<co c="0"><na f="m/Ma_0005:Tengyu" pid="384/7631">Tengyu Ma 0005</na></co>
+<co c="0"><na f="m/Maaz_0001:Muhammad" pid="247/6083-1">Muhammad Maaz 0001</na></co>
+<co c="0"><na f="m/Madotto:Andrea" pid="174/2905">Andrea Madotto</na></co>
+<co c="0"><na f="m/Majumder:Sagnik" pid="223/7908">Sagnik Majumder</na></co>
+<co c="0"><na f="m/Malik:Jitendra" pid="58/2944">Jitendra Malik</na></co>
+<co c="0"><na f="m/Mao:Yongsen" pid="317/5604">Yongsen Mao</na></co>
+<co c="0" n="2"><na f="m/Mart=iacute=n:Miguel" pid="47/8081">Miguel Mart&#237;n</na><na>Miguel Martin</na></co>
+<co c="0"><na f="m/Mavroudi:Effrosyni" pid="166/6300">Effrosyni Mavroudi</na></co>
+<co c="0"><na f="m/McDuff:Daniel" pid="63/9606">Daniel McDuff</na></co>
+<co c="0" n="2"><na f="m/Mendes:Caio_C=_T=" pid="20/11498">Caio C. T. Mendes</na><na>Caio C&#233;sar Teodoro Mendes</na></co>
+<co c="0" n="2"><na f="m/Meng:Helen_M=" pid="92/3270">Helen M. Meng</na><na>Helen Mei-Ling Meng</na></co>
+<co c="0"><na f="m/Meng:Rui" pid="83/8545">Rui Meng</na></co>
+<co c="0"><na f="m/Meredith:Brighid" pid="386/6518">Brighid Meredith</na></co>
+<co c="0"><na f="m/Miller:Austin" pid="258/1144">Austin Miller</na></co>
+<co c="0"><na f="m/Mittal:Abhay" pid="286/7972">Abhay Mittal</na></co>
+<co c="0"><na f="m/Mondal:Ishani" pid="255/8493">Ishani Mondal</na></co>
+<co c="0"><na f="m/Moon:Seungwhan" pid="120/4131">Seungwhan Moon</na></co>
+<co c="0"><na f="m/Moon:Shane" pid="373/5549">Shane Moon</na></co>
+<co c="0"><na f="m/Morency:Louis=Philippe" pid="31/739">Louis-Philippe Morency</na></co>
+<co c="0"><na f="n/Nag:Sayan" pid="198/1398">Sayan Nag</na></co>
+<co c="0"><na f="n/Nagarajan:Tushar" pid="207/8308">Tushar Nagarajan</na></co>
+<co c="0"><na f="n/Newcombe:Richard_A=" pid="01/8653">Richard A. Newcombe</na></co>
+<co c="0"><na f="o/Oguntola:Oluwatumininu" pid="386/7090">Oluwatumininu Oguntola</na></co>
+<co c="0"><na f="o/Otani:Mayu" pid="72/11482">Mayu Otani</na></co>
+<co c="0"><na f="p/Pan:Xiaqing" pid="177/9224">Xiaqing Pan</na></co>
+<co c="0"><na f="p/Pang:Zhanzhong" pid="243/1928">Zhanzhong Pang</na></co>
+<co c="0"><na f="p/Park:Hyun_Soo" pid="68/4325">Hyun Soo Park</na></co>
+<co c="0"><na f="p/Parmar:Mihir" pid="253/6105">Mihir Parmar</na></co>
+<co c="0"><na f="p/Penberthy:Scott" pid="435/9623">Scott Penberthy</na></co>
+<co c="0"><na f="p/Peng_0001:Nanyun" pid="117/4036">Nanyun Peng 0001</na></co>
+<co c="0"><na f="p/Peng:Penny" pid="386/6470">Penny Peng</na></co>
+<co c="0"><na f="p/Peng:Yi=Hao" pid="124/7504">Yi-Hao Peng</na></co>
+<co c="0"><na f="p/Penney:Dana_L=" pid="149/1355">Dana L. Penney</na></co>
+<co c="0"><na f="p/Pfister:Tomas" pid="14/8360">Tomas Pfister</na></co>
+<co c="0"><na f="p/Pramanick:Shraman" pid="289/0043">Shraman Pramanick</na></co>
+<co c="0"><na f="p/Prato_0001:Gabriele" pid="242/8262-1">Gabriele Prato 0001</na></co>
+<co c="0"><na f="r/Ragusa:Francesco" pid="197/7192">Francesco Ragusa</na></co>
+<co c="0"><na f="r/Rajendran:Janarthanan" pid="169/9942">Janarthanan Rajendran</na></co>
+<co c="0" n="2"><na f="r/Ramakrishnan:Santhosh_K=" pid="199/1913">Santhosh K. Ramakrishnan</na><na>Santhosh Kumar Ramakrishnan</na></co>
+<co c="0"><na f="r/Ramazanova:Merey" pid="304/3597">Merey Ramazanova</na></co>
+<co c="0"><na f="r/Ranganathan:Parthasarathy" pid="12/6848">Parthasarathy Ranganathan</na></co>
+<co c="0"><na f="r/Rasheed:Hanoona_Abdul" pid="293/7463">Hanoona Abdul Rasheed</na></co>
+<co c="0"><na f="r/Ravi:Nikhila" pid="248/7650">Nikhila Ravi</na></co>
+<co c="0"><na f="r/Redi:Miriam" pid="85/9997">Miriam Redi</na></co>
+<co c="0"><na f="r/Rehg:James_M=" pid="r/JMRehg">James M. Rehg</na></co>
+<co c="0"><na f="r/Remelli:Edoardo" pid="209/5911">Edoardo Remelli</na></co>
+<co c="0"><na f="r/Ros=eacute=:Carolyn_P=" pid="r/CarolynPensteinRose">Carolyn P. Ros&#233;</na></co>
+<co c="0"><na f="r/Ryan:Fiona" pid="283/7526">Fiona Ryan</na></co>
+<co c="0"><na f="s/Salman:Hadi" pid="192/3204">Hadi Salman</na></co>
+<co c="0"><na f="s/Sato_0001:Yoichi" pid="64/5287-1">Yoichi Sato 0001</na></co>
+<co c="0"><na f="s/Sauser:Eric" pid="91/6103">Eric Sauser</na></co>
+<co c="0"><na f="s/Savva:Manolis" pid="21/9924">Manolis Savva</na></co>
+<co c="0"><na f="s/Schuller:Bj=ouml=rn_W=" pid="54/4934">Bj&#246;rn W. Schuller</na></co>
+<co c="0"><na f="s/Seminara:Luigi" pid="362/2867">Luigi Seminara</na></co>
+<co c="0"><na f="s/Sener:Fadime" pid="119/1497">Fadime Sener</na></co>
+<co c="0"><na f="s/Shah:Hardik" pid="44/5592">Hardik Shah</na></co>
+<co c="0"><na f="s/Shah:Shital" pid="188/5763">Shital Shah</na></co>
+<co c="0"><na f="s/Shamma:David_A=" pid="98/3115">David A. Shamma</na></co>
+<co c="0"><na f="s/Shan:Wei" pid="42/855">Wei Shan</na></co>
+<co c="0"><na f="s/Shen:Qinlan" pid="184/3757">Qinlan Shen</na></co>
+<co c="0"><na f="s/Shi:Baifeng" pid="261/9376">Baifeng Shi</na></co>
+<co c="0"><na f="s/Shi:Jianbo" pid="71/3879">Jianbo Shi</na></co>
+<co c="0" n="2"><na f="s/Shou_0001:Zheng" pid="284/0807">Zheng Shou 0001</na><na>Mike Zheng Shou</na></co>
+<co c="0"><na f="s/Shout:Mike_Zheng" pid="386/7282">Mike Zheng Shout</na></co>
+<co c="0"><na f="s/Shrivastava:Abhinav" pid="65/10572">Abhinav Shrivastava</na></co>
+<co c="0"><na f="s/Sinha:Rajarishi" pid="83/4490">Rajarishi Sinha</na></co>
+<co c="0"><na f="s/Slatkin:Brett" pid="41/10286">Brett Slatkin</na></co>
+<co c="0"><na f="s/Sohn:Kwanghoon" pid="21/2373">Kwanghoon Sohn</na></co>
+<co c="0"><na f="s/Soleymani_0001:Mohammad" pid="s/MohammadSoleymani">Mohammad Soleymani 0001</na></co>
+<co c="0"><na f="s/Somasundaram:Kiran_K=" pid="20/8395">Kiran K. Somasundaram</na></co>
+<co c="0"><na f="s/Somayazulu:Arjun" pid="333/1844">Arjun Somayazulu</na></co>
+<co c="0"><na f="s/Song:Chenan" pid="362/8104">Chenan Song</na></co>
+<co c="0"><na f="s/Song:Yiwen" pid="170/4082">Yiwen Song</na></co>
+<co c="0"><na f="s/Southerland:Audrey" pid="206/8614">Audrey Southerland</na></co>
+<co c="0"><na f="s/Stark:Tammy" pid="405/4460">Tammy Stark</na></co>
+<co c="0"><na f="s/Stent:Amanda" pid="69/2756">Amanda Stent</na></co>
+<co c="0"><na f="s/Su:Shan" pid="51/7623">Shan Su</na></co>
+<co c="0"><na f="s/Sun:Peize" pid="249/2345">Peize Sun</na></co>
+<co c="0"><na f="t/Tateno:Masatoshi" pid="377/3711">Masatoshi Tateno</na></co>
+<co c="0"><na f="t/Tekin:Bugra" pid="136/4930">Bugra Tekin</na></co>
+<co c="0"><na f="t/Tetreault:Joel_R=" pid="40/4518">Joel R. Tetreault</na></co>
+<co c="0"><na f="t/Thadani:Kapil" pid="86/4278">Kapil Thadani</na></co>
+<co c="0"><na f="t/Thomas_0004:Christopher" pid="21/4235-4">Christopher Thomas 0004</na></co>
+<co c="0"><na f="t/Tighe:Joseph" pid="58/8741">Joseph Tighe</na></co>
+<co c="0"><na f="t/Timmons:Joe" pid="435/8973">Joe Timmons</na></co>
+<co c="0"><na f="t/Torralba_0001:Antonio" pid="t/AntonioBTorralba">Antonio Torralba 0001</na></co>
+<co c="0"><na f="t/Torresani:Lorenzo" pid="75/2854">Lorenzo Torresani</na></co>
+<co c="0"><na f="t/Turk_0001:Matthew" pid="61/3381">Matthew Turk 0001</na></co>
+<co c="0"><na f="v/Vallmitjana:Jordi" pid="164/6089">Jordi Vallmitjana</na></co>
+<co c="0"><na f="v/Vasisht:Deepak" pid="149/9280">Deepak Vasisht</na></co>
+<co c="0"><na f="v/Vemprala:Sai" pid="190/8334">Sai Vemprala</na></co>
+<co c="0"><na f="v/Vineet:Vibhav" pid="02/8067">Vibhav Vineet</na></co>
+<co c="0"><na f="v/Vlasic:Daniel" pid="04/5374">Daniel Vlasic</na></co>
+<co c="0"><na f="w/Wang:Huiyu" pid="95/1127">Huiyu Wang</na></co>
+<co c="0"><na f="w/Wang:Kuan=Hsun" pid="243/6651">Kuan-Hsun Wang</na></co>
+<co c="0"><na f="w/Wang:Wenshan" pid="86/8494">Wenshan Wang</na></co>
+<co c="0"><na f="w/Wang:William" pid="66/9854">William Wang</na></co>
+<co c="0"><na f="w/Wang:William_Yang" pid="08/9282">William Yang Wang</na></co>
+<co c="0"><na f="w/Wang_0066:Xin" pid="10/5630-66">Xin Wang 0066</na></co>
+<co c="0"><na f="w/Wang:Yang" pid="181/2842">Yang Wang</na></co>
+<co c="0"><na f="w/Wang:Yansen" pid="134/7817">Yansen Wang</na></co>
+<co c="0"><na f="w/Wang:Yuchen" pid="82/8599">Yuchen Wang</na></co>
+<co c="0"><na f="w/Wei:Xiyu" pid="397/2231">Xiyu Wei</na></co>
+<co c="0"><na f="w/Wen:Zhen" pid="53/5888">Zhen Wen</na></co>
+<co c="0"><na f="w/Westbury:Andrew" pid="302/0668">Andrew Westbury</na></co>
+<co c="0"><na f="w/Whitehill:Matt" pid="251/8424">Matt Whitehill</na></co>
+<co c="0"><na f="w/Wray:Michael" pid="161/3601">Michael Wray</na></co>
+<co c="0"><na f="w/Wu_0001:Xueqing" pid="243/5831-1">Xueqing Wu 0001</na></co>
+<co c="0"><na f="x/Xu:Jiashu" pid="267/0701">Jiashu Xu</na></co>
+<co c="0"><na f="x/Xu:Yan" pid="03/4702">Yan Xu</na></co>
+<co c="0"><na f="x/Xue:Zihui" pid="256/9549">Zihui Xue</na></co>
+<co c="0"><na f="y/Yagi:Takuma" pid="210/2402">Takuma Yagi</na></co>
+<co c="0"><na f="y/Yan:Mingfei" pid="243/2976">Mingfei Yan</na></co>
+<co c="1"><na f="y/Yang_0002:Bin" pid="77/377-2">Bin Yang 0002</na></co>
+<co c="0"><na f="y/Yang:Jianchao" pid="96/3835">Jianchao Yang</na></co>
+<co c="0"><na f="y/Yang:Saelyne" pid="264/7539">Saelyne Yang</na></co>
+<co c="0"><na f="y/Yang:Xitong" pid="168/8851">Xitong Yang</na></co>
+<co c="0"><na f="y/Yao:Angela" pid="64/8484">Angela Yao</na></co>
+<co c="0"><na f="y/Yatani:Koji" pid="71/5014">Koji Yatani</na></co>
+<co c="0"><na f="y/Yoder:Michael_Miller" pid="20/3744">Michael Miller Yoder</na></co>
+<co c="0"><na f="y/Yoon:Jinsung" pid="173/5409">Jinsung Yoon</na></co>
+<co c="0"><na f="y/Yu:Jaesang" pid="295/1448">Jaesang Yu</na></co>
+<co c="0"><na f="y/Yu_0004:Kai" pid="197/1322-4">Kai Yu 0004</na></co>
+<co c="0"><na f="y/Yu:Youngjae" pid="188/6210">Youngjae Yu</na></co>
+<co c="0"><na f="y/Yu:Zecheng" pid="322/3576">Zecheng Yu</na></co>
+<co c="0"><na f="z/Zen:Gloria" pid="45/8613">Gloria Zen</na></co>
+<co c="0"><na f="z/Zeng:Zhaoyang" pid="207/1887">Zhaoyang Zeng</na></co>
+<co c="0"><na f="z/Zha:Shengxin_Cindy" pid="386/6728">Shengxin Cindy Zha</na></co>
+<co c="0"><na f="z/Zhang_0010:Ce" pid="97/919-10">Ce Zhang 0010</na></co>
+<co c="0"><na f="z/Zhang:Edward" pid="159/4948">Edward Zhang</na></co>
+<co c="0"><na f="z/Zhang:Jinxu" pid="362/2934">Jinxu Zhang</na></co>
+<co c="0"><na f="z/Zhang:Pengchuan" pid="207/1300">Pengchuan Zhang</na></co>
+<co c="0"><na f="z/Zhao_0002:Chen" pid="81/3-2">Chen Zhao 0002</na></co>
+<co c="0"><na f="z/Zhao_0010:Jian" pid="70/2932-10">Jian Zhao 0010</na></co>
+<co c="1"><na f="z/Zhao_0008:Yan" pid="88/5320-8">Yan Zhao 0008</na></co>
+<co c="0"><na f="z/Zhao_0003:Ziwei" pid="241/6308-3">Ziwei Zhao 0003</na></co>
+<co c="0"><na f="z/Zhou:Yipin" pid="150/4221">Yipin Zhou</na></co>
+<co c="0"><na f="z/Zhu:Dawei" pid="12/9540">Dawei Zhu</na></co>
+<co c="0"><na f="z/Zhu:Rhyard" pid="435/9280">Rhyard Zhu</na></co>
+<co c="0"><na f="z/Zhu_0001:Zhifan" pid="72/888-1">Zhifan Zhu 0001</na></co>
+<co c="0"><na f="z/Zhuo:Jeff" pid="386/7058">Jeff Zhuo</na></co>
+</coauthors>
+</dblpperson>
+

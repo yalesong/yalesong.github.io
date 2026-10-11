@@ -1,0 +1,93 @@
+name: Sync DBLP Cache
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Weekly at midnight Sunday
+  workflow_dispatch: # Allow manual triggering
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch DBLP XML (solving Anubis PoW if challenged)
+        run: |
+          python3 - << 'EOF'
+          import hashlib, http.cookiejar, json, re, sys, time, urllib.error, urllib.parse, urllib.request
+
+          url = "https://dblp.org/pid/31/9606.xml"
+          ua = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+
+          cj = http.cookiejar.CookieJar()
+          opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+          opener.addheaders = [("User-Agent", ua)]
+
+          def fetch(target_url, attempts=5):
+              for i in range(attempts):
+                  try:
+                      with opener.open(target_url, timeout=30) as resp:
+                          return resp.read().decode("utf-8", errors="replace")
+                  except urllib.error.HTTPError as e:
+                      body = e.read().decode("utf-8", errors="replace")
+                      if 'id="anubis_challenge"' in body:
+                          return body
+                      print(f"HTTP {e.code} on attempt {i + 1}, retrying...", file=sys.stderr)
+                      time.sleep(2 * (i + 1))
+              raise RuntimeError(f"Failed to fetch {target_url}")
+
+          t0 = time.time()
+          body = fetch(url)
+
+          if "<dblpperson" not in body:
+              m = re.search(r'<script id="anubis_challenge" type="application/json">(.*?)</script>', body, re.S)
+              if not m:
+                  print("Error: Response is neither DBLP XML nor Anubis challenge", file=sys.stderr)
+                  sys.exit(1)
+              chal = json.loads(m.group(1))
+              c_id = chal["challenge"]["id"]
+              rand_data = chal["challenge"]["randomData"]
+              diff = chal["rules"]["difficulty"]
+              print(f"Solving Anubis PoW challenge (difficulty={diff})...")
+              prefix = "0" * diff
+              nonce = 0
+              while True:
+                  h = hashlib.sha256(f"{rand_data}{nonce}".encode()).hexdigest()
+                  if h.startswith(prefix):
+                      break
+                  nonce += 1
+              elapsed = max(1, int((time.time() - t0) * 1000))
+              pass_url = (
+                  f"https://dblp.org/.within.website/x/cmd/anubis/api/pass-challenge"
+                  f"?id={c_id}&response={h}&nonce={nonce}"
+                  f"&redir={urllib.parse.quote(url)}&elapsedTime={elapsed}"
+              )
+              body = fetch(pass_url)
+
+          if "<dblpperson" not in body:
+              print("Error: Fetched file is empty or invalid XML", file=sys.stderr)
+              sys.exit(1)
+
+          with open("dblp_fallback.xml", "w", encoding="utf-8") as f:
+              f.write(body)
+          with open("dblp_fallback.js", "w", encoding="utf-8") as f:
+              f.write("window.DBLP_FALLBACK_XML = " + json.dumps(body) + ";\n")
+          print(f"Successfully fetched DBLP XML ({len(body)} bytes)")
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dblp_fallback.xml dblp_fallback.js
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update dblp_fallback"
+            git push
+          fi
+
