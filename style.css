@@ -677,5 +677,234 @@ footer {
   padding: 0 2px;
 }
 
+/* Yale Song Number Tool */
+.yn-subtitle {
+  color: var(--secondary-text);
+  font-size: 0.92rem;
+  margin-top: -10px;
+  margin-bottom: 14px;
+}
+
+.yn-subtitle a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.yn-subtitle a:hover {
+  text-decoration: underline;
+}
+
+.yn-search-bar {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  max-width: 600px;
+}
+
+.yn-input-wrap {
+  position: relative;
+  flex: 1;
+}
+
+#yn-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  font-size: 0.92rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--section-bg);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#yn-input:focus {
+  border-color: var(--accent-color);
+}
+
+.yn-btn {
+  background: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+
+.yn-btn:hover {
+  opacity: 0.9;
+}
+
+.yn-suggestions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  z-index: 300;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.yn-suggestions li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.yn-suggestions li:hover {
+  background: var(--section-bg);
+}
+
+.yn-sug-name {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.yn-sug-meta {
+  font-size: 0.76rem;
+  color: var(--secondary-text);
+  text-align: right;
+}
+
+.yn-examples {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}
+
+.yn-example-chip {
+  background: var(--section-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.yn-example-chip:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.yn-result {
+  margin-top: 18px;
+  padding: 18px 20px;
+  background: var(--section-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.yn-result-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.yn-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-color);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 5px 14px;
+  border-radius: 999px;
+}
+
+.yn-summary {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.yn-chain {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.yn-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 7px 13px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  width: fit-content;
+}
+
+.yn-node-yale {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.yn-node-affil {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}
+
+.yn-edge {
+  margin-left: 18px;
+  padding: 8px 0 8px 16px;
+  border-left: 2px dashed var(--accent-color);
+  font-size: 0.84rem;
+  color: var(--secondary-text);
+}
+
+.yn-edge-paper {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.yn-edge a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.yn-edge a:hover {
+  text-decoration: underline;
+}
+
+.yn-alt-profiles {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.78rem;
+  color: var(--secondary-text);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+
 
 

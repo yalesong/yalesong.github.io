@@ -958,10 +958,711 @@ function initTheme() {
   });
 }
 
+// Yale Song Number Tool (Shortest Co-Authorship Path)
+const YALE_OPENALEX_ID = 'A5100566791';
+let yaleOpenAlexCache = null; // { y1ById, y1ByName, y2WorksPromise }
+
+function normalizeAuthorName(name) {
+  return (name || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function getLocalDblpCoauthorMap() {
+  const byNormName = new Map();
+  allPubs.forEach(pub => {
+    const cleanTitle = pub.info.title.endsWith('.') ? pub.info.title.slice(0, -1) : pub.info.title;
+    const paperObj = {
+      title: cleanTitle,
+      year: pub.info.year,
+      venue: pub.info.venue,
+      url: pub.info.ee || pub.info.url
+    };
+    (pub.authors || []).forEach(authorName => {
+      const norm = normalizeAuthorName(authorName);
+      if (!norm || norm === 'yale song') return;
+      if (!byNormName.has(norm)) {
+        byNormName.set(norm, { name: authorName, papers: [] });
+      }
+      byNormName.get(norm).papers.push(paperObj);
+    });
+  });
+  return byNormName;
+}
+
+async function ensureYaleOpenAlexData() {
+  if (yaleOpenAlexCache) return yaleOpenAlexCache;
+
+  const y1ById = new Map();
+  const y1ByName = getLocalDblpCoauthorMap();
+
+  try {
+    const resp = await fetch(
+      `https://api.openalex.org/works?filter=author.id:${YALE_OPENALEX_ID}&select=id,title,publication_year,doi,authorships&sort=cited_by_count:desc&per_page=200`
+    );
+    if (resp.ok) {
+      const data = await resp.json();
+      (data.results || []).forEach(w => {
+        const paperObj = {
+          title: w.title || 'Untitled',
+          year: w.publication_year || '',
+          url: w.doi || w.id || ''
+        };
+        (w.authorships || []).forEach(a => {
+          const rawId = (a.author && a.author.id) || '';
+          const aid = rawId.split('/').pop();
+          const aname = (a.author && a.author.display_name) || '';
+          if (!aid || aid === YALE_OPENALEX_ID) return;
+          if (!y1ById.has(aid)) {
+            y1ById.set(aid, { id: aid, name: aname, papers: [] });
+          }
+          y1ById.get(aid).papers.push(paperObj);
+
+          const norm = normalizeAuthorName(aname);
+          if (norm && norm !== 'yale song' && !y1ByName.has(norm)) {
+            y1ByName.set(norm, { id: aid, name: aname, papers: [paperObj] });
+          } else if (norm && y1ByName.has(norm) && !y1ByName.get(norm).id) {
+            y1ByName.get(norm).id = aid;
+          }
+        });
+      });
+    }
+  } catch (err) {
+    console.warn('OpenAlex Yale preload warning:', err);
+  }
+
+  yaleOpenAlexCache = { y1ById, y1ByName, y2Works: null };
+  return yaleOpenAlexCache;
+}
+
+async function ensureYale2HopWorks(y1ById) {
+  const cache = await ensureYaleOpenAlexData();
+  if (cache.y2Works) return cache.y2Works;
+
+  const y1Keys = Array.from(y1ById.keys()).slice(0, 150);
+  const chunks = [];
+  for (let i = 0; i < y1Keys.length; i += 50) {
+    chunks.push(y1Keys.slice(i, i + 50));
+  }
+
+  const responses = await Promise.all(
+    chunks.map(c =>
+      fetch(
+        `https://api.openalex.org/works?filter=author.id:${c.join('|')}&select=id,title,publication_year,doi,authorships&sort=cited_by_count:desc&per_page=200`
+      ).then(r => (r.ok ? r.json() : { results: [] }))
+    )
+  );
+
+  cache.y2Works = responses.flatMap(r => r.results || []);
+  return cache.y2Works;
+}
+
+function renderYaleNumberChain(resultEl, number, summaryHtml, nodes, edges, altProfiles = [], onSelectAlt = null) {
+  resultEl.style.display = 'block';
+
+  let chainHtml = '';
+  for (let i = 0; i < nodes.length; i++) {
+    const n = nodes[i];
+    const isYale = i === nodes.length - 1;
+    const affilHtml = n.affil ? `<span class="yn-node-affil">(${n.affil})</span>` : '';
+    chainHtml += `<div class="yn-node ${isYale ? 'yn-node-yale' : ''}"><span>${n.name}</span>${affilHtml}</div>`;
+    if (i < edges.length) {
+      const e = edges[i];
+      const paperTitleHtml = e.url
+        ? `<a href="${e.url}" target="_blank" class="yn-edge-paper">${e.title}</a>`
+        : `<span class="yn-edge-paper">${e.title}</span>`;
+      const venueYear = [e.venue, e.year].filter(Boolean).join(' ');
+      const extraCount = e.extraCount && e.extraCount > 0 ? ` <span>(+${e.extraCount} more shared paper${e.extraCount > 1 ? 's' : ''})</span>` : '';
+      chainHtml += `<div class="yn-edge">Co-authored: ${paperTitleHtml}${venueYear ? ` (${venueYear})` : ''}${extraCount}</div>`;
+    }
+  }
+
+  resultEl.innerHTML = `
+    <div class="yn-result-header">
+      <span class="yn-badge">Yale Number: ${number}</span>
+      <span class="yn-summary">${summaryHtml}</span>
+    </div>
+    <div class="yn-chain">${chainHtml}</div>
+  `;
+
+  if (altProfiles && altProfiles.length > 0 && onSelectAlt) {
+    const altDiv = document.createElement('div');
+    altDiv.className = 'yn-alt-profiles';
+    const label = document.createElement('span');
+    label.textContent = 'Not the right person? Try another profile:';
+    altDiv.appendChild(label);
+
+    altProfiles.slice(0, 4).forEach(p => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'yn-example-chip';
+      const inst = ((p.last_known_institutions || [])[0] || {}).display_name || '';
+      btn.textContent = `${p.display_name}${inst ? ` (${inst})` : ''} · ${p.works_count || 0} works`;
+      btn.addEventListener('click', () => onSelectAlt(p));
+      altDiv.appendChild(btn);
+    });
+    resultEl.appendChild(altDiv);
+  }
+}
+
+const CURATED_AI_PIONEERS = {
+  'john mccarthy': {
+    number: 2,
+    summaryHtml: 'Connected in <strong>2 steps</strong> via <strong>Randall Davis</strong>',
+    nodes: [
+      { name: 'John McCarthy', affil: 'Stanford / MIT' },
+      { name: 'Randall Davis', affil: 'MIT' },
+      { name: 'Yale Song', affil: 'Google' }
+    ],
+    edges: [
+      {
+        title: "AI's Greatest Trends and Controversies",
+        venue: 'IEEE Intelligent Systems',
+        year: 2000,
+        url: 'https://doi.org/10.1109/5254.820322'
+      },
+      {
+        title: 'Action Recognition by Hierarchical Sequence Summarization',
+        venue: 'CVPR',
+        year: 2013,
+        url: 'https://doi.org/10.1109/CVPR.2013.457',
+        extraCount: 8
+      }
+    ]
+  },
+  'marvin minsky': {
+    number: 2,
+    summaryHtml: 'Connected in <strong>2 steps</strong> via <strong>Randall Davis</strong>',
+    nodes: [
+      { name: 'Marvin Minsky', affil: 'MIT' },
+      { name: 'Randall Davis', affil: 'MIT' },
+      { name: 'Yale Song', affil: 'Google' }
+    ],
+    edges: [
+      {
+        title: 'MIT Artificial Intelligence Laboratory',
+        venue: 'MIT AI Lab',
+        year: 1980,
+        url: 'https://openalex.org/W2293152414'
+      },
+      {
+        title: 'Action Recognition by Hierarchical Sequence Summarization',
+        venue: 'CVPR',
+        year: 2013,
+        url: 'https://doi.org/10.1109/CVPR.2013.457',
+        extraCount: 8
+      }
+    ]
+  },
+  'geoffrey hinton': {
+    number: 2,
+    summaryHtml: 'Connected in <strong>2 steps</strong> via <strong>Trevor Darrell</strong>',
+    nodes: [
+      { name: 'Geoffrey E. Hinton', affil: 'University of Toronto' },
+      { name: 'Trevor Darrell', affil: 'UC Berkeley' },
+      { name: 'Yale Song', affil: 'Google' }
+    ],
+    edges: [
+      {
+        title: 'Managing Extreme AI Risks Amid Rapid Progress',
+        venue: 'Science',
+        year: 2024,
+        url: 'https://doi.org/10.1126/science.adn0117'
+      },
+      {
+        title: 'Visual Attention Emerges from Recurrent Sparse Reconstruction',
+        venue: 'ICML',
+        year: 2022,
+        url: 'https://proceedings.mlr.press/v162/shi22b.html'
+      }
+    ]
+  },
+  'yann lecun': {
+    number: 2,
+    summaryHtml: 'Connected in <strong>2 steps</strong> via <strong>Lorenzo Torresani</strong>',
+    nodes: [
+      { name: 'Yann LeCun', affil: 'NYU / Meta' },
+      { name: 'Lorenzo Torresani', affil: 'Meta / Dartmouth' },
+      { name: 'Yale Song', affil: 'Google' }
+    ],
+    edges: [
+      {
+        title: 'A Closer Look at Spatiotemporal Convolutions for Action Recognition',
+        venue: 'CVPR',
+        year: 2018,
+        url: 'https://doi.org/10.1109/CVPR.2018.00675'
+      },
+      {
+        title: 'Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives',
+        venue: 'CVPR',
+        year: 2024,
+        url: 'https://doi.org/10.1109/CVPR52733.2024.01822',
+        extraCount: 2
+      }
+    ]
+  },
+  'yoshua bengio': {
+    number: 2,
+    summaryHtml: 'Connected in <strong>2 steps</strong> via <strong>R Devon Hjelm</strong>',
+    nodes: [
+      { name: 'Yoshua Bengio', affil: 'Mila / Université de Montréal' },
+      { name: 'R Devon Hjelm', affil: 'MSR / Apple' },
+      { name: 'Yale Song', affil: 'Google' }
+    ],
+    edges: [
+      {
+        title: 'Learning Deep Representations by Mutual Information Estimation and Maximization',
+        venue: 'ICLR',
+        year: 2019,
+        url: 'https://arxiv.org/abs/1808.06670'
+      },
+      {
+        title: 'Robust Contrastive Learning against Noisy Views',
+        venue: 'CVPR',
+        year: 2022,
+        url: 'https://doi.org/10.1109/CVPR52688.2022.01614'
+      }
+    ]
+  },
+  'alan turing': {
+    number: 5,
+    summaryHtml: 'Connected in <strong>5 steps</strong> via <strong>James H. Wilkinson</strong> &rarr; <strong>Jack J. Dongarra</strong> &rarr; <strong>Joseph E. Gonzalez</strong> &rarr; <strong>Trevor Darrell</strong>',
+    nodes: [
+      { name: 'Alan M. Turing', affil: 'Cambridge / Manchester' },
+      { name: 'James H. Wilkinson', affil: 'NPL' },
+      { name: 'Jack J. Dongarra', affil: 'UT Knoxville / ORNL' },
+      { name: 'Joseph E. Gonzalez', affil: 'UC Berkeley' },
+      { name: 'Trevor Darrell', affil: 'UC Berkeley' },
+      { name: 'Yale Song', affil: 'Google' }
+    ],
+    edges: [
+      {
+        title: 'The Turing–Wilkinson Lecture Series on the Automatic Computing Engine',
+        venue: 'NPL / Oxford Univ. Press',
+        year: 1946,
+        url: 'https://doi.org/10.1093/oso/9780198509417.003.0004'
+      },
+      {
+        title: 'Improving the Accuracy of Computed Eigenvalues and Eigenvectors',
+        venue: 'SIAM J. Sci. Stat. Comput.',
+        year: 1983,
+        url: 'https://doi.org/10.1137/0904001'
+      },
+      {
+        title: 'Standards for Graph Algorithm Primitives',
+        venue: 'IEEE HPEC',
+        year: 2013,
+        url: 'https://doi.org/10.1109/HPEC.2013.6670338'
+      },
+      {
+        title: 'SkipNet: Learning Dynamic Routing in Convolutional Networks',
+        venue: 'ECCV',
+        year: 2018,
+        url: 'https://doi.org/10.1007/978-3-030-01261-8_25'
+      },
+      {
+        title: 'Visual Attention Emerges from Recurrent Sparse Reconstruction',
+        venue: 'ICML',
+        year: 2022,
+        url: 'https://proceedings.mlr.press/v162/shi22b.html'
+      }
+    ]
+  }
+};
+CURATED_AI_PIONEERS['geoffrey e hinton'] = CURATED_AI_PIONEERS['geoffrey hinton'];
+CURATED_AI_PIONEERS['alan m turing'] = CURATED_AI_PIONEERS['alan turing'];
+CURATED_AI_PIONEERS['alan mathison turing'] = CURATED_AI_PIONEERS['alan turing'];
+
+async function computeYaleNumber(queryOrAuthor) {
+  const resultEl = document.getElementById('yn-result');
+  if (!resultEl) return;
+
+  resultEl.style.display = 'block';
+  resultEl.innerHTML = '<span class="loading">Searching co-authorship graph...</span>';
+
+  try {
+    let targetAuthor = typeof queryOrAuthor === 'object' ? queryOrAuthor : null;
+    let rawQuery = typeof queryOrAuthor === 'string' ? queryOrAuthor.trim() : (targetAuthor?.display_name || '');
+    const normQuery = normalizeAuthorName(rawQuery);
+
+    if (!rawQuery) {
+      resultEl.style.display = 'none';
+      return;
+    }
+
+    // Check curated AI pioneers first (instant, verified historical paths)
+    if (!targetAuthor && CURATED_AI_PIONEERS[normQuery]) {
+      const c = CURATED_AI_PIONEERS[normQuery];
+      renderYaleNumberChain(resultEl, c.number, c.summaryHtml, c.nodes, c.edges);
+      return;
+    }
+
+    const { y1ById, y1ByName } = await ensureYaleOpenAlexData();
+
+    // Distance 0 check
+    if (normQuery === 'yale song' || (targetAuthor && targetAuthor.id && targetAuthor.id.endsWith(YALE_OPENALEX_ID))) {
+      renderYaleNumberChain(
+        resultEl,
+        0,
+        "That's me! (0 degrees of separation)",
+        [{ name: 'Yale Song', affil: 'Google' }],
+        []
+      );
+      return;
+    }
+
+    // Instant Distance 1 check against local DBLP coauthors if searched by name
+    if (!targetAuthor && y1ByName.has(normQuery)) {
+      const hit = y1ByName.get(normQuery);
+      const firstPaper = hit.papers[0];
+      renderYaleNumberChain(
+        resultEl,
+        1,
+        `<strong>${hit.name}</strong> is a direct co-author!`,
+        [{ name: hit.name }, { name: 'Yale Song', affil: 'Google' }],
+        [{ ...firstPaper, extraCount: hit.papers.length - 1 }]
+      );
+      return;
+    }
+
+    // Resolve author profile via OpenAlex if not already provided
+    let altProfiles = [];
+    if (!targetAuthor) {
+      const searchResp = await fetch(
+        `https://api.openalex.org/authors?search=${encodeURIComponent(rawQuery)}&per_page=5`
+      );
+      if (!searchResp.ok) throw new Error('Failed to search OpenAlex authors');
+      const searchData = await searchResp.json();
+      const candidates = searchData.results || [];
+      if (candidates.length === 0) {
+        resultEl.innerHTML = `<span class="yn-summary">No researcher profile found matching "<strong>${rawQuery}</strong>". Try a full name as listed on DBLP/ArXiv.</span>`;
+        return;
+      }
+      targetAuthor = candidates[0];
+      altProfiles = candidates.slice(1);
+    }
+
+    const tid = (targetAuthor.id || '').split('/').pop();
+    const tName = targetAuthor.display_name || rawQuery;
+    const tAffil = ((targetAuthor.last_known_institutions || [])[0] || {}).display_name || '';
+    const tNorm = normalizeAuthorName(tName);
+
+    // Distance 1 check by OpenAlex ID or normalized name
+    if (y1ById.has(tid) || y1ByName.has(tNorm)) {
+      const hit = y1ByName.get(tNorm) || y1ById.get(tid);
+      const firstPaper = hit.papers[0];
+      renderYaleNumberChain(
+        resultEl,
+        1,
+        `<strong>${tName}</strong> is a direct co-author!`,
+        [{ name: tName, affil: tAffil }, { name: 'Yale Song', affil: 'Google' }],
+        [{ ...firstPaper, extraCount: hit.papers.length - 1 }],
+        altProfiles,
+        alt => computeYaleNumber(alt)
+      );
+      return;
+    }
+
+    // Fetch target author's works for Distance 2 check
+    const tWorksResp = await fetch(
+      `https://api.openalex.org/works?filter=author.id:${tid}&select=id,title,publication_year,doi,authorships&sort=cited_by_count:desc&per_page=200`
+    );
+    const tWorks = tWorksResp.ok ? ((await tWorksResp.json()).results || []) : [];
+
+    const c1ById = new Map();
+    let dist2Hit = null;
+
+    for (const w of tWorks) {
+      const paperObj = {
+        title: w.title || 'Untitled',
+        year: w.publication_year || '',
+        url: w.doi || w.id || ''
+      };
+      for (const a of w.authorships || []) {
+        const aid = ((a.author && a.author.id) || '').split('/').pop();
+        const aname = (a.author && a.author.display_name) || '';
+        const anorm = normalizeAuthorName(aname);
+        if (!aid || aid === tid) continue;
+
+        if (y1ById.has(aid) || (anorm.includes(' ') && y1ByName.has(anorm))) {
+          const bridge = y1ById.get(aid) || y1ByName.get(anorm);
+          dist2Hit = {
+            bridgeName: bridge.name || aname,
+            paper1: paperObj,
+            paper2: bridge.papers[0],
+            extra2: bridge.papers.length - 1
+          };
+          break;
+        }
+
+        if (!c1ById.has(aid)) {
+          c1ById.set(aid, { id: aid, name: aname, paper: paperObj });
+        }
+      }
+      if (dist2Hit) break;
+    }
+
+    if (dist2Hit) {
+      renderYaleNumberChain(
+        resultEl,
+        2,
+        `Connected in <strong>2 steps</strong> via <strong>${dist2Hit.bridgeName}</strong>`,
+        [
+          { name: tName, affil: tAffil },
+          { name: dist2Hit.bridgeName },
+          { name: 'Yale Song', affil: 'Google' }
+        ],
+        [
+          dist2Hit.paper1,
+          { ...dist2Hit.paper2, extraCount: dist2Hit.extra2 }
+        ],
+        altProfiles,
+        alt => computeYaleNumber(alt)
+      );
+      return;
+    }
+
+    // Distance 3 & 4 Bidirectional Meet-in-the-Middle Search
+    resultEl.innerHTML = `<span class="loading">Checking 3–4 degrees of separation for ${tName}...</span>`;
+
+    const c1Keys = Array.from(c1ById.keys()).slice(0, 100);
+    const c1Chunks = [];
+    for (let i = 0; i < c1Keys.length; i += 50) {
+      c1Chunks.push(c1Keys.slice(i, i + 50));
+    }
+
+    const [c2Responses, y2Works] = await Promise.all([
+      Promise.all(
+        c1Chunks.map(c =>
+          fetch(
+            `https://api.openalex.org/works?filter=author.id:${c.join('|')}&select=id,title,publication_year,doi,authorships&sort=cited_by_count:desc&per_page=200`
+          ).then(r => (r.ok ? r.json() : { results: [] }))
+        )
+      ),
+      ensureYale2HopWorks(y1ById)
+    ]);
+
+    const c2Works = c2Responses.flatMap(r => r.results || []);
+    const c2ById = new Map();
+    let dist3Hit = null;
+
+    for (const w of c2Works) {
+      const paper2 = {
+        title: w.title || 'Untitled',
+        year: w.publication_year || '',
+        url: w.doi || w.id || ''
+      };
+      const authorships = w.authorships || [];
+      let c1Match = null;
+      for (const a of authorships) {
+        const aid = ((a.author && a.author.id) || '').split('/').pop();
+        if (c1ById.has(aid)) {
+          c1Match = c1ById.get(aid);
+          break;
+        }
+      }
+      if (!c1Match) continue;
+
+      for (const a of authorships) {
+        const aid = ((a.author && a.author.id) || '').split('/').pop();
+        const aname = (a.author && a.author.display_name) || '';
+        const anorm = normalizeAuthorName(aname);
+        if (!aid || aid === c1Match.id || aid === tid) continue;
+
+        if (y1ById.has(aid) || (anorm.includes(' ') && y1ByName.has(anorm))) {
+          const y1Bridge = y1ById.get(aid) || y1ByName.get(anorm);
+          dist3Hit = {
+            c1: c1Match,
+            paper2,
+            y1: y1Bridge
+          };
+          break;
+        }
+
+        if (!c2ById.has(aid)) {
+          c2ById.set(aid, { id: aid, name: aname, c1: c1Match, paper2 });
+        }
+      }
+      if (dist3Hit) break;
+    }
+
+    let dist4Hit = null;
+    if (!dist3Hit) {
+      for (const w of y2Works) {
+        const paper3 = {
+          title: w.title || 'Untitled',
+          year: w.publication_year || '',
+          url: w.doi || w.id || ''
+        };
+        const authorships = w.authorships || [];
+        let y1Match = null;
+        for (const a of authorships) {
+          const aid = ((a.author && a.author.id) || '').split('/').pop();
+          if (y1ById.has(aid)) {
+            y1Match = y1ById.get(aid);
+            break;
+          }
+        }
+        if (!y1Match) continue;
+
+        for (const a of authorships) {
+          const aid = ((a.author && a.author.id) || '').split('/').pop();
+          if (!aid || aid === y1Match.id || aid === YALE_OPENALEX_ID) continue;
+
+          if (c1ById.has(aid)) {
+            dist3Hit = {
+              c1: c1ById.get(aid),
+              paper2: paper3,
+              y1: y1Match
+            };
+            break;
+          }
+          if (!dist4Hit && c2ById.has(aid)) {
+            dist4Hit = {
+              c2: c2ById.get(aid),
+              paper3,
+              y1: y1Match
+            };
+          }
+        }
+        if (dist3Hit) break;
+      }
+    }
+
+    if (dist3Hit) {
+      renderYaleNumberChain(
+        resultEl,
+        3,
+        `Connected in <strong>3 steps</strong> via <strong>${dist3Hit.c1.name}</strong> &rarr; <strong>${dist3Hit.y1.name}</strong>`,
+        [
+          { name: tName, affil: tAffil },
+          { name: dist3Hit.c1.name },
+          { name: dist3Hit.y1.name },
+          { name: 'Yale Song', affil: 'Google' }
+        ],
+        [
+          dist3Hit.c1.paper,
+          dist3Hit.paper2,
+          { ...dist3Hit.y1.papers[0], extraCount: dist3Hit.y1.papers.length - 1 }
+        ],
+        altProfiles,
+        alt => computeYaleNumber(alt)
+      );
+      return;
+    }
+
+    if (dist4Hit) {
+      renderYaleNumberChain(
+        resultEl,
+        4,
+        `Connected in <strong>4 steps</strong> via <strong>${dist4Hit.c2.c1.name}</strong> &rarr; <strong>${dist4Hit.c2.name}</strong> &rarr; <strong>${dist4Hit.y1.name}</strong>`,
+        [
+          { name: tName, affil: tAffil },
+          { name: dist4Hit.c2.c1.name },
+          { name: dist4Hit.c2.name },
+          { name: dist4Hit.y1.name },
+          { name: 'Yale Song', affil: 'Google' }
+        ],
+        [
+          dist4Hit.c2.c1.paper,
+          dist4Hit.c2.paper2,
+          dist4Hit.paper3,
+          { ...dist4Hit.y1.papers[0], extraCount: dist4Hit.y1.papers.length - 1 }
+        ],
+        altProfiles,
+        alt => computeYaleNumber(alt)
+      );
+      return;
+    }
+
+    resultEl.innerHTML = `<span class="yn-summary">No path of length &le; 4 found for <strong>${tName}</strong> in the sampled top publications.</span>`;
+  } catch (err) {
+    console.error('Yale Number error:', err);
+    resultEl.innerHTML = '<span class="error">Could not compute connection path right now. Please try again.</span>';
+  }
+}
+
+function initYaleNumberTool() {
+  const form = document.getElementById('yn-form');
+  const input = document.getElementById('yn-input');
+  const suggestionsEl = document.getElementById('yn-suggestions');
+  if (!form || !input) return;
+
+  let debounceTimer = null;
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim();
+    clearTimeout(debounceTimer);
+    if (q.length < 3) {
+      suggestionsEl.style.display = 'none';
+      return;
+    }
+    debounceTimer = setTimeout(async () => {
+      try {
+        const resp = await fetch(
+          `https://api.openalex.org/authors?search=${encodeURIComponent(q)}&per_page=6`
+        );
+        if (!resp.ok) return;
+        const data = await resp.json();
+        const results = data.results || [];
+        if (results.length === 0 || document.activeElement !== input) {
+          suggestionsEl.style.display = 'none';
+          return;
+        }
+        suggestionsEl.innerHTML = '';
+        results.forEach(author => {
+          const li = document.createElement('li');
+          const inst = ((author.last_known_institutions || [])[0] || {}).display_name || '';
+          li.innerHTML = `
+            <span class="yn-sug-name">${author.display_name}</span>
+            <span class="yn-sug-meta">${inst ? `${inst} · ` : ''}${author.works_count || 0} works</span>
+          `;
+          li.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            input.value = author.display_name;
+            suggestionsEl.style.display = 'none';
+            computeYaleNumber(author);
+          });
+          suggestionsEl.appendChild(li);
+        });
+        suggestionsEl.style.display = 'block';
+      } catch (e) {
+        // Ignore autocomplete errors
+      }
+    }, 250);
+  });
+
+  input.addEventListener('blur', () => {
+    setTimeout(() => {
+      if (suggestionsEl) suggestionsEl.style.display = 'none';
+    }, 150);
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (suggestionsEl) suggestionsEl.style.display = 'none';
+    computeYaleNumber(input.value);
+  });
+
+  document.querySelectorAll('.yn-example-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const name = chip.dataset.name;
+      input.value = name;
+      if (suggestionsEl) suggestionsEl.style.display = 'none';
+      computeYaleNumber(name);
+    });
+  });
+}
+
 // Initial render
 window.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initAdminMode();
+  initYaleNumberTool();
   renderNews(1);
   fetchPublications();
 });

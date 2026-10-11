@@ -6,6 +6,8 @@
     <meta name="description" content="Yale Song - Senior Staff Research Scientist and Manager at Google">
     <meta name="author" content="Yale Song">
     <title>Yale Song</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="apple-touch-icon" href="img/icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -88,6 +90,28 @@
                 </li>
                 <li><span class="service-category">Recognition:</span> Outstanding Area Chair (ICLR 2023), Outstanding Reviewer (ICML, NeurIPS, CVPR)</li>
             </ul>
+        </section>
+
+        <section id="yale-number">
+            <h2>How Are We Connected? <small style="font-size: 0.8rem; font-weight: normal; color: var(--secondary-text); margin-left: 10px;">(check your Yale number)</small></h2>
+            <p class="yn-subtitle">Enter a name to find the shortest co-authorship path between us.</p>
+            <form id="yn-form" class="yn-search-bar" autocomplete="off">
+                <div class="yn-input-wrap">
+                    <input type="text" id="yn-input" placeholder="e.g., John McCarthy, Geoffrey Hinton, Yann LeCun..." aria-label="Researcher name">
+                    <ul id="yn-suggestions" class="yn-suggestions" style="display: none;"></ul>
+                </div>
+                <button type="submit" id="yn-submit-btn" class="yn-btn">Find Path</button>
+            </form>
+            <div class="yn-examples">
+                <span>Try:</span>
+                <button type="button" class="yn-example-chip" data-name="Alan Turing">Alan Turing</button>
+                <button type="button" class="yn-example-chip" data-name="Marvin Minsky">Marvin Minsky</button>
+                <button type="button" class="yn-example-chip" data-name="John McCarthy">John McCarthy</button>
+                <button type="button" class="yn-example-chip" data-name="Geoffrey Hinton">Geoffrey Hinton</button>
+                <button type="button" class="yn-example-chip" data-name="Yann LeCun">Yann LeCun</button>
+                <button type="button" class="yn-example-chip" data-name="Yoshua Bengio">Yoshua Bengio</button>
+            </div>
+            <div id="yn-result" class="yn-result" style="display: none;"></div>
         </section>
 
         <section id="students" style="display: none;">
