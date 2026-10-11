@@ -77,7 +77,7 @@ let allPubs = [];
 
 // Metadata is loaded from pub_metadata.js (window.PUB_METADATA)
 const pubMetadata = window.PUB_METADATA || {};
-let isAdminMode = window.location.hash === '#admin';
+let isAdminMode = false;
 let activeEditKey = null;
 let pendingMergeSourceKey = null;
 
@@ -715,36 +715,65 @@ function setAdminStatus(msg, isError = false) {
   el.style.color = isError ? '#d93025' : 'var(--secondary-text)';
 }
 
-function promptGitHubToken(forcePrompt = false) {
+async function verifyGitHubToken(token) {
+  if (!token) return false;
+  try {
+    const resp = await fetch('https://api.github.com/repos/yalesong/yalesong.github.io', {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/vnd.github+json'
+      }
+    });
+    if (!resp.ok) return false;
+    const data = await resp.json();
+    return Boolean(data && data.permissions && data.permissions.push === true);
+  } catch (err) {
+    console.error('GitHub token verification error:', err);
+    return false;
+  }
+}
+
+async function promptAndVerifyGitHubToken(forcePrompt = false) {
   let token = localStorage.getItem('yalesong_gh_pat') || '';
   if (!token || forcePrompt) {
     const input = window.prompt(
-      'Enter your GitHub Fine-Grained Personal Access Token (scoped to yalesong/yalesong.github.io with Contents: Read & Write).\nLeave blank to clear:',
+      'Enter your GitHub Personal Access Token (scoped to yalesong/yalesong.github.io with Contents: Read & Write).\nLeave blank to clear / logout:',
       token
     );
-    if (input === null) return token;
+    if (input === null) return false;
     token = input.trim();
-    if (token) {
-      localStorage.setItem('yalesong_gh_pat', token);
-    } else {
+    if (!token) {
       localStorage.removeItem('yalesong_gh_pat');
+      updateTokenButtonLabel();
+      return false;
     }
-    updateTokenButtonLabel();
   }
-  return token;
+
+  const valid = await verifyGitHubToken(token);
+  if (!valid) {
+    localStorage.removeItem('yalesong_gh_pat');
+    updateTokenButtonLabel();
+    window.alert('Authentication failed: A valid GitHub token with write access to yalesong/yalesong.github.io is required.');
+    return false;
+  }
+
+  localStorage.setItem('yalesong_gh_pat', token);
+  updateTokenButtonLabel();
+  return true;
 }
 
 function updateTokenButtonLabel() {
   const btn = document.getElementById('admin-token-btn');
   if (!btn) return;
   const hasToken = Boolean(localStorage.getItem('yalesong_gh_pat'));
-  btn.textContent = hasToken ? 'GitHub Token ✓' : 'Set GitHub Token';
+  btn.textContent = hasToken ? 'Token / Logout' : 'Set GitHub Token';
 }
 
 async function saveMetadataToGitHub() {
-  const token = promptGitHubToken(false);
-  if (!token) {
-    setAdminStatus('GitHub token required to push live', true);
+  const verified = await promptAndVerifyGitHubToken(false);
+  const token = localStorage.getItem('yalesong_gh_pat') || '';
+  if (!verified || !token) {
+    setAdminStatus('Valid GitHub token required to push live', true);
     return;
   }
 
@@ -799,6 +828,7 @@ async function saveMetadataToGitHub() {
 }
 
 async function saveMetadataToLocalFile() {
+  if (!isAdminMode) return;
   const content = serializePubMetadataFile();
   try {
     if (window.showSaveFilePicker) {
@@ -846,26 +876,58 @@ function initAdminMode() {
     renderFilteredPubs();
   };
 
-  if (adminToggle) {
-    adminToggle.addEventListener('click', () => {
-      isAdminMode = !isAdminMode;
-      if (!isAdminMode) activeEditKey = null;
+  const tryEnterAdminMode = async () => {
+    const ok = await promptAndVerifyGitHubToken(false);
+    if (ok) {
+      isAdminMode = true;
       syncAdminUI();
+    } else {
+      isAdminMode = false;
+      activeEditKey = null;
+      pendingMergeSourceKey = null;
+      if (window.location.hash === '#admin') {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+      syncAdminUI();
+    }
+  };
+
+  if (adminToggle) {
+    adminToggle.addEventListener('click', async () => {
+      if (isAdminMode) {
+        isAdminMode = false;
+        activeEditKey = null;
+        pendingMergeSourceKey = null;
+        syncAdminUI();
+      } else {
+        await tryEnterAdminMode();
+      }
     });
   }
 
-  window.addEventListener('hashchange', () => {
+  window.addEventListener('hashchange', async () => {
     if (window.location.hash === '#admin' && !isAdminMode) {
-      isAdminMode = true;
-      syncAdminUI();
+      await tryEnterAdminMode();
     }
   });
 
-  if (tokenBtn) tokenBtn.addEventListener('click', () => promptGitHubToken(true));
+  if (tokenBtn) {
+    tokenBtn.addEventListener('click', async () => {
+      const ok = await promptAndVerifyGitHubToken(true);
+      if (!ok) {
+        isAdminMode = false;
+        activeEditKey = null;
+        pendingMergeSourceKey = null;
+        syncAdminUI();
+      }
+    });
+  }
   if (saveGhBtn) saveGhBtn.addEventListener('click', saveMetadataToGitHub);
   if (saveLocalBtn) saveLocalBtn.addEventListener('click', saveMetadataToLocalFile);
 
-  if (isAdminMode) syncAdminUI();
+  if (window.location.hash === '#admin') {
+    tryEnterAdminMode();
+  }
 }
 
 // Theme Toggle Logic
