@@ -244,6 +244,37 @@ h2 {
   min-width: 100px;
 }
 
+/* Updates Section */
+.updates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.updates-list li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.updates-list li::before {
+  content: "•";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.updates-list a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.updates-list a:hover {
+  text-decoration: underline;
+}
+
 /* Publications */
 .pub-list {
   list-style: none;
@@ -330,6 +361,16 @@ h2 {
 .service-category {
   font-weight: 700;
   margin-right: 5px;
+}
+
+.service-list a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.service-list a:hover {
+  text-decoration: underline;
 }
 
 .student-grid {
