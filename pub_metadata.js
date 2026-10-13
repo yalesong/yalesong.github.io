@@ -6,18 +6,17 @@ window.PUB_METADATA = {
     "venue_full": "ICML 2026",
     "awards": [
       "Spotlight"
-    ]
+    ],
+    "project": "https://dwzhu-pku.github.io/PaperBanana/"
   },
   "conf/icml/ZhuMSWLPY26": {
     "awards": [
       "Spotlight"
     ]
   },
-  "journals/corr/abs-2603-25864": {
-    "venue_full": "CVPR 2026"
-  },
   "conf/cvpr/YangYPLCSK26": {
-    "venue_full": "CVPR 2026"
+    "venue_full": "CVPR 2026",
+    "project": "https://guide-bench.github.io/"
   },
   "conf/wacv/ZhangSDITBK26": {
     "venue_full": "WACV 2026"
@@ -218,5 +217,24 @@ window.PUB_METADATA = {
   "journals/corr/abs-2604-24842": {
     "project": "https://co-director-agent.github.io/",
     "blog": "https://research.google/blog/coherent-long-form-video-generation/"
+  },
+  "journals/corr/abs-2608-30241": {
+    "project": "https://shirley-wu.github.io/PaperBanana-Interact/",
+    "code": "https://github.com/shirley-wu/PaperBanana-Interact"
+  },
+  "journals/corr/abs-2605-06924": {
+    "project": "https://dxlong2000.github.io/AARD/"
+  },
+  "journals/corr/abs-2605-26340": {
+    "project": "https://scientist-one.github.io/"
+  },
+  "journals/corr/abs-2604-05018": {
+    "project": "https://yiwen-song.github.io/paper_orchestra/"
+  },
+  "journals/corr/abs-2604-24317": {
+    "project": "https://dibschat.github.io/SPOT-Bench/"
+  },
+  "journals/corr/abs-2603-12310": {
+    "project": "https://yiwen-song.github.io/vqqa/"
   }
 };
