@@ -47,7 +47,8 @@ window.PUB_METADATA = {
   "conf/iccv/PramanickMSCTA25": {
     "awards": [
       "Highlight"
-    ]
+    ],
+    "project": "https://shramanpramanick.github.io/ED-VTG/"
   },
   "conf/cvpr/LuSWTN25": {
     "project": "https://ai.meta.com/research/publications/vited-video-temporal-evidence-distillation/"
@@ -69,12 +70,14 @@ window.PUB_METADATA = {
   "conf/iccv/PramanickSNLSSC23": {
     "awards": [
       "Highlight"
-    ]
+    ],
+    "project": "https://shramanpramanick.github.io/EgoVLPv2/"
   },
   "conf/cvpr/XueSGT23": {
     "awards": [
       "Highlight"
-    ]
+    ],
+    "project": "https://vision.cs.utexas.edu/projects/egot2/"
   },
   "conf/wacv/LaBonteSWVJ23": {
     "poster": "https://tyler-labonte.com/labonte22cvpr_poster.pdf"
@@ -236,5 +239,11 @@ window.PUB_METADATA = {
   },
   "journals/corr/abs-2603-12310": {
     "project": "https://yiwen-song.github.io/vqqa/"
+  },
+  "conf/iccv/ChatterjeeRSTMBCHSMYS25": {
+    "project": "https://dibschat.github.io/ProVideLLM/"
+  },
+  "conf/eccv/GeBXGJSWIV22": {
+    "code": "https://github.com/gyhandy/Neural-Sim-NeRF"
   }
 };
