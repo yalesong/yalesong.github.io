@@ -946,6 +946,106 @@ footer {
   align-items: center;
 }
 
+/* Inline Section Editors (Bio, Openings, Professional Service) */
+.section-edit-btn {
+  margin-left: 10px;
+  background: var(--section-bg);
+  border: 1px solid var(--border-color);
+  color: var(--secondary-text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.section-edit-btn:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.section-edit-form {
+  grid-column: 1 / -1;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  padding: 14px;
+  background: var(--section-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.section-edit-hint {
+  font-size: 0.76rem;
+  color: var(--secondary-text);
+  margin-bottom: 8px;
+}
+
+.section-edit-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.section-edit-textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.section-edit-row {
+  display: grid;
+  grid-template-columns: 210px 1fr auto;
+  gap: 10px;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.section-edit-row input {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 7px 9px;
+  border-radius: 6px;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.section-edit-row input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.section-remove-row-btn {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: #d93025;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.section-remove-row-btn:hover {
+  border-color: #d93025;
+}
+
+@media (max-width: 600px) {
+  .section-edit-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 

@@ -704,8 +704,310 @@ function serializePubMetadataFile() {
     '// Supported fields: venue_full (e.g. "ICML 2026"), awards (array), project, code, data, video, blog, press, poster, slides, demo\n' +
     'window.PUB_METADATA = ' +
     JSON.stringify(pubMetadata, null, 2) +
+    ';\n\n' +
+    '// Editable site content (Bio, Openings, Professional Service)\n' +
+    'window.SITE_CONTENT = ' +
+    JSON.stringify(siteContent, null, 2) +
     ';\n'
   );
+}
+
+const siteContent = window.SITE_CONTENT || {
+  bioHtml: '',
+  openingsVisible: true,
+  openings: [],
+  service: []
+};
+let activeSectionEditor = null; // 'bio' | 'openings' | 'service' | null
+
+function buildSectionActionsBar(collectFn, onCancel) {
+  const actions = document.createElement('div');
+  actions.className = 'pub-edit-actions';
+
+  const pushBtn = document.createElement('button');
+  pushBtn.type = 'button';
+  pushBtn.className = 'admin-btn admin-btn-primary';
+  pushBtn.textContent = 'Save & Push to GitHub';
+  pushBtn.addEventListener('click', async () => {
+    collectFn();
+    await saveMetadataToGitHub();
+  });
+
+  const localBtn = document.createElement('button');
+  localBtn.type = 'button';
+  localBtn.className = 'admin-btn';
+  localBtn.textContent = 'Save to Local File';
+  localBtn.addEventListener('click', async () => {
+    collectFn();
+    await saveMetadataToLocalFile();
+  });
+
+  const applyBtn = document.createElement('button');
+  applyBtn.type = 'button';
+  applyBtn.className = 'admin-btn';
+  applyBtn.textContent = 'Apply (Preview)';
+  applyBtn.addEventListener('click', () => {
+    collectFn();
+    setAdminStatus('Applied in memory (click Push to GitHub or Save Local File to persist)');
+  });
+
+  const cancelBtn = document.createElement('button');
+  cancelBtn.type = 'button';
+  cancelBtn.className = 'admin-btn';
+  cancelBtn.textContent = 'Cancel';
+  cancelBtn.addEventListener('click', onCancel);
+
+  actions.appendChild(pushBtn);
+  actions.appendChild(localBtn);
+  actions.appendChild(applyBtn);
+  actions.appendChild(cancelBtn);
+  return actions;
+}
+
+function createListSectionEditor(itemsKey, addBtnLabel, includeVisibleToggle = false) {
+  const formDiv = document.createElement('div');
+  formDiv.className = 'section-edit-form';
+
+  const hint = document.createElement('div');
+  hint.className = 'section-edit-hint';
+  hint.innerHTML = 'Supports inline HTML such as <code>&lt;strong&gt;...&lt;/strong&gt;</code> and <code>&lt;a href="https://..." target="_blank"&gt;...&lt;/a&gt;</code>.';
+  formDiv.appendChild(hint);
+
+  let visCheckbox = null;
+  if (includeVisibleToggle) {
+    const toggleWrap = document.createElement('label');
+    toggleWrap.style.display = 'inline-flex';
+    toggleWrap.style.alignItems = 'center';
+    toggleWrap.style.gap = '6px';
+    toggleWrap.style.fontSize = '0.84rem';
+    toggleWrap.style.fontWeight = '600';
+    toggleWrap.style.marginBottom = '12px';
+    toggleWrap.style.cursor = 'pointer';
+    visCheckbox = document.createElement('input');
+    visCheckbox.type = 'checkbox';
+    visCheckbox.checked = siteContent.openingsVisible !== false;
+    toggleWrap.appendChild(visCheckbox);
+    toggleWrap.appendChild(document.createTextNode('Show Openings section on public page'));
+    formDiv.appendChild(toggleWrap);
+  }
+
+  const rowsContainer = document.createElement('div');
+  formDiv.appendChild(rowsContainer);
+
+  const addRow = (catVal = '', htmlVal = '') => {
+    const row = document.createElement('div');
+    row.className = 'section-edit-row';
+
+    const catInput = document.createElement('input');
+    catInput.type = 'text';
+    catInput.placeholder = 'Category (e.g. Research Scientist:)';
+    catInput.value = catVal;
+
+    const htmlInput = document.createElement('textarea');
+    htmlInput.className = 'section-edit-textarea';
+    htmlInput.rows = 2;
+    htmlInput.placeholder = 'Details (HTML allowed)...';
+    htmlInput.value = htmlVal;
+
+    const rmBtn = document.createElement('button');
+    rmBtn.type = 'button';
+    rmBtn.className = 'section-remove-row-btn';
+    rmBtn.title = 'Remove item';
+    rmBtn.textContent = '×';
+    rmBtn.addEventListener('click', () => row.remove());
+
+    row.appendChild(catInput);
+    row.appendChild(htmlInput);
+    row.appendChild(rmBtn);
+    rowsContainer.appendChild(row);
+  };
+
+  (siteContent[itemsKey] || []).forEach(item => {
+    addRow(item.category || '', item.html || '');
+  });
+
+  const addBtn = document.createElement('button');
+  addBtn.type = 'button';
+  addBtn.className = 'admin-btn';
+  addBtn.style.marginTop = '4px';
+  addBtn.textContent = addBtnLabel;
+  addBtn.addEventListener('click', () => addRow('', ''));
+  formDiv.appendChild(addBtn);
+
+  const collect = () => {
+    const newItems = [];
+    rowsContainer.querySelectorAll('.section-edit-row').forEach(row => {
+      const cat = row.querySelector('input').value.trim();
+      const html = row.querySelector('textarea').value.trim();
+      if (cat || html) {
+        newItems.push({ category: cat, html });
+      }
+    });
+    siteContent[itemsKey] = newItems;
+    if (includeVisibleToggle && visCheckbox) {
+      siteContent.openingsVisible = visCheckbox.checked;
+    }
+    activeSectionEditor = null;
+    renderEditableSections();
+  };
+
+  formDiv.appendChild(
+    buildSectionActionsBar(collect, () => {
+      activeSectionEditor = null;
+      renderEditableSections();
+    })
+  );
+
+  return formDiv;
+}
+
+function renderEditableSections() {
+  // 1. Top Bio Text
+  const bioEl = document.querySelector('header .bio-text');
+  if (bioEl) {
+    if (!siteContent.bioHtml) {
+      siteContent.bioHtml = bioEl.innerHTML.trim();
+    }
+    const existingBioForm = document.getElementById('bio-edit-form');
+    if (existingBioForm) existingBioForm.remove();
+
+    bioEl.innerHTML = siteContent.bioHtml;
+    if (isAdminMode) {
+      const editBioBtn = document.createElement('button');
+      editBioBtn.type = 'button';
+      editBioBtn.className = 'section-edit-btn';
+      editBioBtn.textContent = activeSectionEditor === 'bio' ? 'Close Editor' : 'Edit Bio';
+      editBioBtn.addEventListener('click', () => {
+        activeSectionEditor = activeSectionEditor === 'bio' ? null : 'bio';
+        renderEditableSections();
+      });
+      bioEl.appendChild(editBioBtn);
+
+      if (activeSectionEditor === 'bio') {
+        const formDiv = document.createElement('div');
+        formDiv.id = 'bio-edit-form';
+        formDiv.className = 'section-edit-form';
+
+        const hint = document.createElement('div');
+        hint.className = 'section-edit-hint';
+        hint.innerHTML = 'Edit intro bio text (supports HTML like <code>&lt;strong&gt;...&lt;/strong&gt;</code> and <code>&lt;a href="..."&gt;...&lt;/a&gt;</code>):';
+        formDiv.appendChild(hint);
+
+        const ta = document.createElement('textarea');
+        ta.className = 'section-edit-textarea';
+        ta.rows = 4;
+        ta.value = siteContent.bioHtml;
+        formDiv.appendChild(ta);
+
+        formDiv.appendChild(
+          buildSectionActionsBar(
+            () => {
+              siteContent.bioHtml = ta.value.trim();
+              activeSectionEditor = null;
+              renderEditableSections();
+            },
+            () => {
+              activeSectionEditor = null;
+              renderEditableSections();
+            }
+          )
+        );
+        bioEl.insertAdjacentElement('afterend', formDiv);
+      }
+    }
+  }
+
+  // 2. Openings Section
+  const openingsSec = document.getElementById('openings');
+  if (openingsSec) {
+    const h2 = openingsSec.querySelector('h2');
+    const ul = openingsSec.querySelector('ul.service-list');
+    const existingForm = document.getElementById('openings-edit-form');
+    if (existingForm) existingForm.remove();
+
+    const isVisible = siteContent.openingsVisible !== false && (siteContent.openings || []).length > 0;
+    openingsSec.style.display = isVisible || isAdminMode ? 'block' : 'none';
+
+    if (h2) {
+      h2.innerHTML = 'Openings';
+      if (isAdminMode) {
+        if (!isVisible) {
+          const hiddenTag = document.createElement('small');
+          hiddenTag.style.fontSize = '0.8rem';
+          hiddenTag.style.fontWeight = 'normal';
+          hiddenTag.style.color = '#d93025';
+          hiddenTag.style.marginLeft = '10px';
+          hiddenTag.textContent = '(Hidden on public page)';
+          h2.appendChild(hiddenTag);
+        }
+        const editBtn = document.createElement('button');
+        editBtn.type = 'button';
+        editBtn.className = 'section-edit-btn';
+        editBtn.textContent = activeSectionEditor === 'openings' ? 'Close Editor' : 'Edit Openings';
+        editBtn.addEventListener('click', () => {
+          activeSectionEditor = activeSectionEditor === 'openings' ? null : 'openings';
+          renderEditableSections();
+        });
+        h2.appendChild(editBtn);
+      }
+    }
+
+    if (ul && Array.isArray(siteContent.openings)) {
+      ul.innerHTML = '';
+      siteContent.openings.forEach(item => {
+        const li = document.createElement('li');
+        const catHtml = item.category ? `<span class="service-category">${item.category}</span> ` : '';
+        li.innerHTML = `${catHtml}${item.html || ''}`;
+        ul.appendChild(li);
+      });
+    }
+
+    if (isAdminMode && activeSectionEditor === 'openings') {
+      const formDiv = createListSectionEditor('openings', '+ Add Opening', true);
+      formDiv.id = 'openings-edit-form';
+      openingsSec.appendChild(formDiv);
+    }
+  }
+
+  // 3. Professional Service Section
+  const serviceSec = document.getElementById('service');
+  if (serviceSec) {
+    const h2 = serviceSec.querySelector('h2');
+    const ul = serviceSec.querySelector('ul.service-list');
+    const existingForm = document.getElementById('service-edit-form');
+    if (existingForm) existingForm.remove();
+
+    if (h2) {
+      h2.innerHTML = 'Professional Service';
+      if (isAdminMode) {
+        const editBtn = document.createElement('button');
+        editBtn.type = 'button';
+        editBtn.className = 'section-edit-btn';
+        editBtn.textContent = activeSectionEditor === 'service' ? 'Close Editor' : 'Edit Service';
+        editBtn.addEventListener('click', () => {
+          activeSectionEditor = activeSectionEditor === 'service' ? null : 'service';
+          renderEditableSections();
+        });
+        h2.appendChild(editBtn);
+      }
+    }
+
+    if (ul && Array.isArray(siteContent.service) && siteContent.service.length > 0) {
+      ul.innerHTML = '';
+      siteContent.service.forEach(item => {
+        const li = document.createElement('li');
+        const catHtml = item.category ? `<span class="service-category">${item.category}</span> ` : '';
+        li.innerHTML = `${catHtml}${item.html || ''}`;
+        ul.appendChild(li);
+      });
+    }
+
+    if (isAdminMode && activeSectionEditor === 'service') {
+      const formDiv = createListSectionEditor('service', '+ Add Service Item', false);
+      formDiv.id = 'service-edit-form';
+      serviceSec.appendChild(formDiv);
+    }
+  }
 }
 
 function setAdminStatus(msg, isError = false) {
@@ -872,7 +1174,9 @@ function initAdminMode() {
   const syncAdminUI = () => {
     if (adminBar) adminBar.style.display = isAdminMode ? 'flex' : 'none';
     if (adminToggle) adminToggle.classList.toggle('active', isAdminMode);
+    if (!isAdminMode) activeSectionEditor = null;
     updateTokenButtonLabel();
+    renderEditableSections();
     renderFilteredPubs();
   };
 
@@ -1661,6 +1965,7 @@ function initYaleNumberTool() {
 // Initial render
 window.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  renderEditableSections();
   initAdminMode();
   initYaleNumberTool();
   renderNews(1);

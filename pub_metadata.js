@@ -247,3 +247,38 @@ window.PUB_METADATA = {
     "code": "https://github.com/gyhandy/Neural-Sim-NeRF"
   }
 };
+
+// Editable site content (Bio, Openings, Professional Service)
+window.SITE_CONTENT = {
+  "bioHtml": "I am a researcher and manager working on computer vision, robotics, and machine learning in real-world contexts. These days, I am mostly interested in <strong>long-form video generation</strong> and <strong>robotic manipulation</strong>, and how <strong>AI agents</strong> can tackle these challenges in novel ways. Previously, I was a research scientist at Meta FAIR, Microsoft Research, and Yahoo Research NYC. I received my PhD from MIT.",
+  "openingsVisible": true,
+  "openings": [
+    {
+      "category": "Research Scientist:",
+      "html": "Strong background in <strong>robot learning</strong> and <strong>contact-rich dexterous manipulation</strong>. Apply <a href=\"https://www.google.com/about/careers/applications/jobs/results/83174664355881670-research-scientist-robotics-cloud-ai\" target=\"_blank\">here</a> and <a href=\"mailto:yalesong@gmail.com\">email me</a> your CV, homepage, and Google Scholar."
+    },
+    {
+      "category": "Student Researcher (Intern):",
+      "html": "Strong background in <strong>computer vision</strong>, <strong>robot learning</strong>, and <strong>AI agents</strong>. <a href=\"mailto:yalesong@gmail.com\">Email me</a> your CV, homepage, and Google Scholar."
+    }
+  ],
+  "service": [
+    {
+      "category": "Journal Editor:",
+      "html": "Transactions on Machine Learning Research (TMLR), 2022–Present"
+    },
+    {
+      "category": "Organizing Committee:",
+      "html": "<strong>CVPR Socials Chair</strong> (2023–2026), <strong>ICLR Paper Award Committee</strong> (2021, 2023), <strong>NeurIPS Expo Chair</strong> (2020–2021), <strong>ICMI Sponsorship Chair</strong> (2021), <strong>ICMI Program Chair</strong> (2019)"
+    },
+    {
+      "category": "Area Chair / Senior PC:",
+      "html": "Regularly serve for <strong>NeurIPS</strong> (2020–2026), <strong>ICLR</strong> (2021–2026), <strong>ICML</strong> (2023–2026), <strong>CVPR</strong> (2020–2026, Lead AC in '25, '26), <strong>ICCV</strong> (2021–2025), and <strong>ECCV</strong> (2022–2024, Lead AC in '24). Also served for WACV, ACL, FG, and ICMI."
+    },
+    {
+      "category": "Recognition:",
+      "html": "Outstanding Area Chair (ICLR 2023), Outstanding Reviewer (ICML, NeurIPS, CVPR)"
+    }
+  ]
+};
+
