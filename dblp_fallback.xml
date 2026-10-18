@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<dblpperson name="Yale Song" pid="31/9606" n="115">
+<dblpperson name="Yale Song" pid="31/9606" n="116">
 <person key="homepages/31/9606" mdate="2011-05-22">
 <author pid="31/9606">Yale Song</author>
 </person>
@@ -226,7 +226,24 @@
 <stream>streams/journals/corr</stream>
 </article>
 </r>
-<r><article key="journals/ijcv/GraumanWTKMAABBBBCCCCCD25" mdate="2026-06-03">
+<r><article publtype="informal" key="journals/corr/abs-2609-36199" mdate="2026-10-15">
+<author pid="341/3754">Vighnesh Subramaniam</author>
+<author pid="k/BorisKatz">Boris Katz</author>
+<author pid="34/7493">Brian Cheung</author>
+<author pid="123/5098">Chun-Liang Li</author>
+<author pid="14/8360">Tomas Pfister</author>
+<author pid="31/9606">Yale Song</author>
+<title>PreviewDiff: Multimodal Critic-Guided Search over Diffusion Latents.</title>
+<year>2026</year>
+<month>September</month>
+<volume>abs/2609.36199</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2609.36199</ee>
+<url>db/journals/corr/corr2609.html#abs-2609-36199</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article key="journals/ijcv/GraumanWTKMAABBBBCCCCCD25" mdate="2026-10-16">
 <author orcid="0000-0002-9591-5873" pid="57/4553">Kristen Grauman</author>
 <author pid="302/0668">Andrew Westbury</author>
 <author pid="75/2854">Lorenzo Torresani</author>
@@ -277,7 +294,7 @@
 <author pid="200/5697">Cristina Gonz&#225;lez</author>
 <author pid="84/8416">Prince Gupta</author>
 <author pid="357/1386">Jiabo Hu</author>
-<author pid="71/8763-2">Yifei Huang 0002</author>
+<author orcid="0000-0001-8067-6227" pid="71/8763-2">Yifei Huang 0002</author>
 <author pid="175/7344-11">Yiming Huang 0011</author>
 <author pid="304/3203">Weslie Khoo</author>
 <author pid="35/211">Anush Kumar</author>
@@ -750,7 +767,7 @@
 <url>db/journals/corr/corr2307.html#abs-2307-05463</url>
 </article>
 </r>
-<r><article publtype="informal" key="journals/corr/abs-2311-18259" mdate="2026-03-18">
+<r><article publtype="informal" key="journals/corr/abs-2311-18259" mdate="2026-10-16">
 <author pid="57/4553">Kristen Grauman</author>
 <author pid="302/0668">Andrew Westbury</author>
 <author pid="75/2854">Lorenzo Torresani</author>
@@ -801,7 +818,7 @@
 <author pid="200/5697">Cristina Gonz&#225;lez</author>
 <author pid="84/8416">Prince Gupta</author>
 <author pid="357/1386">Jiabo Hu</author>
-<author pid="71/8763-2">Yifei Huang 0002</author>
+<author orcid="0000-0001-8067-6227" pid="71/8763-2">Yifei Huang 0002</author>
 <author pid="175/7344-11">Yiming Huang 0011</author>
 <author pid="304/3203">Weslie Khoo</author>
 <author pid="82/8699">et al.</author>
@@ -2026,7 +2043,7 @@
 <url>db/conf/fgr/fg2011.html#SongDD11a</url>
 </inproceedings>
 </r>
-<coauthors n="300" nc="2">
+<coauthors n="303" nc="2">
 <co c="0"><na f="a/Afouras:Triantafyllos" pid="175/5771">Triantafyllos Afouras</na></co>
 <co c="0"><na f="a/al=:et" pid="82/8699">et al.</na></co>
 <co c="0" n="2"><na f="a/Arbel=aacute=ez:Pablo_Andr=eacute=s" pid="41/639">Pablo Andr&#233;s Arbel&#225;ez</na><na>Pablo Arbel&#225;ez</na></co>
@@ -2060,6 +2077,7 @@
 <co c="0"><na f="c/Chen_0004:Yi=Ling" pid="72/3762-4">Yi-Ling Chen 0004</na></co>
 <co c="0"><na f="c/Cheng:Chia=Chun" pid="286/5323">Chia-Chun Cheng</na></co>
 <co c="0"><na f="c/Cheng:Feng" pid="12/3274">Feng Cheng</na></co>
+<co c="0"><na f="c/Cheung:Brian" pid="34/7493">Brian Cheung</na></co>
 <co c="0"><na f="c/Cho:Jae_Won" pid="408/0087">Jae Won Cho</na></co>
 <co c="0"><na f="c/Cho:Jang_Hyun" pid="249/9432">Jang Hyun Cho</na></co>
 <co c="0"><na f="c/Chomyn:Zack" pid="436/0355">Zack Chomyn</na></co>
@@ -2138,6 +2156,7 @@
 <co c="-1"><na f="k/Kae:Andrew" pid="77/7218">Andrew Kae</na></co>
 <co c="0"><na f="k/Kan:Min=Yen" pid="k/MinYenKan">Min-Yen Kan</na></co>
 <co c="0"><na f="k/Kapoor:Ashish" pid="93/161">Ashish Kapoor</na></co>
+<co c="0"><na f="k/Katz:Boris" pid="k/BorisKatz">Boris Katz</na></co>
 <co c="0"><na f="k/Kautz:Jan" pid="48/6214">Jan Kautz</na></co>
 <co c="0" n="2"><na f="k/Kaye:Joseph" pid="k/JosephKaye">Joseph Kaye</na><na>Joseph Jofish Kaye</na></co>
 <co c="0"><na f="k/Kennedy:Lyndon" pid="03/8400">Lyndon Kennedy</na></co>
@@ -2263,6 +2282,7 @@
 <co c="0"><na f="s/Stark:Tammy" pid="405/4460">Tammy Stark</na></co>
 <co c="0"><na f="s/Stent:Amanda" pid="69/2756">Amanda Stent</na></co>
 <co c="0"><na f="s/Su:Shan" pid="51/7623">Shan Su</na></co>
+<co c="0"><na f="s/Subramaniam:Vighnesh" pid="341/3754">Vighnesh Subramaniam</na></co>
 <co c="0"><na f="s/Sun:Peize" pid="249/2345">Peize Sun</na></co>
 <co c="0"><na f="t/Tateno:Masatoshi" pid="377/3711">Masatoshi Tateno</na></co>
 <co c="0"><na f="t/Tekin:Bugra" pid="136/4930">Bugra Tekin</na></co>
