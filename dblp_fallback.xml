@@ -21,13 +21,13 @@
 <stream>streams/conf/cvpr</stream>
 </inproceedings>
 </r>
-<r><inproceedings key="conf/wacv/ZhangSDITBK26" mdate="2026-05-27">
+<r><inproceedings key="conf/wacv/ZhangSDITBK26" mdate="2026-11-07">
 <author pid="97/919-10">Ce Zhang 0010</author>
 <author pid="31/9606">Yale Song</author>
 <author pid="128/0409">Ruta Desai</author>
 <author pid="233/0309">Michael Louis Iuzzolino</author>
 <author pid="58/8741">Joseph Tighe</author>
-<author pid="155/9783">Gedas Bertasius</author>
+<author orcid="0000-0003-1800-4790" pid="155/9783">Gedas Bertasius</author>
 <author pid="172/1012">Satwik Kottur</author>
 <title>Enhancing Visual Planning with Auxiliary Tasks and Multi-token Prediction.</title>
 <booktitle>WACV</booktitle>
@@ -243,7 +243,7 @@
 <stream>streams/journals/corr</stream>
 </article>
 </r>
-<r><article key="journals/ijcv/GraumanWTKMAABBBBCCCCCD25" mdate="2026-10-16">
+<r><article key="journals/ijcv/GraumanWTKMAABBBBCCCCCD25" mdate="2026-11-07">
 <author orcid="0000-0002-9591-5873" pid="57/4553">Kristen Grauman</author>
 <author pid="302/0668">Andrew Westbury</author>
 <author pid="75/2854">Lorenzo Torresani</author>
@@ -328,7 +328,7 @@
 <author pid="72/888-1">Zhifan Zhu 0001</author>
 <author pid="386/7058">Jeff Zhuo</author>
 <author orcid="0000-0001-5244-2407" pid="41/639">Pablo Arbel&#225;ez</author>
-<author pid="155/9783">Gedas Bertasius</author>
+<author orcid="0000-0003-1800-4790" pid="155/9783">Gedas Bertasius</author>
 <author pid="c/DavidCrandall">David Crandall</author>
 <author orcid="0000-0001-8804-6238" pid="95/3618">Dima Damen</author>
 <author pid="243/3258">Jakob Julian Engel</author>
