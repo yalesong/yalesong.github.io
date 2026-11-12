@@ -63,13 +63,15 @@ window.PUB_METADATA = {
   },
   "conf/nips/SongBNWMT23": {
     "awards": [
-      "Spotlight"
+      "Spotlight",
+      "EgoVis 2023/2024 Distinguished Paper Award"
     ],
     "data": "https://github.com/facebookresearch/ego4d-goalstep"
   },
   "conf/iccv/PramanickSNLSSC23": {
     "awards": [
-      "Highlight"
+      "Highlight",
+      "EgoVis 2022/2023 Distinguished Paper Award"
     ],
     "project": "https://shramanpramanick.github.io/EgoVLPv2/"
   },
