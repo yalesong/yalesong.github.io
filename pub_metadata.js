@@ -277,7 +277,7 @@ window.SITE_CONTENT = {
       "html": "<strong>CVPR Socials Chair</strong> (2023–2026), <strong>ICLR Paper Award Committee</strong> (2021, 2023), <strong>NeurIPS Expo Chair</strong> (2020–2021), <strong>ICMI Sponsorship Chair</strong> (2021), <strong>ICMI Program Chair</strong> (2019)"
     },
     {
-      "category": "Area Chair / Senior PC:",
+      "category": "Area Chair / Senior PC / Lead AC / Senior AC:",
       "html": "Regularly serve for <strong>NeurIPS</strong> (2020–2026), <strong>ICLR</strong> (2021–2027), <strong>ICML</strong> (2023–2027, SAC in '27), <strong>CVPR</strong> (2020–2026, Lead AC in '25, '26), <strong>ICCV</strong> (2021–2025), and <strong>ECCV</strong> (2022–2024, Lead AC in '24). Also served for WACV, ACL, FG, and ICMI."
     },
     {
