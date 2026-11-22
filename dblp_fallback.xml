@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<dblpperson name="Yale Song" pid="31/9606" n="116">
+<dblpperson name="Yale Song" pid="31/9606" n="117">
 <person key="homepages/31/9606" mdate="2011-05-22">
 <author pid="31/9606">Yale Song</author>
 </person>
@@ -240,6 +240,30 @@
 <journal>CoRR</journal>
 <ee type="oa">https://doi.org/10.48550/arXiv.2609.36199</ee>
 <url>db/journals/corr/corr2609.html#abs-2609-36199</url>
+<stream>streams/journals/corr</stream>
+</article>
+</r>
+<r><article publtype="informal" key="journals/corr/abs-2610-09326" mdate="2026-11-15">
+<author pid="148/9942">Bingxuan Li</author>
+<author pid="170/4082">Yiwen Song</author>
+<author pid="243/5831-1">Xueqing Wu 0001</author>
+<author pid="287/5126">Yanzhou Pan</author>
+<author pid="37/4190">Yang Li</author>
+<author pid="449/8251">Kuang Su</author>
+<author pid="97/10181">Jingyun Liu</author>
+<author pid="449/7568">Sebastian Ko</author>
+<author pid="23/1797">Huan Zhang</author>
+<author pid="07/4227">Tong Zhang</author>
+<author pid="117/4036">Nanyun Peng 0001</author>
+<author pid="14/8360">Tomas Pfister</author>
+<author pid="31/9606">Yale Song</author>
+<title>VIS-Ground: Video Interactive Storytelling with Contextual Grounding.</title>
+<year>2026</year>
+<month>October</month>
+<volume>abs/2610.09326</volume>
+<journal>CoRR</journal>
+<ee type="oa">https://doi.org/10.48550/arXiv.2610.09326</ee>
+<url>db/journals/corr/corr2610.html#abs-2610-09326</url>
 <stream>streams/journals/corr</stream>
 </article>
 </r>
@@ -2043,7 +2067,7 @@
 <url>db/conf/fgr/fg2011.html#SongDD11a</url>
 </inproceedings>
 </r>
-<coauthors n="303" nc="2">
+<coauthors n="310" nc="1">
 <co c="0"><na f="a/Afouras:Triantafyllos" pid="175/5771">Triantafyllos Afouras</na></co>
 <co c="0"><na f="a/al=:et" pid="82/8699">et al.</na></co>
 <co c="0" n="2"><na f="a/Arbel=aacute=ez:Pablo_Andr=eacute=s" pid="41/639">Pablo Andr&#233;s Arbel&#225;ez</na><na>Pablo Arbel&#225;ez</na></co>
@@ -2085,7 +2109,7 @@
 <co c="0"><na f="c/Chu:Wen=Sheng" pid="35/8617">Wen-Sheng Chu</na></co>
 <co c="0"><na f="c/Chuang:Ching=Yao" pid="190/7522">Ching-Yao Chuang</na></co>
 <co c="0"><na f="c/Chung:Jiwan" pid="277/2798">Jiwan Chung</na></co>
-<co c="1"><na f="c/Cirstea:Razvan=Gabriel" pid="225/7855">Razvan-Gabriel Cirstea</na></co>
+<co c="0"><na f="c/Cirstea:Razvan=Gabriel" pid="225/7855">Razvan-Gabriel Cirstea</na></co>
 <co c="0"><na f="c/Claassen:Carina" pid="436/0837">Carina Claassen</na></co>
 <co c="0"><na f="c/Coda:Alex" pid="228/8336">Alex Coda</na></co>
 <co c="0"><na f="c/Collins_0001:Christopher" pid="75/9076-1">Christopher Collins 0001</na></co>
@@ -2123,7 +2147,7 @@
 <co c="0"><na f="g/Goyal:Palash" pid="183/3699">Palash Goyal</na></co>
 <co c="0"><na f="g/Grauman:Kristen" pid="57/4553">Kristen Grauman</na></co>
 <co c="0"><na f="g/Gunasekar:Suriya" pid="118/7221">Suriya Gunasekar</na></co>
-<co c="1"><na f="g/Guo:Chenjuan" pid="49/7979">Chenjuan Guo</na></co>
+<co c="0"><na f="g/Guo:Chenjuan" pid="49/7979">Chenjuan Guo</na></co>
 <co c="0"><na f="g/Gupta:Jayesh_K=" pid="164/8491">Jayesh K. Gupta</na></co>
 <co c="0"><na f="g/Gupta:Prince" pid="84/8416">Prince Gupta</na></co>
 <co c="0"><na f="g/Gyde:Nicholas" pid="260/6670">Nicholas Gyde</na></co>
@@ -2148,7 +2172,7 @@
 <co c="0"><na f="j/Jang_0001:Yunseok" pid="12/2106-1">Yunseok Jang 0001</na></co>
 <co c="0"><na f="j/Jawahar:C=_V=" pid="j/CVJawahar">C. V. Jawahar</na></co>
 <co c="0"><na f="j/Jegelka:Stefanie" pid="38/7003">Stefanie Jegelka</na></co>
-<co c="1"><na f="j/Jensen:Christian_S=" pid="j/ChristianSJensen">Christian S. Jensen</na></co>
+<co c="0"><na f="j/Jensen:Christian_S=" pid="j/ChristianSJensen">Christian S. Jensen</na></co>
 <co c="0"><na f="j/Jin:Haojian" pid="128/9277">Haojian Jin</na></co>
 <co c="0"><na f="j/Jin:Ye" pid="40/1042">Ye Jin</na></co>
 <co c="0"><na f="j/Joshi:Neel" pid="08/3966">Neel Joshi</na></co>
@@ -2163,12 +2187,13 @@
 <co c="0" n="2"><na f="k/Khan_0001:Salman" pid="32/11535-1">Salman Khan 0001</na><na>Salman H. Khan 0001</na></co>
 <co c="0"><na f="k/Khirodkar:Rawal" pid="230/4108">Rawal Khirodkar</na></co>
 <co c="0"><na f="k/Khoo:Weslie" pid="304/3203">Weslie Khoo</na></co>
-<co c="1"><na f="k/Kieu:Tung" pid="201/8989">Tung Kieu</na></co>
+<co c="0"><na f="k/Kieu:Tung" pid="201/8989">Tung Kieu</na></co>
 <co c="0"><na f="k/Kim:Chris_Dongjoo" pid="176/5576">Chris Dongjoo Kim</na></co>
 <co c="0"><na f="k/Kim:Gunhee" pid="45/115">Gunhee Kim</na></co>
 <co c="0"><na f="k/Kim_0001:Juho" pid="64/3462-1">Juho Kim 0001</na></co>
 <co c="0" n="2"><na f="k/Kim:Young=Jin" pid="67/3028">Young-Jin Kim</na><na>Youngjin Kim</na></co>
 <co c="0" n="2"><na f="k/Kitani:Kris_Makoto" pid="42/163">Kris Makoto Kitani</na><na>Kris Kitani</na></co>
+<co c="0"><na f="k/Ko:Sebastian" pid="449/7568">Sebastian Ko</na></co>
 <co c="0"><na f="k/Kottur:Satwik" pid="172/1012">Satwik Kottur</na></co>
 <co c="0"><na f="k/Kovashka:Adriana" pid="51/8652">Adriana Kovashka</na></co>
 <co c="0"><na f="k/Kr=auml=henb=uuml=hl:Philipp" pid="43/7592">Philipp Kr&#228;henb&#252;hl</na></co>
@@ -2189,12 +2214,14 @@
 <co c="0"><na f="l/Li_0001:Jia" pid="23/6950-1">Jia Li 0001</na></co>
 <co c="0"><na f="l/Li_0001:Li=Jia" pid="31/2187">Li-Jia Li 0001</na></co>
 <co c="0"><na f="l/Li:Sujian" pid="05/4288">Sujian Li</na></co>
+<co c="0"><na f="l/Li:Yang" pid="37/4190">Yang Li</na></co>
 <co c="0"><na f="l/Li:Yuncheng" pid="57/7831">Yuncheng Li</na></co>
 <co c="0"><na f="l/Liang:Kevin_J=" pid="230/8348">Kevin J. Liang</na></co>
 <co c="0"><na f="l/Lin:Ching=Yung" pid="62/1273">Ching-Yung Lin</na></co>
 <co c="0" n="2"><na f="l/Lin:Qinghong" pid="287/4900">Qinghong Lin</na><na>Kevin Qinghong Lin</na></co>
 <co c="0"><na f="l/Lin:Yu=Ru" pid="11/5853">Yu-Ru Lin</na></co>
 <co c="0"><na f="l/Liu:Jia=Wei" pid="85/3336">Jia-Wei Liu</na></co>
+<co c="0"><na f="l/Liu:Jingyun" pid="97/10181">Jingyun Liu</na></co>
 <co c="0"><na f="l/Liu_0007:Miao" pid="60/6348-7">Miao Liu 0007</na></co>
 <co c="0"><na f="l/Long:Do_Xuan" pid="317/0657">Do Xuan Long</na></co>
 <co c="0"><na f="l/Losier:Nick" pid="435/9608">Nick Losier</na></co>
@@ -2230,6 +2257,7 @@
 <co c="0"><na f="o/Oguntola:Oluwatumininu" pid="386/7090">Oluwatumininu Oguntola</na></co>
 <co c="0"><na f="o/Otani:Mayu" pid="72/11482">Mayu Otani</na></co>
 <co c="0"><na f="p/Pan:Xiaqing" pid="177/9224">Xiaqing Pan</na></co>
+<co c="0"><na f="p/Pan:Yanzhou" pid="287/5126">Yanzhou Pan</na></co>
 <co c="0"><na f="p/Pang:Zhanzhong" pid="243/1928">Zhanzhong Pang</na></co>
 <co c="0"><na f="p/Park:Hyun_Soo" pid="68/4325">Hyun Soo Park</na></co>
 <co c="0"><na f="p/Parmar:Mihir" pid="253/6105">Mihir Parmar</na></co>
@@ -2281,6 +2309,7 @@
 <co c="0"><na f="s/Southerland:Audrey" pid="206/8614">Audrey Southerland</na></co>
 <co c="0"><na f="s/Stark:Tammy" pid="405/4460">Tammy Stark</na></co>
 <co c="0"><na f="s/Stent:Amanda" pid="69/2756">Amanda Stent</na></co>
+<co c="0"><na f="s/Su:Kuang" pid="449/8251">Kuang Su</na></co>
 <co c="0"><na f="s/Su:Shan" pid="51/7623">Shan Su</na></co>
 <co c="0"><na f="s/Subramaniam:Vighnesh" pid="341/3754">Vighnesh Subramaniam</na></co>
 <co c="0"><na f="s/Sun:Peize" pid="249/2345">Peize Sun</na></co>
@@ -2319,7 +2348,7 @@
 <co c="0"><na f="x/Xue:Zihui" pid="256/9549">Zihui Xue</na></co>
 <co c="0"><na f="y/Yagi:Takuma" pid="210/2402">Takuma Yagi</na></co>
 <co c="0"><na f="y/Yan:Mingfei" pid="243/2976">Mingfei Yan</na></co>
-<co c="1"><na f="y/Yang_0002:Bin" pid="77/377-2">Bin Yang 0002</na></co>
+<co c="0"><na f="y/Yang_0002:Bin" pid="77/377-2">Bin Yang 0002</na></co>
 <co c="0"><na f="y/Yang:Jianchao" pid="96/3835">Jianchao Yang</na></co>
 <co c="0"><na f="y/Yang:Saelyne" pid="264/7539">Saelyne Yang</na></co>
 <co c="0"><na f="y/Yang:Xitong" pid="168/8851">Xitong Yang</na></co>
@@ -2336,11 +2365,13 @@
 <co c="0"><na f="z/Zha:Shengxin_Cindy" pid="386/6728">Shengxin Cindy Zha</na></co>
 <co c="0"><na f="z/Zhang_0010:Ce" pid="97/919-10">Ce Zhang 0010</na></co>
 <co c="0"><na f="z/Zhang:Edward" pid="159/4948">Edward Zhang</na></co>
+<co c="0"><na f="z/Zhang:Huan" pid="23/1797">Huan Zhang</na></co>
 <co c="0"><na f="z/Zhang:Jinxu" pid="362/2934">Jinxu Zhang</na></co>
 <co c="0"><na f="z/Zhang:Pengchuan" pid="207/1300">Pengchuan Zhang</na></co>
+<co c="0"><na f="z/Zhang:Tong" pid="07/4227">Tong Zhang</na></co>
 <co c="0"><na f="z/Zhao_0002:Chen" pid="81/3-2">Chen Zhao 0002</na></co>
 <co c="0"><na f="z/Zhao_0010:Jian" pid="70/2932-10">Jian Zhao 0010</na></co>
-<co c="1"><na f="z/Zhao_0008:Yan" pid="88/5320-8">Yan Zhao 0008</na></co>
+<co c="0"><na f="z/Zhao_0008:Yan" pid="88/5320-8">Yan Zhao 0008</na></co>
 <co c="0"><na f="z/Zhao_0003:Ziwei" pid="241/6308-3">Ziwei Zhao 0003</na></co>
 <co c="0"><na f="z/Zhou:Yipin" pid="150/4221">Yipin Zhou</na></co>
 <co c="0"><na f="z/Zhu:Dawei" pid="12/9540">Dawei Zhu</na></co>
