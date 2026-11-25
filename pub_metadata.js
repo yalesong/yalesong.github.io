@@ -278,7 +278,7 @@ window.SITE_CONTENT = {
     },
     {
       "category": "Area Chair / Senior AC:",
-      "html": "Regularly serve for <strong>NeurIPS</strong> (2020–2026), <strong>ICLR</strong> (2021–2027), <strong>ICML</strong> (2023–2027, SAC in '27), <strong>CVPR</strong> (2020–2026, Lead AC in '25, '26), <strong>ICCV</strong> (2021–2025), and <strong>ECCV</strong> (2022–2024, Lead AC in '24). Also served for WACV, ACL, FG, and ICMI."
+      "html": "Regularly serve for <strong>NeurIPS</strong> (2020–2026), <strong>ICLR</strong> (2021–2027), <strong>ICML</strong> (2023–2027, SAC in '27), <strong>CVPR</strong> (2020–2027, Lead AC '25-'27), <strong>ICCV</strong> (2021–2025), and <strong>ECCV</strong> (2022–2024, Lead AC in '24). Also served for WACV, ACL, FG, and ICMI."
     },
     {
       "category": "Recognition:",
